@@ -157,6 +157,7 @@ img { max-width: 100%; display: block; }
 .search-link { border-color: var(--line); }
 
 .main { max-width: var(--maxw); margin: 0 auto; padding: 28px 22px 80px; }
+.main:focus, .main:focus-visible { outline: none; }
 .view { min-height: 52vh; }
 .route { animation: fade-up 0.28s ease both; }
 @keyframes fade-up { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
