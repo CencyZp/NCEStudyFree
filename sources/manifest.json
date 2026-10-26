@@ -1,0 +1,5303 @@
+{
+  "startedAt": "2026-10-26T07:36:30.550Z",
+  "sources": {
+    "lrc": "https://nce.mleo.site/NCE{1..4}/book.json + {unit}.lrc",
+    "notes": "https://raw.githubusercontent.com/LiDuoMiao/new-concept-english/master/notes"
+  },
+  "books": [
+    {
+      "key": "NCE1",
+      "label": "第一册",
+      "site": "https://nce.mleo.site/NCE1",
+      "units": 72,
+      "lrcOk": 72,
+      "notesOk": 72,
+      "entries": [
+        {
+          "key": "001-002",
+          "title": "001&002.Excuse Me",
+          "filename": "001&002.Excuse Me",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/001-002.lrc",
+            "cached": true,
+            "bytes": 630,
+            "sha256": "0c1ffcd47964b5929271c445e94a1c129a95ac9c4c000516c6ac01f42b88b276"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/001-002.json",
+            "cached": true,
+            "bytes": 7504,
+            "sha256": "ad80e77f1583bfce8dfb69b3ec528ed1831712d464a8b08aa48808dc2892e48d"
+          }
+        },
+        {
+          "key": "003-004",
+          "title": "003&004.Sorry, Sir",
+          "filename": "003&004.Sorry, Sir",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/003-004.lrc",
+            "cached": true,
+            "bytes": 983,
+            "sha256": "7e6ac13d2822714124d2c0f7e0fa111449d850d33e03af2dc172f2a52a2f66cb"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/003-004.json",
+            "cached": true,
+            "bytes": 8917,
+            "sha256": "53f6df877073438bc5ddf12a82af42cd72e4ddf6c5875747709d6b7c4a6fed23"
+          }
+        },
+        {
+          "key": "005-006",
+          "title": "005&006.Nice to Meet You",
+          "filename": "005&006.Nice to Meet You",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/005-006.lrc",
+            "cached": true,
+            "bytes": 1364,
+            "sha256": "29adf26b730de45478bd0d960a5382f7f4b3a60771d860563befc9595de59dbf"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/005-006.json",
+            "cached": true,
+            "bytes": 7903,
+            "sha256": "65844eecd6c8898a14b0a33e568bd3f51877dd82cdfc9a5ade041f86168c5daf"
+          }
+        },
+        {
+          "key": "007-008",
+          "title": "007&008.Are You a Teacher",
+          "filename": "007&008.Are You a Teacher",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/007-008.lrc",
+            "cached": true,
+            "bytes": 1152,
+            "sha256": "99d640968e6c8701a97303d373b6184c5c4e3f845f3486d241090570c50e9035"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/007-008.json",
+            "cached": true,
+            "bytes": 7733,
+            "sha256": "bee6d17736c818fc74327924c9ca0d19e084565919256eb7afce5c380cb8f71c"
+          }
+        },
+        {
+          "key": "009-010",
+          "title": "009&010.How Are You Today",
+          "filename": "009&010.How Are You Today",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/009-010.lrc",
+            "cached": true,
+            "bytes": 1003,
+            "sha256": "aa3c8a2848f1917ec824a8767ee6c307ce1a4eeeac42b9f4175f9025d2cc7d65"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/009-010.json",
+            "cached": true,
+            "bytes": 7867,
+            "sha256": "c4a4004febfcd9f0abe5ddbc6ea9acb72d18a4c55d17994d733e80dcb78808ea"
+          }
+        },
+        {
+          "key": "011-012",
+          "title": "011&012.Is This Your Shirt",
+          "filename": "011&012.Is This Your Shirt",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/011-012.lrc",
+            "cached": true,
+            "bytes": 1130,
+            "sha256": "0f7fed806e71789d4cb934d23b3b22dc3eb41080901dff2cf5561634e3d1ff10"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/011-012.json",
+            "cached": true,
+            "bytes": 6551,
+            "sha256": "72f263dcf4ed0cb3736160fa71aa60f0ffdd1f3c5832ed5c13593fb5e6707cd9"
+          }
+        },
+        {
+          "key": "013-014",
+          "title": "013&014.A New Dress",
+          "filename": "013&014.A New Dress",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/013-014.lrc",
+            "cached": true,
+            "bytes": 1007,
+            "sha256": "9970b124b7264befcf9457c4ff8a3d6883be4a173f773c175e7dac47013aff3b"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/013-014.json",
+            "cached": true,
+            "bytes": 8309,
+            "sha256": "e90eb33c2e85a50a4a56e57a7a29594d7a415f57832c1a19a90e1b5eb97dac90"
+          }
+        },
+        {
+          "key": "015-016",
+          "title": "015&016.Your Passports, Please",
+          "filename": "015&016.Your Passports, Please",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/015-016.lrc",
+            "cached": true,
+            "bytes": 1360,
+            "sha256": "e5716738559d7424f70af682c5612b561428cef6bbb68d32a494376973ec469a"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/015-016.json",
+            "cached": true,
+            "bytes": 7990,
+            "sha256": "71751fc3f05011ddb606755baec0731c99cbcf7905938eb00b63af968fe8f933"
+          }
+        },
+        {
+          "key": "017-018",
+          "title": "017&018.How do you do",
+          "filename": "017&018.How do you do",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/017-018.lrc",
+            "cached": true,
+            "bytes": 1471,
+            "sha256": "de7b604bf47c27c766cc64ee89d551afd6edadec0dd9830f4bb668041dd8ff9e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/017-018.json",
+            "cached": true,
+            "bytes": 9278,
+            "sha256": "413c163b4af242043676831abd30ee9238d1a20fa16f8e08a7db4e8d16012827"
+          }
+        },
+        {
+          "key": "019-020",
+          "title": "019&020.Tired and Thirsty",
+          "filename": "019&020.Tired and Thirsty",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/019-020.lrc",
+            "cached": true,
+            "bytes": 1136,
+            "sha256": "943ad90411d006674f7ebba8602d2016d6de233b806fc01ff17da13a6dc10634"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/019-020.json",
+            "cached": true,
+            "bytes": 8783,
+            "sha256": "476f22b15d68f3d8369db71de612f7f0cf3542703853a68313049a74d15fc782"
+          }
+        },
+        {
+          "key": "021-022",
+          "title": "021&022.Which Book",
+          "filename": "021&022.Which Book",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/021-022.lrc",
+            "cached": true,
+            "bytes": 704,
+            "sha256": "5044ab8b21454cd058a96e6405aeac145e175cb78d1e8351ab15e7cd314184f2"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/021-022.json",
+            "cached": true,
+            "bytes": 7472,
+            "sha256": "c1b50d79fb990bc6da7dcb3f01cef2eb38ff7f9ce5bc87465d0d7562939d96f4"
+          }
+        },
+        {
+          "key": "023-024",
+          "title": "023&024.Which Glasses",
+          "filename": "023&024.Which Glasses",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/023-024.lrc",
+            "cached": true,
+            "bytes": 780,
+            "sha256": "7d0f2ff48f58b9d99c6ee8d5725c8221e60e5d445ccb87ee05126f96b63cd701"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/023-024.json",
+            "cached": true,
+            "bytes": 7672,
+            "sha256": "7c40fcafafa8aef3eea21cb09f1758ebdc6f058247e3b5b7761efb28045a2081"
+          }
+        },
+        {
+          "key": "025-026",
+          "title": "025&026.Mrs. Smith's Kitchen",
+          "filename": "025&026.Mrs. Smith's Kitchen",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/025-026.lrc",
+            "cached": true,
+            "bytes": 1142,
+            "sha256": "b977f43df7fc09ee7c502dc9e81aadfced3cf6b659e70c2b3c62e809ebeeaa93"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/025-026.json",
+            "cached": true,
+            "bytes": 8941,
+            "sha256": "ade833966e86cac8723fe34e594c6cc15e6bcc20fe3ede049640f09019fd1c9f"
+          }
+        },
+        {
+          "key": "027-028",
+          "title": "027&028.Mrs. Smith's Living Room",
+          "filename": "027&028.Mrs. Smith's Living Room",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/027-028.lrc",
+            "cached": true,
+            "bytes": 1348,
+            "sha256": "c62a0948fcf4ab2b2999e0e4db7f05bf06642c6822450ca151d408412a80248a"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/027-028.json",
+            "cached": true,
+            "bytes": 8080,
+            "sha256": "3f6041dac8609e7a66b5944987adf81dbe5f23cddab35254bea12291988e034a"
+          }
+        },
+        {
+          "key": "029-030",
+          "title": "029&030.Come In, Amy",
+          "filename": "029&030.Come In, Amy",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/029-030.lrc",
+            "cached": true,
+            "bytes": 923,
+            "sha256": "d81d723ae2481eec850d124e29a5b678c37726e0391c3b6b15fa4feb3d9fa1ca"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/029-030.json",
+            "cached": true,
+            "bytes": 6897,
+            "sha256": "201edcd31e35f993e3c26a5d8f6eb83a1304357facb533911e21f12e6a54abee"
+          }
+        },
+        {
+          "key": "031-032",
+          "title": "031&032.Where's Sally",
+          "filename": "031&032.Where's Sally",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/031-032.lrc",
+            "cached": true,
+            "bytes": 1108,
+            "sha256": "fa8da93f954ded01e649e7a37bd3c4c7f866f4eb8485d7b0c30902de98b9f6a4"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/031-032.json",
+            "cached": true,
+            "bytes": 8208,
+            "sha256": "502c3e4c20b30399a465e6a2f90fefd229733a55ba119c245da990caed9dc871"
+          }
+        },
+        {
+          "key": "033-034",
+          "title": "033&034.A Fine Day",
+          "filename": "033&034.A Fine Day",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/033-034.lrc",
+            "cached": true,
+            "bytes": 1136,
+            "sha256": "71cff8c1ee8a0315b7d0e7df525a246d3265f9568c4ebef52fc0b0b94e9090a1"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/033-034.json",
+            "cached": true,
+            "bytes": 7080,
+            "sha256": "a504c1bd80dab882fedf6d7fb1dfeda9dacb69309d413427405bdb235e6d6c26"
+          }
+        },
+        {
+          "key": "035-036",
+          "title": "035&036.Our Village",
+          "filename": "035&036.Our Village",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/035-036.lrc",
+            "cached": true,
+            "bytes": 1474,
+            "sha256": "52a3219f4c3bef709d19a3c915632eb9cff7b0525a9439b073ef297e58a80f57"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/035-036.json",
+            "cached": true,
+            "bytes": 10440,
+            "sha256": "5d526245762130b3dfe0e9cc82755f148f7fdc59f028d677472da9273c5fa761"
+          }
+        },
+        {
+          "key": "037-038",
+          "title": "037&038.Making a Bookcase",
+          "filename": "037&038.Making a Bookcase",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/037-038.lrc",
+            "cached": true,
+            "bytes": 1434,
+            "sha256": "c723c41b65924c2fc26645895d95924a09611ca71fd5c82466a36c637cc8c57a"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/037-038.json",
+            "cached": true,
+            "bytes": 7414,
+            "sha256": "3bbf2c7b82ec4f4f9afcffcf317b0f9fa84a63b900ecaa22426cf68f6a1c297a"
+          }
+        },
+        {
+          "key": "039-040",
+          "title": "039&040.Don't Drop It",
+          "filename": "039&040.Don't Drop It",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/039-040.lrc",
+            "cached": true,
+            "bytes": 1223,
+            "sha256": "d5affb40caa1c1dd02275ee4beda8afd21d4b25f2da9a80d58bfdf480151cc0b"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/039-040.json",
+            "cached": true,
+            "bytes": 7867,
+            "sha256": "d96c5beb1e4a3cc82440bd37fa1ca406e6dfec28e1bc0a2443086f724bb34832"
+          }
+        },
+        {
+          "key": "041-042",
+          "title": "041&042.Penny's Bag",
+          "filename": "041&042.Penny's Bag",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/041-042.lrc",
+            "cached": true,
+            "bytes": 1169,
+            "sha256": "24b838d31a6ebd04738a77c5c062bcba13d58c38d4a6bb5557bcbb2d385c458c"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/041-042.json",
+            "cached": true,
+            "bytes": 11669,
+            "sha256": "5c161fe37c57fb65a33036dc86201c7851a6a5a6459147a4b00bf0822c36b8d8"
+          }
+        },
+        {
+          "key": "043-044",
+          "title": "043&044.Hurry Up",
+          "filename": "043&044.Hurry Up",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/043-044.lrc",
+            "cached": true,
+            "bytes": 1384,
+            "sha256": "f3ffd762dffd7839b1a28dead8c2ee8b2b82536558450e50ae9a8737e6568bc6"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/043-044.json",
+            "cached": true,
+            "bytes": 9600,
+            "sha256": "5165b21bbf18b044c409c88762670cd96bf6ac0fac30737fc4d07d88f2a19064"
+          }
+        },
+        {
+          "key": "045-046",
+          "title": "045&046.The Boss's Letter",
+          "filename": "045&046.The Boss's Letter",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/045-046.lrc",
+            "cached": true,
+            "bytes": 1370,
+            "sha256": "a8b889a7af2f2b94d4e658f9568552fde4bc5eba48fe0f85656c055694c26b2f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/045-046.json",
+            "cached": true,
+            "bytes": 8629,
+            "sha256": "00a4cf0c2f977ede5bfa7e522cd5aa978e02d7ebecaf3ba8cd83e8a7657793f5"
+          }
+        },
+        {
+          "key": "047-048",
+          "title": "047&048.A Cup of Coffee",
+          "filename": "047&048.A Cup of Coffee",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/047-048.lrc",
+            "cached": true,
+            "bytes": 1112,
+            "sha256": "d5a3b24a816099718f838faeb75cc84d43cb8e151bfc08c76b6123e06f051f1b"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/047-048.json",
+            "cached": true,
+            "bytes": 7746,
+            "sha256": "ac2929aa343df8343473ae4c6d3b14307a073092028c069e3f29b190ff5dde05"
+          }
+        },
+        {
+          "key": "049-050",
+          "title": "049&050.At the Butcher's",
+          "filename": "049&050.At the Butcher's",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/049-050.lrc",
+            "cached": true,
+            "bytes": 1403,
+            "sha256": "223e428274d7fcc0c99970a0cedbb43a2444a2b2825cb224eb13277afc0c5deb"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/049-050.json",
+            "cached": true,
+            "bytes": 10056,
+            "sha256": "703faef4bfaf0e95a371e91ffae4a1a2eefdad0a5875bff03739a835aafb2ebc"
+          }
+        },
+        {
+          "key": "051-052",
+          "title": "051&052.A Pleasant Climate",
+          "filename": "051&052.A Pleasant Climate",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/051-052.lrc",
+            "cached": true,
+            "bytes": 1535,
+            "sha256": "ca364731080b736f3fe22a98d79f918cf3a30ee6d13f9ee31d5595344e293bbc"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/051-052.json",
+            "cached": true,
+            "bytes": 10230,
+            "sha256": "51284ddc5a0bbab44c13dc96c14ad79fb3f254fdfe6b0666c86c17aba04a88da"
+          }
+        },
+        {
+          "key": "053-054",
+          "title": "053&054.An Interesting Climate",
+          "filename": "053&054.An Interesting Climate",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/053-054.lrc",
+            "cached": true,
+            "bytes": 1663,
+            "sha256": "1ae669daaef7102fff45de3e8ea3fcce97383c6456c17e379af597e065cf7510"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/053-054.json",
+            "cached": true,
+            "bytes": 11733,
+            "sha256": "0feba07cbe08e720d97912420d501e4122b2dfcb4acd15bb5c9265da8f8590f0"
+          }
+        },
+        {
+          "key": "055-056",
+          "title": "055&056.The Sawyer Family",
+          "filename": "055&056.The Sawyer Family",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/055-056.lrc",
+            "cached": true,
+            "bytes": 1675,
+            "sha256": "6e929d5b01ec80e1cc37f08f1b4f8280649dd194055b4c79f56cf76669acc71a"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/055-056.json",
+            "cached": true,
+            "bytes": 10476,
+            "sha256": "083e709af9c9dff203b1243d4c3cb42d94474e1e33af04a7f88dab1ae65ab1f3"
+          }
+        },
+        {
+          "key": "057-058",
+          "title": "057&058.An Unusual Day",
+          "filename": "057&058.An Unusual Day",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/057-058.lrc",
+            "cached": true,
+            "bytes": 1794,
+            "sha256": "dd7175c97bce95cadc65e4c890abd00b99b9eb0fb2648ac127dd59443e7d6db8"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/057-058.json",
+            "cached": true,
+            "bytes": 10753,
+            "sha256": "6e36907317b15a039d78c61ae4457b0320415dd3994d118451f7226396a7c50f"
+          }
+        },
+        {
+          "key": "059-060",
+          "title": "059&060.Is That All",
+          "filename": "059&060.Is That All",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/059-060.lrc",
+            "cached": true,
+            "bytes": 1399,
+            "sha256": "23d60e9be23092599d1a181a1ef7855cd08f53ceb811a6b4f20f6c8fc0806d07"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/059-060.json",
+            "cached": true,
+            "bytes": 8334,
+            "sha256": "97510c3a1aa4703e50a7decd5dd8ebfaf69b0aa60fba060f14d2929145bf7a30"
+          }
+        },
+        {
+          "key": "061-062",
+          "title": "061&062.A Bad Cold",
+          "filename": "061&062.A Bad Cold",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/061-062.lrc",
+            "cached": true,
+            "bytes": 1420,
+            "sha256": "96a6733a166b503dd8048e18ce7240abf8e10b920ac329a5b027676860b6c3be"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/061-062.json",
+            "cached": true,
+            "bytes": 11666,
+            "sha256": "a4477bdeef46955b2500e0057ac281a9c3a9570135d50a7caec583bc38ad8238"
+          }
+        },
+        {
+          "key": "063-064",
+          "title": "063&064.Thank You, Doctor",
+          "filename": "063&064.Thank You, Doctor",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/063-064.lrc",
+            "cached": true,
+            "bytes": 1842,
+            "sha256": "35bec6002e684807d2b666ed434efd85a293280fdf377cf2894121358e736826"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/063-064.json",
+            "cached": true,
+            "bytes": 10131,
+            "sha256": "b8d070dc4d4f61c75ff59e34aaaa0a67dc3068b26b8c95b034d6b6047ea94418"
+          }
+        },
+        {
+          "key": "065-066",
+          "title": "065&066.Not a Baby",
+          "filename": "065&066.Not a Baby",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/065-066.lrc",
+            "cached": true,
+            "bytes": 1708,
+            "sha256": "e86453871721490e0498818a583b458868e6708466069c58c59e246a267dfd64"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/065-066.json",
+            "cached": true,
+            "bytes": 11565,
+            "sha256": "a79724671229d6ff0cfb1a2e1befab65df7488c71ff5b8d64353e2ba6ea25b29"
+          }
+        },
+        {
+          "key": "067-068",
+          "title": "067&068.The Weekend",
+          "filename": "067&068.The Weekend",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/067-068.lrc",
+            "cached": true,
+            "bytes": 1479,
+            "sha256": "fa95f47f9a07e486cbea1c372437dd8d2767355ad9aef037f6b83130e6881caf"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/067-068.json",
+            "cached": true,
+            "bytes": 12157,
+            "sha256": "494b85cdd2962046fd0f09d0b9eb8f49eef306415266c3cc6b15ed83cafb1021"
+          }
+        },
+        {
+          "key": "069-070",
+          "title": "069&070.The Car Race",
+          "filename": "069&070.The Car Race",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/069-070.lrc",
+            "cached": true,
+            "bytes": 1713,
+            "sha256": "72968c2deb7b917baba99aa8a41b988c97e17b947c328b279ce3c382a4d7be8e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/069-070.json",
+            "cached": true,
+            "bytes": 10423,
+            "sha256": "3f3603af807e048274371d28e880d2ea2eb350e3d90c8282bff9aa026dcb91d5"
+          }
+        },
+        {
+          "key": "071-072",
+          "title": "071&072.He's Awful",
+          "filename": "071&072.He's Awful",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/071-072.lrc",
+            "cached": true,
+            "bytes": 1866,
+            "sha256": "6fa7e6f422e11ac7df75ddd2ef75c2f2ef435b22f06f32d10769a2df91be579e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/071-072.json",
+            "cached": true,
+            "bytes": 10304,
+            "sha256": "f105badb8f61a3db53d149e8104b4c299e6770272737d50645ef38384752ceb2"
+          }
+        },
+        {
+          "key": "073-074",
+          "title": "073&074.The Way to King Street",
+          "filename": "073&074.The Way to King Street",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/073-074.lrc",
+            "cached": true,
+            "bytes": 1644,
+            "sha256": "074df40a49a48c3924c0287223dce88e69c509bc03f9cb1b0f5d53732a916f81"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/073-074.json",
+            "cached": true,
+            "bytes": 12148,
+            "sha256": "14868376be0293b3a997c1ee315ed0e8b743b55e8521aff3af39ccb62481582f"
+          }
+        },
+        {
+          "key": "075-076",
+          "title": "075&076.Uncomfortable Shoes",
+          "filename": "075&076.Uncomfortable Shoes",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/075-076.lrc",
+            "cached": true,
+            "bytes": 1660,
+            "sha256": "d02bc23fdfd782b54c53cdb6ddd7d865c10b7527907aec63c80ead4a42f98fa7"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/075-076.json",
+            "cached": true,
+            "bytes": 8050,
+            "sha256": "b44423a2b0f138e31e101355b1a34690e5605313a96fe2c4e3150f501139a963"
+          }
+        },
+        {
+          "key": "077-078",
+          "title": "077&078.Terrible Toothache",
+          "filename": "077&078.Terrible Toothache",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/077-078.lrc",
+            "cached": true,
+            "bytes": 1649,
+            "sha256": "90cc215623f3ec7fb036561279fa87e8c632ee451e12ef360b220823663abe4f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/077-078.json",
+            "cached": true,
+            "bytes": 7859,
+            "sha256": "61d90c2c52235805aa843e6f6baaa2a4b08b15b5879b57c8306de11b16443f93"
+          }
+        },
+        {
+          "key": "079-080",
+          "title": "079&080.Carol's Shopping List",
+          "filename": "079&080.Carol's Shopping List",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/079-080.lrc",
+            "cached": true,
+            "bytes": 1712,
+            "sha256": "9ed7f44439d4cfb099cdc4e19ca018a758dcec1a00688a6d6faa0d4e7ac11fdf"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/079-080.json",
+            "cached": true,
+            "bytes": 9680,
+            "sha256": "9c13e8fbe60476ee4f64a333db1eb77d842e100d87d1c4d253e06427178bb575"
+          }
+        },
+        {
+          "key": "081-082",
+          "title": "081&082.Roast Beef and Potatoes",
+          "filename": "081&082.Roast Beef and Potatoes",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/081-082.lrc",
+            "cached": true,
+            "bytes": 1650,
+            "sha256": "750d3628aa3551e65b8cf1e79f214fd3258c8a635354b784edd3e636611fa1ee"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/081-082.json",
+            "cached": true,
+            "bytes": 8459,
+            "sha256": "9aeb6fa6fb298f3b0bc93263d1237d5cbe151701dec95a5b1195b7d0b839d643"
+          }
+        },
+        {
+          "key": "083-084",
+          "title": "083&084.Going on Holiday",
+          "filename": "083&084.Going on Holiday",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/083-084.lrc",
+            "cached": true,
+            "bytes": 1895,
+            "sha256": "7fb3ecae9658a51f9248db234796067007ee2fa31b13c48ee8337ef8def4fa93"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/083-084.json",
+            "cached": true,
+            "bytes": 9966,
+            "sha256": "13a6e095302c82e181005ddfa6dc9dd0374293f1fbe3cac752356926272c1708"
+          }
+        },
+        {
+          "key": "085-086",
+          "title": "085&086.Paris in the Spring",
+          "filename": "085&086.Paris in the Spring",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/085-086.lrc",
+            "cached": true,
+            "bytes": 1512,
+            "sha256": "8c9c21dfb3f5bec6941e4cc8289ffb12a287da33041398f96e66a8dc6a364adf"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/085-086.json",
+            "cached": true,
+            "bytes": 10420,
+            "sha256": "3534c64510f6a7c6945c9f4537a96b098c862471ab9df74f0db9e0ab245a7f77"
+          }
+        },
+        {
+          "key": "087-088",
+          "title": "087&088.A Car Crash",
+          "filename": "087&088.A Car Crash",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/087-088.lrc",
+            "cached": true,
+            "bytes": 1614,
+            "sha256": "fd51cc6cd41178b9d800ad8cbd8eb2136f556c8c887afa2325b80232321057c7"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/087-088.json",
+            "cached": true,
+            "bytes": 10630,
+            "sha256": "c8b2c56e4c96e0cfcfce8966c20efce3575cf1d208e9aeb83c7721baf7865290"
+          }
+        },
+        {
+          "key": "089-090",
+          "title": "089&090.For Sale",
+          "filename": "089&090.For Sale",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/089-090.lrc",
+            "cached": true,
+            "bytes": 1682,
+            "sha256": "a765da3897c0af0fe3e2a5e26765e7e76d6e1254b42c12398de9a8d024149029"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/089-090.json",
+            "cached": true,
+            "bytes": 9790,
+            "sha256": "32f5d2badb67c17b6a35b24df0335d299c5c600dcbb59bc01d7ea7d7379e7c0d"
+          }
+        },
+        {
+          "key": "091-092",
+          "title": "091&092.Poor Ian",
+          "filename": "091&092.Poor Ian",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/091-092.lrc",
+            "cached": true,
+            "bytes": 1719,
+            "sha256": "a13cae4b3c060c20b530bd62d4e71c5b1117eb130769ecbb61a50d2cf678ed6f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/091-092.json",
+            "cached": true,
+            "bytes": 10530,
+            "sha256": "6bb72558b3d4e593213da8c72bf05f022644a74efafaa1665dcf8f45c676b6c2"
+          }
+        },
+        {
+          "key": "093-094",
+          "title": "093&094.Our New Neighbour",
+          "filename": "093&094.Our New Neighbour",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/093-094.lrc",
+            "cached": true,
+            "bytes": 1377,
+            "sha256": "efa1682c90edde61e6049413ede375bdf7d226ad68454e6bd5b25f8baa1b6c5d"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/093-094.json",
+            "cached": true,
+            "bytes": 9705,
+            "sha256": "0bd82c4955524aedfde6b1021393efe325541a9544d3e6b944a16bf92ea5eab5"
+          }
+        },
+        {
+          "key": "095-096",
+          "title": "095&096.Tickets, Please",
+          "filename": "095&096.Tickets, Please",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/095-096.lrc",
+            "cached": true,
+            "bytes": 1797,
+            "sha256": "351ef944eb0493315cbd677a756a32bcb3326cec467b7ff5a8a452d0a97a24d5"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/095-096.json",
+            "cached": true,
+            "bytes": 10471,
+            "sha256": "fdc78f849ab6ee759f811b4c840bfbc8eb89a991fd0d0f64a3f65376be0ce75a"
+          }
+        },
+        {
+          "key": "097-098",
+          "title": "097&098.A Small Blue Case",
+          "filename": "097&098.A Small Blue Case",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/097-098.lrc",
+            "cached": true,
+            "bytes": 1695,
+            "sha256": "5a7cfb6465a5654f8820267316def2ff3e6a5ba7c5aac8aec1bd4031c98d009c"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/097-098.json",
+            "cached": true,
+            "bytes": 9870,
+            "sha256": "fa164eeecee84e25f154c26acee62f4d32924d6ea7e6d9531b1b28a135350202"
+          }
+        },
+        {
+          "key": "099-100",
+          "title": "099&100.Ow",
+          "filename": "099&100.Ow",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/099-100.lrc",
+            "cached": true,
+            "bytes": 1276,
+            "sha256": "090568c3ef3e102ec76bec88267edbc6797c445e991754f148e8514398e98662"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/099-100.json",
+            "cached": true,
+            "bytes": 10022,
+            "sha256": "6b1de59769240b5455dcd63892d1a6d2dfc45cb2d8950836e5742b44bb32627f"
+          }
+        },
+        {
+          "key": "101-102",
+          "title": "101&102.A Card From Jimmy",
+          "filename": "101&102.A Card From Jimmy",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/101-102.lrc",
+            "cached": true,
+            "bytes": 1841,
+            "sha256": "7e1158765c3aecf83bc1ab59c2032c361c8a1c73d72d3a05306e67f2459ad6c7"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/101-102.json",
+            "cached": true,
+            "bytes": 10582,
+            "sha256": "077074d0d0b6260c6c4c9bd9c753e3a539554dfdc423e7ded09e8b9bb4bb3b61"
+          }
+        },
+        {
+          "key": "103-104",
+          "title": "103&104.The French Test",
+          "filename": "103&104.The French Test",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/103-104.lrc",
+            "cached": true,
+            "bytes": 1859,
+            "sha256": "b19f77e0f51c10a25e630e1e387eea03cc6a4e561db4f6f9d8fe888f0dd536b8"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/103-104.json",
+            "cached": true,
+            "bytes": 10770,
+            "sha256": "97f6b67d2b112d78e000cbd37f0b453ac14414eba006e56ef9c1682302d7bde7"
+          }
+        },
+        {
+          "key": "105-106",
+          "title": "105&106.Full of Mistakes",
+          "filename": "105&106.Full of Mistakes",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/105-106.lrc",
+            "cached": true,
+            "bytes": 1574,
+            "sha256": "c026d97cdc834fb762552673bb56e694a99433cd18c471f7cff204467331af8d"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/105-106.json",
+            "cached": true,
+            "bytes": 11742,
+            "sha256": "ca91391e71d276f25287c67f59df9346ded6ed522403b20297301925c2470fb0"
+          }
+        },
+        {
+          "key": "107-108",
+          "title": "107&108.It's Too Small",
+          "filename": "107&108.It's Too Small",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/107-108.lrc",
+            "cached": true,
+            "bytes": 1844,
+            "sha256": "89d1038192c2bbe684eb56f08116b7fdfe3e45395605877b3e727b0037fd179f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/107-108.json",
+            "cached": true,
+            "bytes": 10196,
+            "sha256": "00f09eea346f720bc95942e8261a7d2087cf2e01290049376b72cea42fda3a5e"
+          }
+        },
+        {
+          "key": "109-110",
+          "title": "109&110.A Good Idea",
+          "filename": "109&110.A Good Idea",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/109-110.lrc",
+            "cached": true,
+            "bytes": 1604,
+            "sha256": "3cc313334f1d4a77c569b819ee61557ee63e85276f827f9497abc835a7db88b5"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/109-110.json",
+            "cached": true,
+            "bytes": 11346,
+            "sha256": "ac584f699717627b71dcb226956dfab3de1d650fff2dd20596b0577185222a19"
+          }
+        },
+        {
+          "key": "111-112",
+          "title": "111&112.The Most Expensive Model",
+          "filename": "111&112.The Most Expensive Model",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/111-112.lrc",
+            "cached": true,
+            "bytes": 2113,
+            "sha256": "51fadbf966f5caee13fc97cbf45f0e0d999a6049da6dc40458aa750e2c3631d0"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/111-112.json",
+            "cached": true,
+            "bytes": 8469,
+            "sha256": "bb1275f71a7b38c305b1fe3b36746fa47f27c6bc3389c7c6743f980ac8211531"
+          }
+        },
+        {
+          "key": "113-114",
+          "title": "113&114.Small Change",
+          "filename": "113&114.Small Change",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/113-114.lrc",
+            "cached": true,
+            "bytes": 1639,
+            "sha256": "1018652076567f0a871eba180df4e44cd9948e5327a38dae4f7f68a681c1ff71"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/113-114.json",
+            "cached": true,
+            "bytes": 11641,
+            "sha256": "7379734da35a918583c8079787c22d2b6c3f812de3ccfaea6bec1e7e3841a150"
+          }
+        },
+        {
+          "key": "115-116",
+          "title": "115&116.Knock, Knock",
+          "filename": "115&116.Knock, Knock",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/115-116.lrc",
+            "cached": true,
+            "bytes": 1785,
+            "sha256": "2506ec30dec84c6bca2c4a4c0d504445acd39701d58291c300d2b473e68fa2cf"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/115-116.json",
+            "cached": true,
+            "bytes": 9304,
+            "sha256": "40c82ee23b9f839399e2fdcb79d1233a074f3bf15a275bf623a60b051e2aa238"
+          }
+        },
+        {
+          "key": "117-118",
+          "title": "117&118.Tommy's Breakfast",
+          "filename": "117&118.Tommy's Breakfast",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/117-118.lrc",
+            "cached": true,
+            "bytes": 1841,
+            "sha256": "a527b8444dee5ee01892e8fb4a5a80e40aeb1b242893bcd1eab1679212d8763e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/117-118.json",
+            "cached": true,
+            "bytes": 10510,
+            "sha256": "828a59145c6f9d0ab43d8c69c69a75f8be99e042aefe3b207b7bc16ff30a631a"
+          }
+        },
+        {
+          "key": "119-120",
+          "title": "119&120.A True Story",
+          "filename": "119&120.A True Story",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/119-120.lrc",
+            "cached": true,
+            "bytes": 1991,
+            "sha256": "a51b9f273533eebc6db9ac0c6e784823bdb8085fc7d6bf5f74c0cdf89749d213"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/119-120.json",
+            "cached": true,
+            "bytes": 10377,
+            "sha256": "ae570c5f736ed941800a6cb9d2efb13ff007f96718ce6788c7493c67a1f6867f"
+          }
+        },
+        {
+          "key": "121-122",
+          "title": "121&122.The Man in a Hat",
+          "filename": "121&122.The Man in a Hat",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/121-122.lrc",
+            "cached": true,
+            "bytes": 1650,
+            "sha256": "12085ef61fbf76b86e2a06c90236047ecab9199fbbef337bf0d9b33780b70d4e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/121-122.json",
+            "cached": true,
+            "bytes": 8118,
+            "sha256": "efcf334dc021a01e9df2ea35b60bf2c2cd945d67df1644b9f03bcd0f6a3a66d6"
+          }
+        },
+        {
+          "key": "123-124",
+          "title": "123&124.A Trip to Australia",
+          "filename": "123&124.A Trip to Australia",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/123-124.lrc",
+            "cached": true,
+            "bytes": 1667,
+            "sha256": "bdffd5425693605572344485c4791f5ad4883f2a69627d022be18852bd7806d6"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/123-124.json",
+            "cached": true,
+            "bytes": 10235,
+            "sha256": "16dbe1b2952e416ca9019dfd50f7c1078ae91b0fd4d208b99d24642281cae54c"
+          }
+        },
+        {
+          "key": "125-126",
+          "title": "125&126.Tea for Two",
+          "filename": "125&126.Tea for Two",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/125-126.lrc",
+            "cached": true,
+            "bytes": 1525,
+            "sha256": "8ee78be827b381ba17b31aa3e33fd59106c5084d1635f90202d4cbb23baef7be"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/125-126.json",
+            "cached": true,
+            "bytes": 11774,
+            "sha256": "bb276acf065c02427cfc806662e2b20c1e03068427d26f585343dc56cb8c3b4f"
+          }
+        },
+        {
+          "key": "127-128",
+          "title": "127&128.A Famous Actress",
+          "filename": "127&128.A Famous Actress",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/127-128.lrc",
+            "cached": true,
+            "bytes": 1878,
+            "sha256": "2ede3620900be4f01bcd633cc06d37811568485cd456d3d55df5a874f5359122"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/127-128.json",
+            "cached": true,
+            "bytes": 10246,
+            "sha256": "90a8bb8fcdd449ade108c9e615f5450f9c875f3fd7799350906e9e349fa8fc00"
+          }
+        },
+        {
+          "key": "129-130",
+          "title": "129&130.Seventy Miles an Hour",
+          "filename": "129&130.Seventy Miles an Hour",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/129-130.lrc",
+            "cached": true,
+            "bytes": 1995,
+            "sha256": "96d53393c1f7acf9eac0ef17c148edf6120e1a5ac6221e4e658608cd5c65ed4b"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/129-130.json",
+            "cached": true,
+            "bytes": 9961,
+            "sha256": "ddd0d43cece4f23dac7169d5175abc71bfe30349a2228b70f0e0f1308c7a1de0"
+          }
+        },
+        {
+          "key": "131-132",
+          "title": "131&132.Don't be So Sure",
+          "filename": "131&132.Don't be So Sure",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/131-132.lrc",
+            "cached": true,
+            "bytes": 1774,
+            "sha256": "59ff98cbbb8c255ebe362cc2f1646d10ca34b333ed2e1b97623173c5e61bff80"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/131-132.json",
+            "cached": true,
+            "bytes": 10677,
+            "sha256": "3ff3891bb6394d843eaedb92c230a866e6ad2f5a3fd5128c70120a2ddd9c2815"
+          }
+        },
+        {
+          "key": "133-134",
+          "title": "133&134.Sensational News",
+          "filename": "133&134.Sensational News",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/133-134.lrc",
+            "cached": true,
+            "bytes": 1848,
+            "sha256": "f3c75016e19ae6b977596a5c5961aa7f3dd07c9961040e62f9f661141d06d60d"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/133-134.json",
+            "cached": true,
+            "bytes": 10710,
+            "sha256": "2bfb34f75ecbf84bcf8542f90442396da814ead162adc628f2a0360e56d2c6aa"
+          }
+        },
+        {
+          "key": "135-136",
+          "title": "135&136.The Latest Report",
+          "filename": "135&136.The Latest Report",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/135-136.lrc",
+            "cached": true,
+            "bytes": 2132,
+            "sha256": "42c8fd869359833a3dfdfe7159f8c01b081a7a29cd04d692defe1cd38b932726"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/135-136.json",
+            "cached": true,
+            "bytes": 10839,
+            "sha256": "5c49cbdaf50512b8e9ccf5db581547dfbb10970d474e41c09f899f4298abe46d"
+          }
+        },
+        {
+          "key": "137-138",
+          "title": "137&138.A Pleasant Dream",
+          "filename": "137&138.A Pleasant Dream",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/137-138.lrc",
+            "cached": true,
+            "bytes": 2007,
+            "sha256": "0158a9ec4333c72a52d3ec41c6d38526d4be1d4a8cdfaeca6ecdc716bba0c3e3"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/137-138.json",
+            "cached": true,
+            "bytes": 10699,
+            "sha256": "2d4c8da0e4ad72121b1f165b5981752f98ac2b0ba8631017686053e8376236bc"
+          }
+        },
+        {
+          "key": "139-140",
+          "title": "139&140.Is That You, John",
+          "filename": "139&140.Is That You, John",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/139-140.lrc",
+            "cached": true,
+            "bytes": 2019,
+            "sha256": "91b260a292f0192426b2be836d0fc6a2e3a29b05c653dbc28bcf450050c57ce5"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/139-140.json",
+            "cached": true,
+            "bytes": 10879,
+            "sha256": "147efeed900f6bd0153a1996bccfc18a4ee9cf6046cf1751cef5e98aceece519"
+          }
+        },
+        {
+          "key": "141-142",
+          "title": "141&142.Sally's First Train Ride",
+          "filename": "141&142.Sally's First Train Ride",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/141-142.lrc",
+            "cached": true,
+            "bytes": 2167,
+            "sha256": "cc447f0a8ce9df67fd2d8dcf6ad9a6961df90d4a6088718c2143c9260be4031e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/141-142.json",
+            "cached": true,
+            "bytes": 8412,
+            "sha256": "b601bc753255db28be049bf7cc23155ee0ffd5d1ba2f30ae262d8fe0bc9b54bc"
+          }
+        },
+        {
+          "key": "143-144",
+          "title": "143&144.A Walk Through the Woods",
+          "filename": "143&144.A Walk Through the Woods",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE1/143-144.lrc",
+            "cached": true,
+            "bytes": 1931,
+            "sha256": "4666fd8e42ac90782e8cab67d54e2b92c73c3edd854bea221bf53d981c8b79e9"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE1/143-144.json",
+            "cached": true,
+            "bytes": 10250,
+            "sha256": "cbe293621d49b60faa224247f2c09543e25a86dd864763501f9d9f0fc21b77a9"
+          }
+        }
+      ]
+    },
+    {
+      "key": "NCE2",
+      "label": "第二册",
+      "site": "https://nce.mleo.site/NCE2",
+      "units": 96,
+      "lrcOk": 96,
+      "notesOk": 96,
+      "entries": [
+        {
+          "key": "01",
+          "title": "01.A Private Conversation",
+          "filename": "01.A Private Conversation",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/01.lrc",
+            "cached": true,
+            "bytes": 1429,
+            "sha256": "3aa735c87890d779b1bc0da9a6d7f1112379cfbecbd3fded01fdb35aeb70b0ce"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/01.json",
+            "cached": true,
+            "bytes": 9470,
+            "sha256": "1144713dc4e96ca51918de52007dc4d3b1a6670d79273a8a76eb66584306787b"
+          }
+        },
+        {
+          "key": "02",
+          "title": "02.Breakfast or Lunch",
+          "filename": "02.Breakfast or Lunch",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/02.lrc",
+            "cached": true,
+            "bytes": 1471,
+            "sha256": "51eda2278c6f70ddccf8233cbef6f13b77329fa0cc893c3277aab731691366fa"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/02.json",
+            "cached": true,
+            "bytes": 9944,
+            "sha256": "28c52478254b1d56cd1a357689e0dc3a42073970e9ed1b1879fe13e8fb583e5c"
+          }
+        },
+        {
+          "key": "03",
+          "title": "03.Please Send Me a Card",
+          "filename": "03.Please Send Me a Card",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/03.lrc",
+            "cached": true,
+            "bytes": 1367,
+            "sha256": "106d6bef5cc818f705917748d46cb47b73930d23105d50a031ad6b5f583fbf3c"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/03.json",
+            "cached": true,
+            "bytes": 8843,
+            "sha256": "3d544c2354d8f97d3a9e1d8d4e8368038dd33784278ee8b4b120347a299d5dc2"
+          }
+        },
+        {
+          "key": "04",
+          "title": "04.An Exciting Trip",
+          "filename": "04.An Exciting Trip",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/04.lrc",
+            "cached": true,
+            "bytes": 1307,
+            "sha256": "cfb6bc44589b399844e224adb80621a81e01f9621830dc113f3442559c971a44"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/04.json",
+            "cached": true,
+            "bytes": 10193,
+            "sha256": "e54907717b645cb134591782edcac0c358e79129d812cb4aa1483192750b1e12"
+          }
+        },
+        {
+          "key": "05",
+          "title": "05.No Wrong Numbers",
+          "filename": "05.No Wrong Numbers",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/05.lrc",
+            "cached": true,
+            "bytes": 1450,
+            "sha256": "649eaa216c4892daf204f5d729e1f466cd4063fe6df7224a279613041dcfa1b7"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/05.json",
+            "cached": true,
+            "bytes": 7750,
+            "sha256": "be32fca838dd40ed29ac8e504d1bf37651c8fc935415c4e0be8559e4a9f2f832"
+          }
+        },
+        {
+          "key": "06",
+          "title": "06.Percy Buttons",
+          "filename": "06.Percy Buttons",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/06.lrc",
+            "cached": true,
+            "bytes": 1277,
+            "sha256": "0ced805c1def50b9e4f5e778a29edf62c9e1b5f6d6446a89227bd65dfc373b85"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/06.json",
+            "cached": true,
+            "bytes": 10873,
+            "sha256": "cfe9e6224d5fd38d5544643c949914487d291c245ef7acc3d8fe1661777791eb"
+          }
+        },
+        {
+          "key": "07",
+          "title": "07.Too Late",
+          "filename": "07.Too Late",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/07.lrc",
+            "cached": true,
+            "bytes": 1448,
+            "sha256": "568f501c906997581f0245fd924750c6b473b68a0344dc3935db86f3216cbe53"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/07.json",
+            "cached": true,
+            "bytes": 10362,
+            "sha256": "4d9fd03d529bf6ce1d51c5180803e535730e26473474b0b486802ef6b6c2c259"
+          }
+        },
+        {
+          "key": "08",
+          "title": "08.The Best and the Worst",
+          "filename": "08.The Best and the Worst",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/08.lrc",
+            "cached": true,
+            "bytes": 1487,
+            "sha256": "20b53ab26f7eb2bdc0ef0089a09b68962128983d75f2a51166ba4e8ebb0d1199"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/08.json",
+            "cached": true,
+            "bytes": 10482,
+            "sha256": "f18848a5dbf2060d250f69a3fa33fb47a863e282e2808d0dc212928fea107f9c"
+          }
+        },
+        {
+          "key": "09",
+          "title": "09.A Cold Welcome",
+          "filename": "09.A Cold Welcome",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/09.lrc",
+            "cached": true,
+            "bytes": 1478,
+            "sha256": "4fa53ebacffe1d2c489433fd007a5737e8e90ef59a0bbb92d53e6a60a4638e36"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/09.json",
+            "cached": true,
+            "bytes": 10763,
+            "sha256": "4a1b0ecab2b5c6035eb67d20ab9a0457fb220a5f2a0d29b9237525d2eb262421"
+          }
+        },
+        {
+          "key": "10",
+          "title": "10.Not for Jazz",
+          "filename": "10.Not for Jazz",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/10.lrc",
+            "cached": true,
+            "bytes": 1246,
+            "sha256": "124e5cd01bed9c2aff8bbfc42f8817d8f69576e3c5ef215848e54216ad49d6f1"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/10.json",
+            "cached": true,
+            "bytes": 10613,
+            "sha256": "a2aa38bac7d587e1abee250db7414510ac86ed8367793f58db2cea5774ad9615"
+          }
+        },
+        {
+          "key": "11",
+          "title": "11.One Good Turn Deserves Another",
+          "filename": "11.One Good Turn Deserves Another",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/11.lrc",
+            "cached": true,
+            "bytes": 1343,
+            "sha256": "28f15683922d809de90bccbfb536381a939111c98873eb66c3cb078f11b29b00"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/11.json",
+            "cached": true,
+            "bytes": 10963,
+            "sha256": "637006786b7e99cc50d2164591d36a9115be5888fb00cbbbe7011393d4258772"
+          }
+        },
+        {
+          "key": "12",
+          "title": "12.Goodbye and Good Luck",
+          "filename": "12.Goodbye and Good Luck",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/12.lrc",
+            "cached": true,
+            "bytes": 1310,
+            "sha256": "61b7166f4cb9f56784a69a319a204e868a7d5034f2b48770d05d511ec608decd"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/12.json",
+            "cached": true,
+            "bytes": 9779,
+            "sha256": "579c561ce0a1faf7b8c7a3c05178a2eabf5742fcd33e8f8f4a8f306bbb822c19"
+          }
+        },
+        {
+          "key": "13",
+          "title": "13.The Greenwood Boys",
+          "filename": "13.The Greenwood Boys",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/13.lrc",
+            "cached": true,
+            "bytes": 1316,
+            "sha256": "4cabe6f36b0b72c36b09669e9bee945c507d46465cfab279027592704432e17a"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/13.json",
+            "cached": true,
+            "bytes": 10236,
+            "sha256": "b268068f86c70fe0b0e5b274a994d0a1ff6d19f2e0f3670e4002705585cb0161"
+          }
+        },
+        {
+          "key": "14",
+          "title": "14.Do You Speak English",
+          "filename": "14.Do You Speak English",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/14.lrc",
+            "cached": true,
+            "bytes": 1421,
+            "sha256": "23d873b7508738555fe69303ad597132626bc590624173f9c87249efad9c7310"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/14.json",
+            "cached": true,
+            "bytes": 11762,
+            "sha256": "5211bb82304ae12b0bc54f5240896ea59fb09cdbc43b233e450320847eb0ade6"
+          }
+        },
+        {
+          "key": "15",
+          "title": "15.Good News",
+          "filename": "15.Good News",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/15.lrc",
+            "cached": true,
+            "bytes": 1239,
+            "sha256": "7d238cc92b8cf7bb92a9bf5eaf2874959a60e1e7ca31b2f3bd86ea31c84919e7"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/15.json",
+            "cached": true,
+            "bytes": 10826,
+            "sha256": "adab9ccc6c3dfbbb43c6f83034fccea9f5095a9516ab449ef2341cf20e1db6d1"
+          }
+        },
+        {
+          "key": "16",
+          "title": "16.A Polite Request",
+          "filename": "16.A Polite Request",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/16.lrc",
+            "cached": true,
+            "bytes": 1300,
+            "sha256": "d91f1bc72ae1550a26b201c6345a973b0d7bb6c87a61ba53c6e1d1ed2586e029"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/16.json",
+            "cached": true,
+            "bytes": 10765,
+            "sha256": "e865a450f00755622dc3d4898a0d28b31fe1236b9f23fd5c5c7d64e015b76205"
+          }
+        },
+        {
+          "key": "17",
+          "title": "17.Always Young",
+          "filename": "17.Always Young",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/17.lrc",
+            "cached": true,
+            "bytes": 1362,
+            "sha256": "67d2b405e5179f664fcb9a045a889cfbe7c2d3155f9022e67bfbe3a6602c218f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/17.json",
+            "cached": true,
+            "bytes": 10494,
+            "sha256": "1ec37d87ae4493d8d341477092984fc90ea594df71ef40854b2b03512902f303"
+          }
+        },
+        {
+          "key": "18",
+          "title": "18.He Often does This",
+          "filename": "18.He Often does This",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/18.lrc",
+            "cached": true,
+            "bytes": 1296,
+            "sha256": "01a93171937b9649eaefeced2b262d597fe729386cd2f749fcb84edacc044e8c"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/18.json",
+            "cached": true,
+            "bytes": 10142,
+            "sha256": "51449be7703466d8f0a28c6f59f0f05dd22108b8b2b8b6b7a8233a131acfab7a"
+          }
+        },
+        {
+          "key": "19",
+          "title": "19.Sold Out",
+          "filename": "19.Sold Out",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/19.lrc",
+            "cached": true,
+            "bytes": 1584,
+            "sha256": "b3ebf67f8a8e2acfdac522bf6935463068dfdf1c95bc731e0b22b596da1840b6"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/19.json",
+            "cached": true,
+            "bytes": 9274,
+            "sha256": "6aa44e1aef04d2cdd96cbd9401f6f65400e4692a740377cc8638f9ccaeece0c3"
+          }
+        },
+        {
+          "key": "20",
+          "title": "20.One Man in a Boat",
+          "filename": "20.One Man in a Boat",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/20.lrc",
+            "cached": true,
+            "bytes": 1510,
+            "sha256": "2877e83a104f0314b372a0c9f1287a12441bbafb0ac8fc09bb012fcd95495451"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/20.json",
+            "cached": true,
+            "bytes": 12020,
+            "sha256": "8f383f372a75e3daab8d70daa1b4db8ea13c0a485130afca203bdf6eed6cb89f"
+          }
+        },
+        {
+          "key": "21",
+          "title": "21.Mad or Not",
+          "filename": "21.Mad or Not",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/21.lrc",
+            "cached": true,
+            "bytes": 1335,
+            "sha256": "6df1a49562b24f9d05107fa59e12047fd7ecbf7024fea3535ecb6aec193c745e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/21.json",
+            "cached": true,
+            "bytes": 10450,
+            "sha256": "80fab066c71d4e59aed7172caae693722c1af7546d1fec45460d06914f0112f4"
+          }
+        },
+        {
+          "key": "22",
+          "title": "22.A Glass Envelope",
+          "filename": "22.A Glass Envelope",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/22.lrc",
+            "cached": true,
+            "bytes": 1229,
+            "sha256": "f5050d861dd1b9ebc98cb23cd1ccfed193a07582ac97208d587c911a151d9fbf"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/22.json",
+            "cached": true,
+            "bytes": 9456,
+            "sha256": "ddcf47989ce7949188ddad6636ca3e5cd42fa921c1d85fb756332e1f8d340307"
+          }
+        },
+        {
+          "key": "23",
+          "title": "23.A New House",
+          "filename": "23.A New House",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/23.lrc",
+            "cached": true,
+            "bytes": 1412,
+            "sha256": "2a7b4108fcdb68f67fd049972d7a34338b7790e5989756785266ac7faf6f4d0a"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/23.json",
+            "cached": true,
+            "bytes": 10509,
+            "sha256": "9e3585804e15838136c25a7f59ed43b6d0d1da3db58bb4079f840e647630b15b"
+          }
+        },
+        {
+          "key": "24",
+          "title": "24.It Could be Worse",
+          "filename": "24.It Could be Worse",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/24.lrc",
+            "cached": true,
+            "bytes": 1424,
+            "sha256": "42fdefbcc10e2f10d4cf1281f72791d10f8f5d4e65d71bf2120d9751678b38a7"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/24.json",
+            "cached": true,
+            "bytes": 9040,
+            "sha256": "3fd2a918b31eaa2457abb6662b272524ba0a4fd357f8f568924cd2a7d04dc4a9"
+          }
+        },
+        {
+          "key": "25",
+          "title": "25.Do the English Speak English",
+          "filename": "25.Do the English Speak English",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/25.lrc",
+            "cached": true,
+            "bytes": 2015,
+            "sha256": "7bdcfcbf2407247951e05b214d27a4e537258b8cdd49990d4217b83bac084e78"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/25.json",
+            "cached": true,
+            "bytes": 10523,
+            "sha256": "e726dd4c5359fd8949c97ba32ea5b10272fb43e91b4d19c319ac5df122de0951"
+          }
+        },
+        {
+          "key": "26",
+          "title": "26.The Best Art Critics",
+          "filename": "26.The Best Art Critics",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/26.lrc",
+            "cached": true,
+            "bytes": 1958,
+            "sha256": "897398ff8149a13bccb33519bd3804b536d591f481e09ea63b18cc1bce585363"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/26.json",
+            "cached": true,
+            "bytes": 8980,
+            "sha256": "05d3262b32d0c2d751f27f4c8166cfb7cdd3d8743b6e78a30b0c0c9575872e8b"
+          }
+        },
+        {
+          "key": "27",
+          "title": "27.A Wet Night",
+          "filename": "27.A Wet Night",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/27.lrc",
+            "cached": true,
+            "bytes": 1778,
+            "sha256": "6b7615295ee82e24195c98995320880fa6c8c5b61e63c8e0d05fdde482881bb4"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/27.json",
+            "cached": true,
+            "bytes": 10467,
+            "sha256": "1cebaabc136ddac8b9a8328e894d41a0181a3fff9096413f60941aa4357682c5"
+          }
+        },
+        {
+          "key": "28",
+          "title": "28.No Parking",
+          "filename": "28.No Parking",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/28.lrc",
+            "cached": true,
+            "bytes": 1735,
+            "sha256": "8f2063d5492e07ef8579e861d438d754d772aaafe6e9b5924f0c642cb58170d6"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/28.json",
+            "cached": true,
+            "bytes": 10385,
+            "sha256": "bd5268d4f84774cfd1aab5ebd4524daccedcd803a95a15acaa6c050147b91059"
+          }
+        },
+        {
+          "key": "29",
+          "title": "29.Taxi",
+          "filename": "29.Taxi",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/29.lrc",
+            "cached": true,
+            "bytes": 1999,
+            "sha256": "7a1070771b1c02c19df00665a38d5c94e01b8db9f16211499c4e673c85d93b61"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/29.json",
+            "cached": true,
+            "bytes": 12321,
+            "sha256": "18d170e860f184f391b25f6d13b9c4894be7a3d99364d213d8db72c3ac1ab853"
+          }
+        },
+        {
+          "key": "30",
+          "title": "30.Football or Polo",
+          "filename": "30.Football or Polo",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/30.lrc",
+            "cached": true,
+            "bytes": 1705,
+            "sha256": "5fcc06b19dc1883f81310a011df5fed0fa608eed9ed3cff43f3d22293e919c30"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/30.json",
+            "cached": true,
+            "bytes": 10287,
+            "sha256": "17fc8095c385fe54943424bea79b660294d3b95e51f9640584e01521bbbcea1d"
+          }
+        },
+        {
+          "key": "31",
+          "title": "31.Success Story",
+          "filename": "31.Success Story",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/31.lrc",
+            "cached": true,
+            "bytes": 1865,
+            "sha256": "b83b475ece90851d7ead7f4e05828bf6b0801ce18c102b0173cc89c4f30d121e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/31.json",
+            "cached": true,
+            "bytes": 9628,
+            "sha256": "54912093be8df72389190738df7deece1b64018ec72986930ed3d3a0e697b81e"
+          }
+        },
+        {
+          "key": "32",
+          "title": "32.Shopping Made Easy",
+          "filename": "32.Shopping Made Easy",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/32.lrc",
+            "cached": true,
+            "bytes": 1941,
+            "sha256": "3bbc9de21cc0b67f31b71854d4ef2e68c64829b4b91b9008ed692a0ca65150ba"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/32.json",
+            "cached": true,
+            "bytes": 10532,
+            "sha256": "6d34a96622ecae7c687ab7932c4f180be05810187be297ce4320b7ecf4cd69a9"
+          }
+        },
+        {
+          "key": "33",
+          "title": "33.Out of the Darkness",
+          "filename": "33.Out of the Darkness",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/33.lrc",
+            "cached": true,
+            "bytes": 1731,
+            "sha256": "46ffd4e2000cf7e9d60e1ce6477b673c582b30af1a5fcc02494f038435727f03"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/33.json",
+            "cached": true,
+            "bytes": 10398,
+            "sha256": "b194ae09a5e927d36fb52c4d521f4dff9346f8e266e44cc77938cb5a1164f867"
+          }
+        },
+        {
+          "key": "34",
+          "title": "34.Quick Work",
+          "filename": "34.Quick Work",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/34.lrc",
+            "cached": true,
+            "bytes": 1818,
+            "sha256": "ee627600afc966b628785a3e6504b6f06c16988f1c497e3edadca81af73b9a42"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/34.json",
+            "cached": true,
+            "bytes": 11549,
+            "sha256": "177ff9b1f77e30a62cec73117b86a812ebb7e74b04d67696a134370621a3093a"
+          }
+        },
+        {
+          "key": "35",
+          "title": "35.Stop Thief",
+          "filename": "35.Stop Thief",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/35.lrc",
+            "cached": true,
+            "bytes": 1992,
+            "sha256": "328749fe54cc8d2ed58b003b05ab6ff74408d7ef2721b3ca61da634b8a3c892a"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/35.json",
+            "cached": true,
+            "bytes": 9238,
+            "sha256": "e58cd150a1f3529b1bf62ba1f63522a386b9db224b4bd2ce1c30b00c1ce2df74"
+          }
+        },
+        {
+          "key": "36",
+          "title": "36.Across the Channel",
+          "filename": "36.Across the Channel",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/36.lrc",
+            "cached": true,
+            "bytes": 1880,
+            "sha256": "71a67fae2ea259cf1a99fb01b7d01a86c478beb00a7217ef382dbf3590cb87a9"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/36.json",
+            "cached": true,
+            "bytes": 8276,
+            "sha256": "023bbb1ad6407b63e7a88f244f31a57b9cb5d430de2c56e0ef6e9608d1e34319"
+          }
+        },
+        {
+          "key": "37",
+          "title": "37.The Olympic Games",
+          "filename": "37.The Olympic Games",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/37.lrc",
+            "cached": true,
+            "bytes": 1972,
+            "sha256": "db2bea38118e60d82562361ea28af1f80a8d97f78f20d793d4a287353f889be0"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/37.json",
+            "cached": true,
+            "bytes": 11180,
+            "sha256": "567ccda6efa6da322d8ed0dceb33ec84a0a119bdcd33e092b89c74f98ae87034"
+          }
+        },
+        {
+          "key": "38",
+          "title": "38.Everything Except the Weather",
+          "filename": "38.Everything Except the Weather",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/38.lrc",
+            "cached": true,
+            "bytes": 1897,
+            "sha256": "adbd7c5857439fb0f864b70fff6df40537eaee3897ee881fbc251e7484c47c12"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/38.json",
+            "cached": true,
+            "bytes": 9813,
+            "sha256": "4078bf1a406c67856e04a73faa271ec0ac85e255c67c862dd587619e10bb5249"
+          }
+        },
+        {
+          "key": "39",
+          "title": "39.Am I All Right",
+          "filename": "39.Am I All Right",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/39.lrc",
+            "cached": true,
+            "bytes": 1914,
+            "sha256": "95e5a6ba652d1f4a323c250179505f9357d32b462b52655ae761570eb5a73cbf"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/39.json",
+            "cached": true,
+            "bytes": 9833,
+            "sha256": "740fbb63a67d10e24a100216dff94ab93b6cebb962387efb37eb87ddb3d12689"
+          }
+        },
+        {
+          "key": "40",
+          "title": "40.Food and Talk",
+          "filename": "40.Food and Talk",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/40.lrc",
+            "cached": true,
+            "bytes": 1885,
+            "sha256": "0298f584c860a2fbe5489ece303431619849ae50dd1209a94496714b590f115f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/40.json",
+            "cached": true,
+            "bytes": 10486,
+            "sha256": "118b7be3e7de2e46a2c63a916e44f5f67a1648f09c3af1231899eb49189ece53"
+          }
+        },
+        {
+          "key": "41",
+          "title": "41.Do You Call That a Hat",
+          "filename": "41.Do You Call That a Hat",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/41.lrc",
+            "cached": true,
+            "bytes": 1849,
+            "sha256": "115c140707ebf55a13883c77a8f1e21df67dbae121d5eefab270ed85f9bba57b"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/41.json",
+            "cached": true,
+            "bytes": 10296,
+            "sha256": "cf2be55ebf6e1dcb69565f3bc90de20411b9316d11684e336d2d2d9ff7f5bcba"
+          }
+        },
+        {
+          "key": "42",
+          "title": "42.Not Very Musical",
+          "filename": "42.Not Very Musical",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/42.lrc",
+            "cached": true,
+            "bytes": 1748,
+            "sha256": "8cb5b73c1906a7bdff794e80ecab4d1851fb9ef2d5c104801ceae4f4b9da7aac"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/42.json",
+            "cached": true,
+            "bytes": 11123,
+            "sha256": "b61d68b3572e22b0130ef207cdb9255cf8f59624aa312b9dfa838392a2d2f83a"
+          }
+        },
+        {
+          "key": "43",
+          "title": "43.Over the South Pole",
+          "filename": "43.Over the South Pole",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/43.lrc",
+            "cached": true,
+            "bytes": 1779,
+            "sha256": "be6e69a9ee702c643d2e1f2554056a12c5ec4b14c0880baa73993fe95d104d4c"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/43.json",
+            "cached": true,
+            "bytes": 13666,
+            "sha256": "c90cc6c0b69021487776ffc42fc3af6aa856f882c17835bb0cecd60237f9d9e4"
+          }
+        },
+        {
+          "key": "44",
+          "title": "44.Through the Forest",
+          "filename": "44.Through the Forest",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/44.lrc",
+            "cached": true,
+            "bytes": 1799,
+            "sha256": "a0e0c64bb71818d34cb89516ff73784b5e0b5defd01bd6abcb7236122d19938e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/44.json",
+            "cached": true,
+            "bytes": 10861,
+            "sha256": "a7cb089242a59fe5bae496de020eda87cd14bb2d30edac7c1bf44d4b43de6da1"
+          }
+        },
+        {
+          "key": "45",
+          "title": "45.A Clear Conscience",
+          "filename": "45.A Clear Conscience",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/45.lrc",
+            "cached": true,
+            "bytes": 1745,
+            "sha256": "3497c51474ec0fd1898896cd4b2c142a7ab68736d97b4f10feae91242da5133f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/45.json",
+            "cached": true,
+            "bytes": 10266,
+            "sha256": "2afbe8448ae030e1e404ddfc78db169e06bf33f38e32704d1e5988876b17809b"
+          }
+        },
+        {
+          "key": "46",
+          "title": "46.Expensive and Uncomfortable",
+          "filename": "46.Expensive and Uncomfortable",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/46.lrc",
+            "cached": true,
+            "bytes": 1765,
+            "sha256": "a0a36eedd8f326b752009f112bfb98a695dc2ebc4deea9d79402223474faf150"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/46.json",
+            "cached": true,
+            "bytes": 10947,
+            "sha256": "c4f39cc80a279cb2f97457a42c14e99fbedb7e4687c09a7a814ba4ce8f747783"
+          }
+        },
+        {
+          "key": "47",
+          "title": "47.A Thirsty Ghost",
+          "filename": "47.A Thirsty Ghost",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/47.lrc",
+            "cached": true,
+            "bytes": 1692,
+            "sha256": "68bdce96d41fa5b9a6170b13cd27602c2c67275331ab555276bf39cd763e35b8"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/47.json",
+            "cached": true,
+            "bytes": 9161,
+            "sha256": "544b9d2addadccb10a6abfdc41a897b3ed74eb361bb738c482bf2af8e1d61133"
+          }
+        },
+        {
+          "key": "48",
+          "title": "48.Did You Want to Tell Me Something",
+          "filename": "48.Did You Want to Tell Me Something",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/48.lrc",
+            "cached": true,
+            "bytes": 1658,
+            "sha256": "aa95c768f291004d81800d7bda253c1662aec616986541dfe91f46a2e32d3477"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/48.json",
+            "cached": true,
+            "bytes": 12489,
+            "sha256": "1bb0329d1ca5567a7a5cd0ddd268548c76569bc31727491c576af387d806440e"
+          }
+        },
+        {
+          "key": "49",
+          "title": "49.The End of a Dream",
+          "filename": "49.The End of a Dream",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/49.lrc",
+            "cached": true,
+            "bytes": 1957,
+            "sha256": "fbcdac8ee8995f2b289bfa36aac684538e82104d2696e135e3c3feffda5a3ce6"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/49.json",
+            "cached": true,
+            "bytes": 10446,
+            "sha256": "6ce5bc28e7655de815941ba56a66781aca0c8ce848205774f7ad2614a7cc1fc2"
+          }
+        },
+        {
+          "key": "50",
+          "title": "50.Taken for a Ride",
+          "filename": "50.Taken for a Ride",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/50.lrc",
+            "cached": true,
+            "bytes": 2150,
+            "sha256": "06605dba90160fa382ad12ec24045a785ec9bc7bf5d2faa429014d322107836b"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/50.json",
+            "cached": true,
+            "bytes": 11164,
+            "sha256": "7bdf33c34ce677bfd91e74796f54b08a7a3024b6e1a5b8560d27dc2a3ade7072"
+          }
+        },
+        {
+          "key": "51",
+          "title": "51.Reward for Virtue",
+          "filename": "51.Reward for Virtue",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/51.lrc",
+            "cached": true,
+            "bytes": 1980,
+            "sha256": "9759573101e0762fc504661421ac4d8032180e4ccc549a1aa9baf9c87f4e756e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/51.json",
+            "cached": true,
+            "bytes": 10339,
+            "sha256": "c9770c5a5414075d354198cf7eef05c684df045c9b7a7f5c4dcb84c44177bf4c"
+          }
+        },
+        {
+          "key": "52",
+          "title": "52.A Pretty Carpet",
+          "filename": "52.A Pretty Carpet",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/52.lrc",
+            "cached": true,
+            "bytes": 1808,
+            "sha256": "74b7c8303c92e573655e8cf3c35fd51090243cc3463c10b3a458defdb514bd38"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/52.json",
+            "cached": true,
+            "bytes": 9669,
+            "sha256": "4a63932cf0d74f89e15b37c721b963cece44e533dd2f4e35d903154b257fcd52"
+          }
+        },
+        {
+          "key": "53",
+          "title": "53.Hot Snake",
+          "filename": "53.Hot Snake",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/53.lrc",
+            "cached": true,
+            "bytes": 1964,
+            "sha256": "48724a167185f580a5d95fe3a1c9a764ce4fd0e47f55d19bb35bd3f844ff1ec7"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/53.json",
+            "cached": true,
+            "bytes": 11061,
+            "sha256": "80d52053471d18d6db678f4dd99ad6fd20d0fe7fdb099eb5481e192897f19d14"
+          }
+        },
+        {
+          "key": "54",
+          "title": "54.Sticky Fingers",
+          "filename": "54.Sticky Fingers",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/54.lrc",
+            "cached": true,
+            "bytes": 1992,
+            "sha256": "da36d0305482ccb8579143352d63767f8c89d4689773c7c58009445869d25399"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/54.json",
+            "cached": true,
+            "bytes": 11891,
+            "sha256": "e9068cb794c1942efa2b23c074b0601e49db28e02e1f38e9ae5066f8492697ba"
+          }
+        },
+        {
+          "key": "55",
+          "title": "55.Not a Gold Mine",
+          "filename": "55.Not a Gold Mine",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/55.lrc",
+            "cached": true,
+            "bytes": 2020,
+            "sha256": "c420bdc371aec47ece06e839f687235cb002cf60f3658b826299fa70f972a665"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/55.json",
+            "cached": true,
+            "bytes": 11059,
+            "sha256": "aee52a0a8f6c8618a52990b0ede6048ec5db288b431cb5a5a347b78531b0b5cb"
+          }
+        },
+        {
+          "key": "56",
+          "title": "56.Faster Than Sound",
+          "filename": "56.Faster Than Sound",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/56.lrc",
+            "cached": true,
+            "bytes": 1966,
+            "sha256": "b6103d9f46001eee7c74e0597aa64ad004d5fd0f3ac5f32adbb4920a32448149"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/56.json",
+            "cached": true,
+            "bytes": 10549,
+            "sha256": "562f8066390f87b21f5ead0c429db0a495810fc8c588927e0ee461fb95491ba1"
+          }
+        },
+        {
+          "key": "57",
+          "title": "57.Can I Help You, Madam",
+          "filename": "57.Can I Help You, Madam",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/57.lrc",
+            "cached": true,
+            "bytes": 2135,
+            "sha256": "eaa886f03bf96cd328e51f48f674021a3b8c097848d3ad5bd7d9a0da26dc5b8a"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/57.json",
+            "cached": true,
+            "bytes": 10294,
+            "sha256": "239f7192e852cf7403b5d3344bd2fd7b5d9b4bcc9195d6066386f98a15037d69"
+          }
+        },
+        {
+          "key": "58",
+          "title": "58.A Blessing in Disguise",
+          "filename": "58.A Blessing in Disguise",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/58.lrc",
+            "cached": true,
+            "bytes": 1950,
+            "sha256": "7e2fb6e90d48f86d29df2d2e3150dda0088446ca077c032ca6cc21608ff7effc"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/58.json",
+            "cached": true,
+            "bytes": 13113,
+            "sha256": "2118ed3d6605d127c60bd7f1bf9115bc89f9860e811617026aef4848a2af79cd"
+          }
+        },
+        {
+          "key": "59",
+          "title": "59.In or Out",
+          "filename": "59.In or Out",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/59.lrc",
+            "cached": true,
+            "bytes": 1881,
+            "sha256": "6a44ef6e6caa34d20c3709291590d3e72f63a74649ce3e056183f3d4bc81122c"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/59.json",
+            "cached": true,
+            "bytes": 12242,
+            "sha256": "42a64f68f578a0fe9b7fb2f45d3aeba59ab0d15eb5aeb959572f80a69dd5353a"
+          }
+        },
+        {
+          "key": "60",
+          "title": "60.The Future",
+          "filename": "60.The Future",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/60.lrc",
+            "cached": true,
+            "bytes": 1889,
+            "sha256": "34f2947f754dd358d3fe5ee798d62960dfb6651dd3abfe5d1db69c0ea82ec6c3"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/60.json",
+            "cached": true,
+            "bytes": 10132,
+            "sha256": "d9cc61b7bdcad23529f4f56c6e04ee7689dabcce20b70a6fd5363ccaabd90109"
+          }
+        },
+        {
+          "key": "61",
+          "title": "61.Trouble with the Hubble",
+          "filename": "61.Trouble with the Hubble",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/61.lrc",
+            "cached": true,
+            "bytes": 2096,
+            "sha256": "5c06dd7507850f137c66e9f084a58224c74488205ce7999d075e8d0fcbf8fac2"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/61.json",
+            "cached": true,
+            "bytes": 11942,
+            "sha256": "cf41e9146cbf2d078125c7b8c1956061dc5d631cf662f9ac2be0d06e22bc0ebe"
+          }
+        },
+        {
+          "key": "62",
+          "title": "62.After the Fire",
+          "filename": "62.After the Fire",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/62.lrc",
+            "cached": true,
+            "bytes": 1999,
+            "sha256": "9575639accde612c903a89d2dc3aebacbdd318371f35c5a27d78759801de3db8"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/62.json",
+            "cached": true,
+            "bytes": 11806,
+            "sha256": "44aee256f0333740447d40a3b8ccf4757bd9930b8f4458ca8719aab3757a5a87"
+          }
+        },
+        {
+          "key": "63",
+          "title": "63.She Was Not Amused",
+          "filename": "63.She Was Not Amused",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/63.lrc",
+            "cached": true,
+            "bytes": 1926,
+            "sha256": "f1a8bae3e2af8f18b565475a177d5b1bfc97d521318b08db14a73a6d27c1059a"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/63.json",
+            "cached": true,
+            "bytes": 10573,
+            "sha256": "1f62c7e3fdf609a3028aed947b47b8225cdf1cc169d4923f3fa8855da5d9c9b2"
+          }
+        },
+        {
+          "key": "64",
+          "title": "64.The Channel Tunnel",
+          "filename": "64.The Channel Tunnel",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/64.lrc",
+            "cached": true,
+            "bytes": 2040,
+            "sha256": "cd12a4bbf86bca8616f23b3363e9cea3342a6ad99ab22020c87a5cf7a9d7eda3"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/64.json",
+            "cached": true,
+            "bytes": 8802,
+            "sha256": "0a11d155ec48562397480c62ba9085cc5dfdccdd908bf2a4a999837dafb87d9f"
+          }
+        },
+        {
+          "key": "65",
+          "title": "65.Jumbo Versus the Police",
+          "filename": "65.Jumbo Versus the Police",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/65.lrc",
+            "cached": true,
+            "bytes": 2005,
+            "sha256": "7916ac73c2d2a395e9b19b7c6ab3b93092c8a067e8210d90b10391d35280dec1"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/65.json",
+            "cached": true,
+            "bytes": 10094,
+            "sha256": "5493e483b2b322860fa4543d44a67188cf73a11fe9d3ec23208afb7fffd4a74a"
+          }
+        },
+        {
+          "key": "66",
+          "title": "66.Sweet as Honey",
+          "filename": "66.Sweet as Honey",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/66.lrc",
+            "cached": true,
+            "bytes": 2125,
+            "sha256": "eaa47cf5fb53ad5f09d43471c2d4efad65f00688499bfd51e8f51b29df75d9d7"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/66.json",
+            "cached": true,
+            "bytes": 11158,
+            "sha256": "55aac92e043d7a78d3a89c5bffb7c01ea089a572c156e14450cdd6dcae80ddf6"
+          }
+        },
+        {
+          "key": "67",
+          "title": "67.Volcanoes",
+          "filename": "67.Volcanoes",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/67.lrc",
+            "cached": true,
+            "bytes": 1984,
+            "sha256": "1c90df5c5d2d831b157aefe11c71673e9bc766bda04a47e4fafa628e9f1c250a"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/67.json",
+            "cached": true,
+            "bytes": 10204,
+            "sha256": "9f6f8023cebd732d8e8ba95377c005614c095073c316aa3f13cc91b76d50daca"
+          }
+        },
+        {
+          "key": "68",
+          "title": "68.Persistent",
+          "filename": "68.Persistent",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/68.lrc",
+            "cached": true,
+            "bytes": 2081,
+            "sha256": "df525d098903c8241f481966671f6407b04e115bae001d349cbfdb2106e26448"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/68.json",
+            "cached": true,
+            "bytes": 11378,
+            "sha256": "653a7a62a9b1ca65f0c7b0461bb6e0cdc3e070672f25b0793bdf46c67207f8f0"
+          }
+        },
+        {
+          "key": "69",
+          "title": "69.But not Murder",
+          "filename": "69.But not Murder",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/69.lrc",
+            "cached": true,
+            "bytes": 1995,
+            "sha256": "7cec0c92a30858d50e83f13b2dc8e0cf51102c2ede54ab39e7af67f777fe523a"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/69.json",
+            "cached": true,
+            "bytes": 11193,
+            "sha256": "218d7fc777519dfcea445e8bce82f6ff218132f65f734a2ca26394e69a8b8e4e"
+          }
+        },
+        {
+          "key": "70",
+          "title": "70.Red for Danger",
+          "filename": "70.Red for Danger",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/70.lrc",
+            "cached": true,
+            "bytes": 1974,
+            "sha256": "55e887df35a8801e6718afb9e8996fe879229bbea60c1a23b3e7ae6ccec8cbc0"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/70.json",
+            "cached": true,
+            "bytes": 11162,
+            "sha256": "36f8b9a000adec54662b4faa3f590088a31aa9db97dd25c0d4dc433d2db227df"
+          }
+        },
+        {
+          "key": "71",
+          "title": "71.A Famous Clock",
+          "filename": "71.A Famous Clock",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/71.lrc",
+            "cached": true,
+            "bytes": 1853,
+            "sha256": "e53cb58a0bfe2472d4c9c777ccb672d24583d3469f7c95ca7fdd4fa519b85c59"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/71.json",
+            "cached": true,
+            "bytes": 10475,
+            "sha256": "07b875d5023d7e9e41cd6e51d92e38f2b440c112cc4d89eae0ac4aa129ebe1d9"
+          }
+        },
+        {
+          "key": "72",
+          "title": "72.A Car Called Bluebird",
+          "filename": "72.A Car Called Bluebird",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/72.lrc",
+            "cached": true,
+            "bytes": 2108,
+            "sha256": "b2c282551a7efff3670440a35b6bae2df983bb0f7d42bfc57a416e08c4290d6e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/72.json",
+            "cached": true,
+            "bytes": 11462,
+            "sha256": "653e1e202a9688bfbcb97d3b84e4a274b9fa776427c128cab03e1fc053ceab75"
+          }
+        },
+        {
+          "key": "73",
+          "title": "73.The Record-Holder",
+          "filename": "73.The Record-Holder",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/73.lrc",
+            "cached": true,
+            "bytes": 2165,
+            "sha256": "c5646f705c678c9baee2b3988932f86105af2770f311bf4bf962dcd0123f7533"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/73.json",
+            "cached": true,
+            "bytes": 11256,
+            "sha256": "cd3ad34bc93a08749e434cf2d1cee53481b44e0abfb63ce5bcb043090a62db72"
+          }
+        },
+        {
+          "key": "74",
+          "title": "74.Out of the Limelight",
+          "filename": "74.Out of the Limelight",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/74.lrc",
+            "cached": true,
+            "bytes": 2665,
+            "sha256": "e923796ba692395bdf38294ae70e233017a02af5f01442575bbf01505eb8e868"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/74.json",
+            "cached": true,
+            "bytes": 10918,
+            "sha256": "f9a50c36ccddc5812b2c91a6ddede618c7c961d25faed2d911c45871ba1ecad2"
+          }
+        },
+        {
+          "key": "75",
+          "title": "75.SOS",
+          "filename": "75.SOS",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/75.lrc",
+            "cached": true,
+            "bytes": 2211,
+            "sha256": "4e3cc340048c78859cff6ebeae9e5e7728488145e0ec9fd5cd8f30c1a43d473f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/75.json",
+            "cached": true,
+            "bytes": 11245,
+            "sha256": "6c819d97cefa2b59cfbc11ad287790cb8d648e846d23aa3ab6aa7057b168f8ca"
+          }
+        },
+        {
+          "key": "76",
+          "title": "76.April Fools' Day",
+          "filename": "76.April Fools' Day",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/76.lrc",
+            "cached": true,
+            "bytes": 2450,
+            "sha256": "11955d2a5b1d9f25f0761961eab1caff07cd40fe3fd220ee248666ac493fe1f5"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/76.json",
+            "cached": true,
+            "bytes": 12890,
+            "sha256": "a7b029d56659352c91b56612f3a027c753a62b4113b1253252932df33bf1f92c"
+          }
+        },
+        {
+          "key": "77",
+          "title": "77.A Successful Operation",
+          "filename": "77.A Successful Operation",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/77.lrc",
+            "cached": true,
+            "bytes": 2236,
+            "sha256": "26565a4c2a93bb214bef5e5ef85927fcfbfb85af1f30f6f0769de0b11b230522"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/77.json",
+            "cached": true,
+            "bytes": 13928,
+            "sha256": "d9c2d4f677df347a28643ddc623bdac2b4916de4f868960178e8521eeaa837c0"
+          }
+        },
+        {
+          "key": "78",
+          "title": "78.The Last One",
+          "filename": "78.The Last One",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/78.lrc",
+            "cached": true,
+            "bytes": 2222,
+            "sha256": "014ec4a3f164078f946fff0f2cfb11509bb9ca749f8f2f8c652e806ada0daaec"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/78.json",
+            "cached": true,
+            "bytes": 11340,
+            "sha256": "2ee4d2aa1ba62873626b802c45ff723b6a22235ffadb46b2cc2ed39890ba0403"
+          }
+        },
+        {
+          "key": "79",
+          "title": "79.By Air",
+          "filename": "79.By Air",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/79.lrc",
+            "cached": true,
+            "bytes": 2017,
+            "sha256": "ae6881765ec0c619145f9ae1614a8c0a13e13832987ce8625ab189ecee4a1599"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/79.json",
+            "cached": true,
+            "bytes": 10466,
+            "sha256": "753d34826bfd6da7fc19d411c4a388b1f84becd5135cfdcabd6d815915c31cad"
+          }
+        },
+        {
+          "key": "80",
+          "title": "80.The Crystal Palace",
+          "filename": "80.The Crystal Palace",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/80.lrc",
+            "cached": true,
+            "bytes": 2252,
+            "sha256": "b45eb798b7d1d50d859e48583a15e712d178889f929c5628eeeeea757dd964b3"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/80.json",
+            "cached": true,
+            "bytes": 10620,
+            "sha256": "c6af068383325735918c7827e931653e211f9b02f802132f7ce204123600ea37"
+          }
+        },
+        {
+          "key": "81",
+          "title": "81.Escape",
+          "filename": "81.Escape",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/81.lrc",
+            "cached": true,
+            "bytes": 2129,
+            "sha256": "a1794e076f92dd64c91c73e142ac8fa81aae8e2786c0e472747d65d55eb05fd8"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/81.json",
+            "cached": true,
+            "bytes": 10734,
+            "sha256": "373f7e7a985bd67de6a228633bbd85b8a5b824563623f30ec8c026bb8984e361"
+          }
+        },
+        {
+          "key": "82",
+          "title": "82.Monster or Fish",
+          "filename": "82.Monster or Fish",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/82.lrc",
+            "cached": true,
+            "bytes": 2140,
+            "sha256": "9ce2c0ff74020798ef12da11c6bbbf86fd6c9ce5b638c434616b0493efdf932b"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/82.json",
+            "cached": true,
+            "bytes": 12664,
+            "sha256": "5e99d319e31d06ccc1637eddafae47180d6f5ba73c8482833f76e4d35bc0d241"
+          }
+        },
+        {
+          "key": "83",
+          "title": "83.After the Elections",
+          "filename": "83.After the Elections",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/83.lrc",
+            "cached": true,
+            "bytes": 2332,
+            "sha256": "c6420d1f56e78d13392bfb1d23d7b51b45a23550418603a1c883c87c4e556e00"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/83.json",
+            "cached": true,
+            "bytes": 9309,
+            "sha256": "602ffc79c6e9b4b012d1392ed0d9f8b95c4a8ab9e0d2781a18a5244006f7963b"
+          }
+        },
+        {
+          "key": "84",
+          "title": "84.On Strike",
+          "filename": "84.On Strike",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/84.lrc",
+            "cached": true,
+            "bytes": 2134,
+            "sha256": "a536c172f53b0c519f7589bc9f806f181c68d754df957c0f47c493791d217980"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/84.json",
+            "cached": true,
+            "bytes": 11628,
+            "sha256": "10d36cb7be748ec46a533e81157b09b6de932cc34eb565c5e5496345a0667f24"
+          }
+        },
+        {
+          "key": "85",
+          "title": "85.Never Too Old To Learn",
+          "filename": "85.Never Too Old To Learn",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/85.lrc",
+            "cached": true,
+            "bytes": 1931,
+            "sha256": "2e517965baed4930018fc5ff79f4253f44fed41acc7fe1988e30f7a36e09c3f5"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/85.json",
+            "cached": true,
+            "bytes": 11941,
+            "sha256": "17c7daf275d67f01c130b06dc3dc46273e5ca2dfb3cc8e3125f71e185c6d56e9"
+          }
+        },
+        {
+          "key": "86",
+          "title": "86.Out of Control",
+          "filename": "86.Out of Control",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/86.lrc",
+            "cached": true,
+            "bytes": 2165,
+            "sha256": "4259f9ec40c47087aec7e7c0e091d64ec57daeee6bcee32709ace79c8ed731fa"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/86.json",
+            "cached": true,
+            "bytes": 10669,
+            "sha256": "427bfc12709efe4c2f3984657a8c9197696a032968feec1ba9eb998025368567"
+          }
+        },
+        {
+          "key": "87",
+          "title": "87.A Perfect Alibi",
+          "filename": "87.A Perfect Alibi",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/87.lrc",
+            "cached": true,
+            "bytes": 2160,
+            "sha256": "f32b68f10c8f9db15fa7153f6170f4c2bca5a74216934e225e27ef81b024b6a9"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/87.json",
+            "cached": true,
+            "bytes": 10821,
+            "sha256": "a9fbbcebf3c549154e7fcb9a5045d0db499950b4d11d75339e088b3d14bcdeb8"
+          }
+        },
+        {
+          "key": "88",
+          "title": "88.Trapped in a Mine",
+          "filename": "88.Trapped in a Mine",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/88.lrc",
+            "cached": true,
+            "bytes": 2232,
+            "sha256": "6e9ad2f20da66eaa9e9bec853c5ab40833589a361cf16fccc46157e222434a0d"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/88.json",
+            "cached": true,
+            "bytes": 13881,
+            "sha256": "da9fd0e1bf253570149145cf0fe3feb3a1a9a642058dd3c0bd294e61ec3f6db6"
+          }
+        },
+        {
+          "key": "89",
+          "title": "89.A Slip of the Tongue",
+          "filename": "89.A Slip of the Tongue",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/89.lrc",
+            "cached": true,
+            "bytes": 2129,
+            "sha256": "e09c3c64faa9f9d0a086bb264a74e96a33556e046769689841eca5372a7e6d3d"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/89.json",
+            "cached": true,
+            "bytes": 11071,
+            "sha256": "9f8a83904ae160785fbd388178e776ca7f5381e1aab9fd0e9ea9cca2749f2361"
+          }
+        },
+        {
+          "key": "90",
+          "title": "90.What's for Supper",
+          "filename": "90.What's for Supper",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/90.lrc",
+            "cached": true,
+            "bytes": 2312,
+            "sha256": "211ef7c22be8569bf6a7fe52d3794eda9ecc5030c0900c0068396fab74162780"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/90.json",
+            "cached": true,
+            "bytes": 10860,
+            "sha256": "5975ef2abc1a6817098925c2dfa221a1402a8707266163c68635ec2b3f1fe157"
+          }
+        },
+        {
+          "key": "91",
+          "title": "91.Three Men in a Basket",
+          "filename": "91.Three Men in a Basket",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/91.lrc",
+            "cached": true,
+            "bytes": 2215,
+            "sha256": "ebab03f11405ffad765f7067f826ba44268a8eaa71ac3c866f6c1456d92de01c"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/91.json",
+            "cached": true,
+            "bytes": 12156,
+            "sha256": "7f2ff42c08dda391fd0a20812cb8cc1c14589c238af7af1fe3468ea752b9143a"
+          }
+        },
+        {
+          "key": "92",
+          "title": "92.Asking for Trouble",
+          "filename": "92.Asking for Trouble",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/92.lrc",
+            "cached": true,
+            "bytes": 2385,
+            "sha256": "bbdf9dc2760c561bc63914a534c800eaf02d5adae2bc18e67496278fdab1bdca"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/92.json",
+            "cached": true,
+            "bytes": 11779,
+            "sha256": "136d327d45fe76c2bf1f8daf5c6f87ee48f74768884072466c9639a9ea711045"
+          }
+        },
+        {
+          "key": "93",
+          "title": "93.A Noble Gift",
+          "filename": "93.A Noble Gift",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/93.lrc",
+            "cached": true,
+            "bytes": 2086,
+            "sha256": "29ee2be890ab1849c986afa08ee1d57acf7f0063ee6e669133b21f4da210ae57"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/93.json",
+            "cached": true,
+            "bytes": 10723,
+            "sha256": "9b8bbdc008e00d60c2d4f48b93c7148429eec90f2a1d0d612c343148d1ea4c19"
+          }
+        },
+        {
+          "key": "94",
+          "title": "94.Future Champions",
+          "filename": "94.Future Champions",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/94.lrc",
+            "cached": true,
+            "bytes": 2175,
+            "sha256": "d04d5cf87bd1610b0b2e1b1922da46f05ad2b20a878fdd52da3e9f402b60a2b0"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/94.json",
+            "cached": true,
+            "bytes": 12365,
+            "sha256": "255f1a0b4ec3e28434a11228f8b14f770203abac50a6b4dd6f25edf6b5fe9b84"
+          }
+        },
+        {
+          "key": "95",
+          "title": "95.A Fantasy",
+          "filename": "95.A Fantasy",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/95.lrc",
+            "cached": true,
+            "bytes": 2428,
+            "sha256": "31c29084786f6dbbf11e4db12fe86e5685d3fd4f6342851b3798de68f70cb9fa"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/95.json",
+            "cached": true,
+            "bytes": 13802,
+            "sha256": "159d577392704ec6b3704ef387b1476fd404b219adc91c4c57f8c43af08e8f88"
+          }
+        },
+        {
+          "key": "96",
+          "title": "96.The Dead Return",
+          "filename": "96.The Dead Return",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE2/96.lrc",
+            "cached": true,
+            "bytes": 2096,
+            "sha256": "d7409f46ca982d6ed9be802a442d3bd0d09c9b8d724fcaf8863d34a66262faeb"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE2/96.json",
+            "cached": true,
+            "bytes": 10569,
+            "sha256": "5334501104efb85d06ebede8b03cde21169435169c61f43f3e968e7b795d210a"
+          }
+        }
+      ]
+    },
+    {
+      "key": "NCE3",
+      "label": "第三册",
+      "site": "https://nce.mleo.site/NCE3",
+      "units": 60,
+      "lrcOk": 60,
+      "notesOk": 60,
+      "entries": [
+        {
+          "key": "01",
+          "title": "01.A Puma at Large",
+          "filename": "01.A Puma at Large",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/01.lrc",
+            "cached": true,
+            "bytes": 3521,
+            "sha256": "733dcb486590762e7f83222ad2092d88420848a9da9f1c105afd45cd870915da"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/01.json",
+            "cached": true,
+            "bytes": 14001,
+            "sha256": "464a8120d2cf76d1e5d114feb1901f5a441ae1aa05e4a73a0a5038b88c22c5f8"
+          }
+        },
+        {
+          "key": "02",
+          "title": "02.Thirteen Equals One",
+          "filename": "02.Thirteen Equals One",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/02.lrc",
+            "cached": true,
+            "bytes": 3120,
+            "sha256": "4c054f6a5549b12762d6ca98776bf734527fd694d207487b2ff5fc9e16953de6"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/02.json",
+            "cached": true,
+            "bytes": 14087,
+            "sha256": "ff254020a1caa3f0a015968d1382f4d2fa9148ecdd2d544bcd969c6953bed075"
+          }
+        },
+        {
+          "key": "03",
+          "title": "03.An Unknown Goddess",
+          "filename": "03.An Unknown Goddess",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/03.lrc",
+            "cached": true,
+            "bytes": 3224,
+            "sha256": "238274ec2c18a164971707b0aa79c965b9c1204a376c9aa7ae47de073aa3418d"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/03.json",
+            "cached": true,
+            "bytes": 16921,
+            "sha256": "124044c51d71a887db657bc655a137c5fc00a7d9d88dfbb515138921b7a6241e"
+          }
+        },
+        {
+          "key": "04",
+          "title": "04.The Double Life of Alfred Bloggs",
+          "filename": "04.The Double Life of Alfred Bloggs",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/04.lrc",
+            "cached": true,
+            "bytes": 3066,
+            "sha256": "baa3c7f46df8e9589564486c65b95f290f4be14ed980c0a3c232fa68bd388ef9"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/04.json",
+            "cached": true,
+            "bytes": 10594,
+            "sha256": "aba064f1144888e01e49e52b2d02b89402390bff6255eb41097e361b36d845b5"
+          }
+        },
+        {
+          "key": "05",
+          "title": "05.The Facts",
+          "filename": "05.The Facts",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/05.lrc",
+            "cached": true,
+            "bytes": 3061,
+            "sha256": "e241b5f5ff0e049b4a26532a9b225677d12b8368171ba76269c4680a507af37d"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/05.json",
+            "cached": true,
+            "bytes": 8179,
+            "sha256": "37db99f9766b6d37d85bc42e2c5d94dfa4ddb4c5535c3a581a4cd2cb31156808"
+          }
+        },
+        {
+          "key": "06",
+          "title": "06.Smash and Grab",
+          "filename": "06.Smash and Grab",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/06.lrc",
+            "cached": true,
+            "bytes": 3115,
+            "sha256": "78705abb36af573fc468bae97e154defc3fd8f76ead1ed54abcd186602339dea"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/06.json",
+            "cached": true,
+            "bytes": 12250,
+            "sha256": "7dba71f1cdd18a198243cd8617d3a02417edb8e8095a020f433b90fd29505dfd"
+          }
+        },
+        {
+          "key": "07",
+          "title": "07.Mutilated Ladies",
+          "filename": "07.Mutilated Ladies",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/07.lrc",
+            "cached": true,
+            "bytes": 3173,
+            "sha256": "c4a2b43f04f619e5d186de9bfadb11d52d27d7cc38aae069b720199057b87df8"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/07.json",
+            "cached": true,
+            "bytes": 9743,
+            "sha256": "a164116d94dcbed659b21b3f2734f8320be7ec0d28f8e31ff657663f91e9b943"
+          }
+        },
+        {
+          "key": "08",
+          "title": "08.A Famous Monastery",
+          "filename": "08.A Famous Monastery",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/08.lrc",
+            "cached": true,
+            "bytes": 3226,
+            "sha256": "ac5e144c89656ed53c780a34b25c65df44c448e671a85342a504262ce2abf629"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/08.json",
+            "cached": true,
+            "bytes": 13073,
+            "sha256": "3cf819a33ff31ebfc320566fe7151dcd1f994e30554169bdb3398c34d29edde8"
+          }
+        },
+        {
+          "key": "09",
+          "title": "09.Flying Cats",
+          "filename": "09.Flying Cats",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/09.lrc",
+            "cached": true,
+            "bytes": 3178,
+            "sha256": "12d6767200f9ff37ec82f961b4cd5e7a379b5a87119d13cfaa9713fd4ff48c7f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/09.json",
+            "cached": true,
+            "bytes": 11894,
+            "sha256": "bef0dff549bd56ffa3351ea66d0c30d6824f833793b7296e25b8bae4b3a4ebae"
+          }
+        },
+        {
+          "key": "10",
+          "title": "10.The Loss of the Titanic",
+          "filename": "10.The Loss of the Titanic",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/10.lrc",
+            "cached": true,
+            "bytes": 3257,
+            "sha256": "3d45a3ffeff26d5d3155d547207297fdeed820e9490b73a649fecb48600a00e1"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/10.json",
+            "cached": true,
+            "bytes": 12442,
+            "sha256": "e19622dc0d18062c9ea1007daf62e99ddf7cf63fb68e808f749aa47864f8f54f"
+          }
+        },
+        {
+          "key": "11",
+          "title": "11.Not Guilty",
+          "filename": "11.Not Guilty",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/11.lrc",
+            "cached": true,
+            "bytes": 3505,
+            "sha256": "cc26fb5560903013dc09bf39b88869eaace5533d0d6660c6f7c95907d3816e16"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/11.json",
+            "cached": true,
+            "bytes": 11207,
+            "sha256": "89c437239fc1a440e48c3007ab9b6b8c041e27b9c49356b0395f111d26344a00"
+          }
+        },
+        {
+          "key": "12",
+          "title": "12.Life on a Desert Island",
+          "filename": "12.Life on a Desert Island",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/12.lrc",
+            "cached": true,
+            "bytes": 3132,
+            "sha256": "64f95df2a4082fb250099fa0f16ad6f9803f48472acbced1bcf3edb8b584bb80"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/12.json",
+            "cached": true,
+            "bytes": 11730,
+            "sha256": "d3e858257fda7d99246407226869f73de112a61d1db96b4dea8b1110b3a15f42"
+          }
+        },
+        {
+          "key": "13",
+          "title": "13.It's Only Me",
+          "filename": "13.It's Only Me",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/13.lrc",
+            "cached": true,
+            "bytes": 2964,
+            "sha256": "1784f8628eef930d4eeca702d377779306598d2dc3a86b168a44eeb63d8241fb"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/13.json",
+            "cached": true,
+            "bytes": 10709,
+            "sha256": "e77da5781abcbe957aed26e6b2f5564126ebb1bd31e1caa15a0b7cac8a780979"
+          }
+        },
+        {
+          "key": "14",
+          "title": "14.A Noble Gangster",
+          "filename": "14.A Noble Gangster",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/14.lrc",
+            "cached": true,
+            "bytes": 3015,
+            "sha256": "836cc8de0de035331880dcf56de633cc207dc71332b22e0ba8ba3e176af02e3b"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/14.json",
+            "cached": true,
+            "bytes": 10035,
+            "sha256": "b6328ff5baccad199d994b3c21aaf6bfd6cf48c956c5d462ee7a01a423a8fa64"
+          }
+        },
+        {
+          "key": "15",
+          "title": "15.Fifty Pence Worth of Trouble",
+          "filename": "15.Fifty Pence Worth of Trouble",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/15.lrc",
+            "cached": true,
+            "bytes": 3293,
+            "sha256": "5056aeba3078dd39f196901c8492513fc90e752fe10717a69250d481991e5eb5"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/15.json",
+            "cached": true,
+            "bytes": 10832,
+            "sha256": "c66f6449228094f91451a03d5d613a1043f0d8fbdf684d3426064300880188c8"
+          }
+        },
+        {
+          "key": "16",
+          "title": "16.Mary Had a Little Lamb",
+          "filename": "16.Mary Had a Little Lamb",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/16.lrc",
+            "cached": true,
+            "bytes": 3182,
+            "sha256": "ee23f2eea415a25b54b92db6f5341e08765cbbd84ef9ec01dd8ba062baabf7a6"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/16.json",
+            "cached": true,
+            "bytes": 13775,
+            "sha256": "f2d9903e84127f308444e9611c0b9b48d55b3331cc384352cc33176c3821575c"
+          }
+        },
+        {
+          "key": "17",
+          "title": "17.The Longest Suspension Bridge in the World",
+          "filename": "17.The Longest Suspension Bridge in the World",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/17.lrc",
+            "cached": true,
+            "bytes": 3276,
+            "sha256": "c5424f765f9c05357ddb1cd69c59167b0f19217d9d3714c075ccb5c421a05867"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/17.json",
+            "cached": true,
+            "bytes": 13433,
+            "sha256": "b4a829cdcf5d2923032ca0e5782abe99e8fa5704e852986175989b73a7f6b8f2"
+          }
+        },
+        {
+          "key": "18",
+          "title": "18.Electric Currents in Modern Art",
+          "filename": "18.Electric Currents in Modern Art",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/18.lrc",
+            "cached": true,
+            "bytes": 3313,
+            "sha256": "2dc9f579c38f89129263060ab1c9f25fa519d45aaddc7df480db4331fc7bd39e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/18.json",
+            "cached": true,
+            "bytes": 12677,
+            "sha256": "fa91f32374c9e6a0cfcf94d3904eed2e2fbeecb42d19d883a6c933c8e830f935"
+          }
+        },
+        {
+          "key": "19",
+          "title": "19.A Very Dear Cat",
+          "filename": "19.A Very Dear Cat",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/19.lrc",
+            "cached": true,
+            "bytes": 3347,
+            "sha256": "a6248e8c20fce3df9f8a083b9bf256d0336fe70b6892effde6c6066ff67d3706"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/19.json",
+            "cached": true,
+            "bytes": 11252,
+            "sha256": "d6cca825dcef148a381f84a21d3d686083574eccf0d39f80eeeb23ed502f563e"
+          }
+        },
+        {
+          "key": "20",
+          "title": "20.Pioneer Pilots",
+          "filename": "20.Pioneer Pilots",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/20.lrc",
+            "cached": true,
+            "bytes": 3252,
+            "sha256": "009cdcc5e0d6db2f2cce680d02628f8d5ce07b31d606e113bdeff1993d9586ae"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/20.json",
+            "cached": true,
+            "bytes": 15060,
+            "sha256": "55fdf0548676faab7ff49b976f38d0230a3d9281044a24aba0f365f5dee309d6"
+          }
+        },
+        {
+          "key": "21",
+          "title": "21.Daniel Mendoza",
+          "filename": "21.Daniel Mendoza",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/21.lrc",
+            "cached": true,
+            "bytes": 4452,
+            "sha256": "11fbe13f082025c4adec56a9bbc1f102ee8298d7111152e72bf65002fc04c479"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/21.json",
+            "cached": true,
+            "bytes": 11891,
+            "sha256": "ef277d4976909361859184c1e09e7d8d7f4b9cece839ff5e9a094ccf5c93a5f4"
+          }
+        },
+        {
+          "key": "22",
+          "title": "22.By Heart",
+          "filename": "22.By Heart",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/22.lrc",
+            "cached": true,
+            "bytes": 4035,
+            "sha256": "bedb92dedd188830c63d3ac0f45c4c0346ab6a9d2eb7b4291930fa4e15cb4c17"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/22.json",
+            "cached": true,
+            "bytes": 10816,
+            "sha256": "da24a6553b48218c2211ac23973fb2406f65d5c7efe7815b8b02f44636f0b657"
+          }
+        },
+        {
+          "key": "23",
+          "title": "23.One Man's Meat is Another Man's Poison",
+          "filename": "23.One Man's Meat is Another Man's Poison",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/23.lrc",
+            "cached": true,
+            "bytes": 4246,
+            "sha256": "5deec8038fbe56b06f6c2be8431e4e44369704cab14cbee32e8c583453f18428"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/23.json",
+            "cached": true,
+            "bytes": 14146,
+            "sha256": "5b5bbe1c06afb5f4cc8d174d466ab8d38869cc989e7c497d882945b014b83c2a"
+          }
+        },
+        {
+          "key": "24",
+          "title": "24.A Skeleton in the Cupboard",
+          "filename": "24.A Skeleton in the Cupboard",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/24.lrc",
+            "cached": true,
+            "bytes": 4210,
+            "sha256": "bdf6599949f7a7378b5d05a0a0b788bd8d94ce647dee3870899c30237a07aa07"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/24.json",
+            "cached": true,
+            "bytes": 10601,
+            "sha256": "c2de8591e220f50d22c3824f1630ced531ef91e490acf4666b686c846374d473"
+          }
+        },
+        {
+          "key": "25",
+          "title": "25.The Cutty Sark",
+          "filename": "25.The Cutty Sark",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/25.lrc",
+            "cached": true,
+            "bytes": 4247,
+            "sha256": "f60c0cb1f3804788d917ba02c4ea514ebb853bc540e517e34ca77e3bb9eb898a"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/25.json",
+            "cached": true,
+            "bytes": 11386,
+            "sha256": "fd65f498315082fc26c0b24311cbee7f915626b728cd04203062bf635f8bf5ee"
+          }
+        },
+        {
+          "key": "26",
+          "title": "26.Wanted a Large Biscuit Tin",
+          "filename": "26.Wanted a Large Biscuit Tin",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/26.lrc",
+            "cached": true,
+            "bytes": 4270,
+            "sha256": "5ab65f20cfd88a21ef0e0e1ed6ae1439d65dd9a6ef9f2f567a20fcbaa57a1f54"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/26.json",
+            "cached": true,
+            "bytes": 15885,
+            "sha256": "a1a2b9d538d6b3bfdab95aee9ffeb3b4bedba09e4ad2b59cbb20dba662c14425"
+          }
+        },
+        {
+          "key": "27",
+          "title": "27.Nothing to Sell and Nothing to Buy",
+          "filename": "27.Nothing to Sell and Nothing to Buy",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/27.lrc",
+            "cached": true,
+            "bytes": 4206,
+            "sha256": "c69bf1b6d70ad96ed1239b923060dc5ec341dd07b52469bee457a7ceea2ff1d5"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/27.json",
+            "cached": true,
+            "bytes": 12469,
+            "sha256": "d9214cac62aa38a25546b16ef2df2ba8e3c0d9e1cc1edf417e60d2cdca221b99"
+          }
+        },
+        {
+          "key": "28",
+          "title": "28.Five Pounds Too Dear",
+          "filename": "28.Five Pounds Too Dear",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/28.lrc",
+            "cached": true,
+            "bytes": 4217,
+            "sha256": "0c2328228506fd2d5c3232daaba40466acefab09a1d7ea994a273fc6897d8eb0"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/28.json",
+            "cached": true,
+            "bytes": 15322,
+            "sha256": "4bb3a95e598bd1485af87192dccd6e54b66af29b8718f737202cc11ca4886475"
+          }
+        },
+        {
+          "key": "29",
+          "title": "29.Funny or Not",
+          "filename": "29.Funny or Not",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/29.lrc",
+            "cached": true,
+            "bytes": 4311,
+            "sha256": "7abb841c012bc9a3aeb5c3e0aa7fca3e656c7939a5779b749eb2a523927d754c"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/29.json",
+            "cached": true,
+            "bytes": 14760,
+            "sha256": "5b7b4ba5705bb71e78c970e45ce738658e1b245a7f8354f14830aede1c4834ce"
+          }
+        },
+        {
+          "key": "30",
+          "title": "30.The Death of a Ghost",
+          "filename": "30.The Death of a Ghost",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/30.lrc",
+            "cached": true,
+            "bytes": 4346,
+            "sha256": "e4b381d7c5b73741ed54544561fbec696e916f2c084fc8c897779c1575d6060e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/30.json",
+            "cached": true,
+            "bytes": 12359,
+            "sha256": "1a476428f4f6bdf412ff7eb1b62e0e5b62458a48fdfb6b326df4cd585f6da06f"
+          }
+        },
+        {
+          "key": "31",
+          "title": "31.A Lovable Eccentric",
+          "filename": "31.A Lovable Eccentric",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/31.lrc",
+            "cached": true,
+            "bytes": 4174,
+            "sha256": "ea91ace0bf0e17921289ad8219d581a8182ef6063069a125a142b32e964653e0"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/31.json",
+            "cached": true,
+            "bytes": 13812,
+            "sha256": "387eb6bca9b0cbe02e7d559ce341b8e3fed41a0081d74e839ee5e4af540d2a0f"
+          }
+        },
+        {
+          "key": "32",
+          "title": "32.A Lost Ship",
+          "filename": "32.A Lost Ship",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/32.lrc",
+            "cached": true,
+            "bytes": 4321,
+            "sha256": "d8c3e9ad2e820484902c09e042e1f43e545e63db1b6e89b4c4aa7498f9768a0f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/32.json",
+            "cached": true,
+            "bytes": 9548,
+            "sha256": "212f8c725935e12fdd9479855f184a7f3fd9cdbc2c5a4b072b02bc0170a194e0"
+          }
+        },
+        {
+          "key": "33",
+          "title": "33.A Day to Remember",
+          "filename": "33.A Day to Remember",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/33.lrc",
+            "cached": true,
+            "bytes": 4354,
+            "sha256": "5ad8d9f773c317fea98be6b5c465abb412d4ba9c8fd7a0fad189695b4a73e31e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/33.json",
+            "cached": true,
+            "bytes": 16488,
+            "sha256": "4e38b9042052f37ffdc5145c7e9d6d0ef2ff29e34f014ed6899799fdf3c4710a"
+          }
+        },
+        {
+          "key": "34",
+          "title": "34.A Happy Discovery",
+          "filename": "34.A Happy Discovery",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/34.lrc",
+            "cached": true,
+            "bytes": 4431,
+            "sha256": "5d2f048f1916970baf34e9d7b3212c9833600415e82752c57d062d43ca92ba48"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/34.json",
+            "cached": true,
+            "bytes": 12810,
+            "sha256": "6e1ffe6d3a98acf24dc94a50f2dd7ea891bbf253025fe4c055dba93afe7a3f7d"
+          }
+        },
+        {
+          "key": "35",
+          "title": "35.Justice was Done",
+          "filename": "35.Justice was Done",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/35.lrc",
+            "cached": true,
+            "bytes": 4482,
+            "sha256": "78fa42452d5717c84e316b477e5706855e2b7d8bd31b17dd9801cced8cbfae63"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/35.json",
+            "cached": true,
+            "bytes": 12233,
+            "sha256": "dc176726a0f2b1cf6b71098fb02a6fdf5849bf79f8181aab002fa4b4ee3ca743"
+          }
+        },
+        {
+          "key": "36",
+          "title": "36.A Chance in a Million",
+          "filename": "36.A Chance in a Million",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/36.lrc",
+            "cached": true,
+            "bytes": 4573,
+            "sha256": "e402bfb17be60bb4e3691357ce6095a24ebacab01bccd25c5bd458c520c6c851"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/36.json",
+            "cached": true,
+            "bytes": 11055,
+            "sha256": "8f309531f9344f879567bc168dbe64538f54d9ab58aafa0a027e146cee2ac7da"
+          }
+        },
+        {
+          "key": "37",
+          "title": "37.The Westhaven Express",
+          "filename": "37.The Westhaven Express",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/37.lrc",
+            "cached": true,
+            "bytes": 4364,
+            "sha256": "cabca4f1e34b8958ea682bcc86a2dfb17d167a84d7ed9ac35558d6d51b0d7d82"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/37.json",
+            "cached": true,
+            "bytes": 12782,
+            "sha256": "715fd1bbb352eab7a3215c87e07819558547ed4f906c244ce78b580bac1131ae"
+          }
+        },
+        {
+          "key": "38",
+          "title": "38.The First Calendar",
+          "filename": "38.The First Calendar",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/38.lrc",
+            "cached": true,
+            "bytes": 4195,
+            "sha256": "a956c7f72ccaed10baf5922453781fbdb023f1e41d9e2425b37c22a942cbe86f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/38.json",
+            "cached": true,
+            "bytes": 11709,
+            "sha256": "c57c96c47184eab191b4d1dffb526788568a8c47c6a355ce67c138a1757977ef"
+          }
+        },
+        {
+          "key": "39",
+          "title": "39.Nothing to Worry About",
+          "filename": "39.Nothing to Worry About",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/39.lrc",
+            "cached": true,
+            "bytes": 4268,
+            "sha256": "48203c189249d6835de1cce8f2e4a3cc602b8b122e3de81013e6dff292596c2b"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/39.json",
+            "cached": true,
+            "bytes": 13870,
+            "sha256": "63e6b6383fce63b022a537bf4a8da079aecbd6ee5428a74a39044f8f87a19fde"
+          }
+        },
+        {
+          "key": "40",
+          "title": "40.Who's Who",
+          "filename": "40.Who's Who",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/40.lrc",
+            "cached": true,
+            "bytes": 4412,
+            "sha256": "d6805369002d004d0a8c219bdad187e5e22d0e7b11c8ebe03bf6a49770bb9821"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/40.json",
+            "cached": true,
+            "bytes": 10630,
+            "sha256": "59750d8eac25a34de27b81ccbc813d25790365c9daec2ea118318620d4504223"
+          }
+        },
+        {
+          "key": "41",
+          "title": "41.Illusions of Pastoral Peace",
+          "filename": "41.Illusions of Pastoral Peace",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/41.lrc",
+            "cached": true,
+            "bytes": 6170,
+            "sha256": "5024152b10bffe426f642a8c115186791e0afb78479c95fd6671c14d3e0965bb"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/41.json",
+            "cached": true,
+            "bytes": 13092,
+            "sha256": "c3c6325754b5a56b59981402d0a5253303b348172ebf24bae053f8b180312590"
+          }
+        },
+        {
+          "key": "42",
+          "title": "42.Modern Cavemen",
+          "filename": "42.Modern Cavemen",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/42.lrc",
+            "cached": true,
+            "bytes": 6191,
+            "sha256": "ee83bd0733a2057850b5077bf27f36a96ccbe4a2b669ff69fe362bfc29d87dc4"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/42.json",
+            "cached": true,
+            "bytes": 15580,
+            "sha256": "aa73c09a75f8ea9eae8accd42fd51e5ad6d0b3323963356ae9c22e8f411225e9"
+          }
+        },
+        {
+          "key": "43",
+          "title": "43.Fully Insured",
+          "filename": "43.Fully Insured",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/43.lrc",
+            "cached": true,
+            "bytes": 5626,
+            "sha256": "cdb0c754403c37fd634278b2a97719e04b4953750067ff5397a482e7aaf95a58"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/43.json",
+            "cached": true,
+            "bytes": 11441,
+            "sha256": "41b21b734509f29c2b1c275da0668563d24da2efeab2d8a226555a3a45983057"
+          }
+        },
+        {
+          "key": "44",
+          "title": "44.Speed and Comfort",
+          "filename": "44.Speed and Comfort",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/44.lrc",
+            "cached": true,
+            "bytes": 6208,
+            "sha256": "c73dabeefca65a125e301c9405b496f648df4633070adc0c4054b1a075d16fba"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/44.json",
+            "cached": true,
+            "bytes": 14241,
+            "sha256": "fbf4c63c5363c9ff9cb3039117a527ddeb6519dd55c10a6f8967f500fb5e6453"
+          }
+        },
+        {
+          "key": "45",
+          "title": "45.The Power of the Press",
+          "filename": "45.The Power of the Press",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/45.lrc",
+            "cached": true,
+            "bytes": 5267,
+            "sha256": "985a68d8d17a18171741a1e1a22414d296f1f868d93428253962cb5edfe2399f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/45.json",
+            "cached": true,
+            "bytes": 14577,
+            "sha256": "13b83c267136a54af54f6244b50b34456e1d069abbfc67eb3ed0c7acc9a743b8"
+          }
+        },
+        {
+          "key": "46",
+          "title": "46.Do It Yourself",
+          "filename": "46.Do It Yourself",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/46.lrc",
+            "cached": true,
+            "bytes": 6376,
+            "sha256": "0430d82af746dcbb3357240a3ffa2056c831fb7f711f777290291e0028fcf528"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/46.json",
+            "cached": true,
+            "bytes": 11934,
+            "sha256": "4ecc375715a20e2951ef1a24b2051a5672de29f9b3ce7b2a550d876295df11fd"
+          }
+        },
+        {
+          "key": "47",
+          "title": "47.Too High a Price",
+          "filename": "47.Too High a Price",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/47.lrc",
+            "cached": true,
+            "bytes": 6111,
+            "sha256": "d23a028b7e9703c6ab938480a82d162b621e44eabd88c53f4c2d64f7bd474e13"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/47.json",
+            "cached": true,
+            "bytes": 12817,
+            "sha256": "1b75ad6a1b40c841a93c1f9e2cf92131742713edcedd39acf2990bdb54f848ad"
+          }
+        },
+        {
+          "key": "48",
+          "title": "48.The Silent Village",
+          "filename": "48.The Silent Village",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/48.lrc",
+            "cached": true,
+            "bytes": 6396,
+            "sha256": "9408141b73d50ed0b9fc4eef6a0023d0b216dd70301f973de527cb76a618a9f4"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/48.json",
+            "cached": true,
+            "bytes": 11794,
+            "sha256": "e83f060dd364f03729c10c83112e99fdca918309f370839434ac8549970bf9e9"
+          }
+        },
+        {
+          "key": "49",
+          "title": "49.The Ideal Servant",
+          "filename": "49.The Ideal Servant",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/49.lrc",
+            "cached": true,
+            "bytes": 6473,
+            "sha256": "b6b6504efd285f64b30104b1f1861bc3ae3b92984f05ed439efd41faa11ffe7f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/49.json",
+            "cached": true,
+            "bytes": 11523,
+            "sha256": "b952c8c2e58d8c5170390512747e3f975f00e132a03368c0767de8f72b0fd6fc"
+          }
+        },
+        {
+          "key": "50",
+          "title": "50.New Year Resolutions",
+          "filename": "50.New Year Resolutions",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/50.lrc",
+            "cached": true,
+            "bytes": 6185,
+            "sha256": "ddfe0974793bf10a5a1dede586a263e42f121eae629cb4067d40ac71aeca59b9"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/50.json",
+            "cached": true,
+            "bytes": 10699,
+            "sha256": "88892b56c2a7974331224181ba28819ce3921ec5c1467ec9b117922c93d21537"
+          }
+        },
+        {
+          "key": "51",
+          "title": "51.Predicting the Future",
+          "filename": "51.Predicting the Future",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/51.lrc",
+            "cached": true,
+            "bytes": 5882,
+            "sha256": "150bd7ade4a458aa62225968b7c9d9a6e8b914b8ee4ccec4ed6855d78a967922"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/51.json",
+            "cached": true,
+            "bytes": 12978,
+            "sha256": "c1295cd1fa4b0eec5505319b2702e29d6c469888b85f535f856d4453d7649a1c"
+          }
+        },
+        {
+          "key": "52",
+          "title": "52.Mud is Mud",
+          "filename": "52.Mud is Mud",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/52.lrc",
+            "cached": true,
+            "bytes": 6134,
+            "sha256": "78f591000702516b2be97ba5ca3dd70a82e31321456b9d216e766aa067acedd7"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/52.json",
+            "cached": true,
+            "bytes": 11347,
+            "sha256": "32e138918414a405339f109d301426d02b01dd3ad0e85e8110fa3b5a843dadf6"
+          }
+        },
+        {
+          "key": "53",
+          "title": "53.In the Public Interest",
+          "filename": "53.In the Public Interest",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/53.lrc",
+            "cached": true,
+            "bytes": 5729,
+            "sha256": "44cfde21f6db42eb7b77dea67987d0acaee75523cee2b725d5cfd3bcd66aed1f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/53.json",
+            "cached": true,
+            "bytes": 12461,
+            "sha256": "1f0587fb2d142ee8709c918cbb39da51d65f323970c10b0cce38b6dd5a0d6052"
+          }
+        },
+        {
+          "key": "54",
+          "title": "54.Instinct or Cleverness",
+          "filename": "54.Instinct or Cleverness",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/54.lrc",
+            "cached": true,
+            "bytes": 6177,
+            "sha256": "629379d519ed068bf44372a4692892ee503b00b810ca3cd1bc1dad52418ab4a1"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/54.json",
+            "cached": true,
+            "bytes": 12181,
+            "sha256": "a6201b89be9a20f4891fba9c82a3d357ba79a51e4850d2825d980c62aa161a4b"
+          }
+        },
+        {
+          "key": "55",
+          "title": "55.From the Earth Greetings",
+          "filename": "55.From the Earth Greetings",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/55.lrc",
+            "cached": true,
+            "bytes": 6072,
+            "sha256": "cd89243a95d760d8bae7f61f623e9f188122feaff0533ac8280f96698be6b9c8"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/55.json",
+            "cached": true,
+            "bytes": 11555,
+            "sha256": "0215d99bc1c62956a8d72a78c53e2ae39cdbc34094ea3cfbf25c4eabb36c7883"
+          }
+        },
+        {
+          "key": "56",
+          "title": "56.Our Neighbour, the River",
+          "filename": "56.Our Neighbour, the River",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/56.lrc",
+            "cached": true,
+            "bytes": 5804,
+            "sha256": "8e5b06b4cfb1e4dd70346c80cc4a04fad42b5a2f86711ab82eb2fbd6220bd1c5"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/56.json",
+            "cached": true,
+            "bytes": 12736,
+            "sha256": "5fb67bea81da10806211142689bdecaef90134c17613bf2e827ec1d67ba6523c"
+          }
+        },
+        {
+          "key": "57",
+          "title": "57.Back in the Old Country",
+          "filename": "57.Back in the Old Country",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/57.lrc",
+            "cached": true,
+            "bytes": 6102,
+            "sha256": "8a685b5c832ec57be0448023fecf80813d2f772ac380a129a98513d618811bba"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/57.json",
+            "cached": true,
+            "bytes": 11560,
+            "sha256": "635e5b8b42570a5625a48422ea595afe5db00c8cc647c7a115e432d8674eedd0"
+          }
+        },
+        {
+          "key": "58",
+          "title": "58.A Spot of Bother",
+          "filename": "58.A Spot of Bother",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/58.lrc",
+            "cached": true,
+            "bytes": 5826,
+            "sha256": "3a921ddd90e1fb71950fd0505a42c5f589eaaf43841c4bb6103ae83200f93db0"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/58.json",
+            "cached": true,
+            "bytes": 11275,
+            "sha256": "71f9d687e181b6adef6ce37f4773a2a80aeb1af38278e501cb37b918a50ee060"
+          }
+        },
+        {
+          "key": "59",
+          "title": "59.Collecting",
+          "filename": "59.Collecting",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/59.lrc",
+            "cached": true,
+            "bytes": 6331,
+            "sha256": "f0cb58fdd527cf536f8f1a85ede95eccae3378b3db8433a8b3403ac73c4f77f5"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/59.json",
+            "cached": true,
+            "bytes": 12484,
+            "sha256": "bafc0109d08f7a2fbe330a3913934d74441517a5053ecf6ff4f397f2adae3e5e"
+          }
+        },
+        {
+          "key": "60",
+          "title": "60.Too Early and Too Late",
+          "filename": "60.Too Early and Too Late",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE3/60.lrc",
+            "cached": true,
+            "bytes": 6567,
+            "sha256": "a8244085af16f66ec6c76c7fc8447a830b475d08b066997fb2db71f1685cdf0e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE3/60.json",
+            "cached": true,
+            "bytes": 12277,
+            "sha256": "3abea409a549a391a12c23fd05b98d1e6582a46d7e07407059214656085dd7ce"
+          }
+        }
+      ]
+    },
+    {
+      "key": "NCE4",
+      "label": "第四册",
+      "site": "https://nce.mleo.site/NCE4",
+      "units": 48,
+      "lrcOk": 48,
+      "notesOk": 48,
+      "entries": [
+        {
+          "key": "01",
+          "title": "01.Finding Fossil Man",
+          "filename": "01.Finding Fossil Man",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/01.lrc",
+            "cached": true,
+            "bytes": 2952,
+            "sha256": "752e7f07028ae501251e71d632229a41dac82ae7f2a4c13b48ed4c12e047a2ef"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/01.json",
+            "cached": true,
+            "bytes": 11943,
+            "sha256": "f7500ff5b9dd4a03a818bf06283c84358832ad9b7e736d88782ae7efb7ce4040"
+          }
+        },
+        {
+          "key": "02",
+          "title": "02.Spare That Spider",
+          "filename": "02.Spare That Spider",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/02.lrc",
+            "cached": true,
+            "bytes": 3296,
+            "sha256": "d1ff05910c78640f5c66058e5254e4d9e432eae3a69ae85015bb61e98eef6235"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/02.json",
+            "cached": true,
+            "bytes": 10488,
+            "sha256": "487bd72c3e9f9a06957519ed12e886c3a1538aff2590c2f07187593dc88600f9"
+          }
+        },
+        {
+          "key": "03",
+          "title": "03.Matterhorn Man",
+          "filename": "03.Matterhorn Man",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/03.lrc",
+            "cached": true,
+            "bytes": 3477,
+            "sha256": "62dbb5093a0fc014eeaf59cd3c4fa5cdcc18cbab579748e0181a1cef72989f91"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/03.json",
+            "cached": true,
+            "bytes": 12133,
+            "sha256": "86ca5217ca4e61378ac8afc50a37f258e7ad6e2226c98e58eee02ffba7688dbf"
+          }
+        },
+        {
+          "key": "04",
+          "title": "04.Seeing Hands",
+          "filename": "04.Seeing Hands",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/04.lrc",
+            "cached": true,
+            "bytes": 3464,
+            "sha256": "36c065b4ad740e4cdf793e689016ff3fc03a55af8badae763c45415fb7827374"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/04.json",
+            "cached": true,
+            "bytes": 10886,
+            "sha256": "c429200c1b2d67e541b9d9af43dd67d68b758e2b352fbf92fc710c8a39ae1113"
+          }
+        },
+        {
+          "key": "05",
+          "title": "05.Youth",
+          "filename": "05.Youth",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/05.lrc",
+            "cached": true,
+            "bytes": 3568,
+            "sha256": "662f3e654f0d103c89c5c26f081069236d9a81c5c0661391a114fc89cceda73e"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/05.json",
+            "cached": true,
+            "bytes": 16814,
+            "sha256": "abd0d943b8ed05d8d3959cb076e9d9190caedc913a4968ed514ab93dacb22926"
+          }
+        },
+        {
+          "key": "06",
+          "title": "06.The Sporting Spirit",
+          "filename": "06.The Sporting Spirit",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/06.lrc",
+            "cached": true,
+            "bytes": 2929,
+            "sha256": "5098fdab2e179b5ea3a96348f1dc9f59bc9a728da2a54f327223fba691c9460f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/06.json",
+            "cached": true,
+            "bytes": 16496,
+            "sha256": "b8e583ee87aff88b78f8b58099649df110fc29140e7607c9fde596ab65b14209"
+          }
+        },
+        {
+          "key": "07",
+          "title": "07.Bats",
+          "filename": "07.Bats",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/07.lrc",
+            "cached": true,
+            "bytes": 3136,
+            "sha256": "a371f604d5a46f17babbb52051340c90aed5e32c3e3a0645f649d83b304ad945"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/07.json",
+            "cached": true,
+            "bytes": 14594,
+            "sha256": "8d30095c25f5ff042fa88956bc38990485eb0adb51a81f86953d9e685450fada"
+          }
+        },
+        {
+          "key": "08",
+          "title": "08.Trading Standards",
+          "filename": "08.Trading Standards",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/08.lrc",
+            "cached": true,
+            "bytes": 3350,
+            "sha256": "1286fc2494b70f083ed66730fffa5d4700644d4dff434483123782f96671d3c9"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/08.json",
+            "cached": true,
+            "bytes": 13602,
+            "sha256": "cfd4c322b19d2347e5d9a221dc6a756a96d5e764b1a2b7114eb165d853e9c0f4"
+          }
+        },
+        {
+          "key": "09",
+          "title": "09.Royal Espionage",
+          "filename": "09.Royal Espionage",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/09.lrc",
+            "cached": true,
+            "bytes": 3602,
+            "sha256": "b6fade54d1dff73c5239768ffe8795c8c3bf0372a190424a2d558dd8ce982d87"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/09.json",
+            "cached": true,
+            "bytes": 12719,
+            "sha256": "0eae541e93ff2fe93c120de1379fd61cf53a39d841cd95945c70f9da5bcadb05"
+          }
+        },
+        {
+          "key": "10",
+          "title": "10.Silicon Valley",
+          "filename": "10.Silicon Valley",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/10.lrc",
+            "cached": true,
+            "bytes": 3673,
+            "sha256": "d3da2a41ede8d358326f87ffccf66ec01f9b450f65f8b7c16c75259a6e6fa0df"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/10.json",
+            "cached": true,
+            "bytes": 16980,
+            "sha256": "78b96025643ab4b33f2f8912a5d90893fb17b21bbab73d3a1d302f7d1ce28dd2"
+          }
+        },
+        {
+          "key": "11",
+          "title": "11.How to Grow Old",
+          "filename": "11.How to Grow Old",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/11.lrc",
+            "cached": true,
+            "bytes": 3547,
+            "sha256": "7d8fbe4b0a5087d5529b7cea4f1f83d8f8cfe52ec61a780b2b5332d985304528"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/11.json",
+            "cached": true,
+            "bytes": 12071,
+            "sha256": "6fda8ae66f5f46c9f9132c8318c44fa363ee46ecbaf38f8314f463840e583970"
+          }
+        },
+        {
+          "key": "12",
+          "title": "12.Banks and Their Customers",
+          "filename": "12.Banks and Their Customers",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/12.lrc",
+            "cached": true,
+            "bytes": 3279,
+            "sha256": "18feaaa806adc07cb839a8e4a6523b0a4ea446893e9917dba5a6eeca2cfddcd7"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/12.json",
+            "cached": true,
+            "bytes": 12592,
+            "sha256": "ae096690ea1cc2b7a7b0ef700620f4d644e5cc4935b409dba67cd392adce9643"
+          }
+        },
+        {
+          "key": "13",
+          "title": "13.The Search for Oil",
+          "filename": "13.The Search for Oil",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/13.lrc",
+            "cached": true,
+            "bytes": 3089,
+            "sha256": "ed287d3b510da6ef1fff35bbdf2d28c5907956888b5aa0a7606b81cc9b0d06da"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/13.json",
+            "cached": true,
+            "bytes": 15020,
+            "sha256": "7c41ea09378249479b50c53813cc37c0effccd40c0b7e71a9c05b37f61fa1331"
+          }
+        },
+        {
+          "key": "14",
+          "title": "14.The Butterfly Effect",
+          "filename": "14.The Butterfly Effect",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/14.lrc",
+            "cached": true,
+            "bytes": 3596,
+            "sha256": "7390d70822e060c9b8b89444004fa54ebfcd54e11f98b0ec176894192a138bb7"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/14.json",
+            "cached": true,
+            "bytes": 12334,
+            "sha256": "e3ea42d9859cff371539475b7edb1b5724b39e1fa58a37ac8fd96da2fbcdde79"
+          }
+        },
+        {
+          "key": "15",
+          "title": "15.Secrecy in Industry",
+          "filename": "15.Secrecy in Industry",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/15.lrc",
+            "cached": true,
+            "bytes": 3215,
+            "sha256": "2ee64d0b97db5ab0629c34ae33ff12a9691a4bc487a1aa93842f0351a863319b"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/15.json",
+            "cached": true,
+            "bytes": 14577,
+            "sha256": "aa63bc5d163d226782c51d65528c195787104874b6f0a23684e943dbfba80b16"
+          }
+        },
+        {
+          "key": "16",
+          "title": "16.The Modern City",
+          "filename": "16.The Modern City",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/16.lrc",
+            "cached": true,
+            "bytes": 2948,
+            "sha256": "6a2c29ab5e300b640fb9147ad3f46d5cd26b708513bb684a4535bfab388eb1b6"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/16.json",
+            "cached": true,
+            "bytes": 15953,
+            "sha256": "0e923d5c95291483f05f399494db6060267fa80d0dd45583fc9b98a52f45b26c"
+          }
+        },
+        {
+          "key": "17",
+          "title": "17.A Man-made Disease",
+          "filename": "17.A Man-made Disease",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/17.lrc",
+            "cached": true,
+            "bytes": 4059,
+            "sha256": "33edd4a89f3c8d1de327f4c5dcd7ddac098553da288b48e6d3a5cff50dce153f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/17.json",
+            "cached": true,
+            "bytes": 15699,
+            "sha256": "f3b3959d8f3f5ff24a06409dd415edfd4a543d108af2c0079b2d4d6f4cc7ddef"
+          }
+        },
+        {
+          "key": "18",
+          "title": "18.Porpoises",
+          "filename": "18.Porpoises",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/18.lrc",
+            "cached": true,
+            "bytes": 4396,
+            "sha256": "fdc4772753869c159dfe7819c418ce8ea27d1261573a5a9857736b4a88d07679"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/18.json",
+            "cached": true,
+            "bytes": 19202,
+            "sha256": "0c93f6078717990ce8bfb3506c58e5df31bb11a3cd7589d2d95f4f1cd64b69a4"
+          }
+        },
+        {
+          "key": "19",
+          "title": "19.The Stuff of Dreams",
+          "filename": "19.The Stuff of Dreams",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/19.lrc",
+            "cached": true,
+            "bytes": 4401,
+            "sha256": "c28e49e6484b4a540e5ea827bdf814e445add7f15926d82af714af519a22219f"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/19.json",
+            "cached": true,
+            "bytes": 14413,
+            "sha256": "e17a9b3414fb21432274229435f693df0dcf1ca85667914c144c7d953516bcc4"
+          }
+        },
+        {
+          "key": "20",
+          "title": "20.Snake Poison",
+          "filename": "20.Snake Poison",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/20.lrc",
+            "cached": true,
+            "bytes": 4555,
+            "sha256": "77de665553d09adc09ecb33778a5ea54918b9323b1da625ee044c1a1e3855dda"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/20.json",
+            "cached": true,
+            "bytes": 12010,
+            "sha256": "b3603dea97a07dbf188f2a9c124cd0c071c11d9dbb9b3147ea1a8a7c85e1c9b1"
+          }
+        },
+        {
+          "key": "21",
+          "title": "21.William S. Hart and the Early Western Film",
+          "filename": "21.William S. Hart and the Early Western Film",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/21.lrc",
+            "cached": true,
+            "bytes": 4315,
+            "sha256": "f411dd7d04bff62f36291997075c3d61d5f310a3ddde1b09f1520a14e4e1925c"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/21.json",
+            "cached": true,
+            "bytes": 11944,
+            "sha256": "cc990f1d1c9b419544456685c1ab5277546e5d1f2665d70e6f920778f466a0c5"
+          }
+        },
+        {
+          "key": "22",
+          "title": "22.Knowledge and Progress",
+          "filename": "22.Knowledge and Progress",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/22.lrc",
+            "cached": true,
+            "bytes": 4040,
+            "sha256": "369aec7688a31d4d1e9eefead8a95a70f6a239c1f42209d11b748997674b86ea"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/22.json",
+            "cached": true,
+            "bytes": 14121,
+            "sha256": "18ae1b151c091616de65f092d75d6c01b0f88e3ffa73d99621f426769072e158"
+          }
+        },
+        {
+          "key": "23",
+          "title": "23.Bird Flight",
+          "filename": "23.Bird Flight",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/23.lrc",
+            "cached": true,
+            "bytes": 4025,
+            "sha256": "04995b86a9d972c6aba776d8c2442b6352c74ef2c7b5d67d24057606ef2c75fe"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/23.json",
+            "cached": true,
+            "bytes": 11740,
+            "sha256": "14bf548f91193e78af9630f409036f08b5bb66b750d9f70dfb67117e965dfa5d"
+          }
+        },
+        {
+          "key": "24",
+          "title": "24.Beauty",
+          "filename": "24.Beauty",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/24.lrc",
+            "cached": true,
+            "bytes": 4038,
+            "sha256": "e0c03901e7af478ae8fe2041b8c2f447a368e003f7844c2a0f0745e2289ca7eb"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/24.json",
+            "cached": true,
+            "bytes": 14919,
+            "sha256": "239b8e02b4c8c41b8cd5b15405e6ce7d5810c213abdc1a86798d1caff27389a2"
+          }
+        },
+        {
+          "key": "25",
+          "title": "25.Non-Auditory Effects of Noise",
+          "filename": "25.Non-Auditory Effects of Noise",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/25.lrc",
+            "cached": true,
+            "bytes": 5350,
+            "sha256": "3b0fe3fc203d7a67ea3c42d4e8c6cba816be8c655e8c9ffafbd8a501668602b1"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/25.json",
+            "cached": true,
+            "bytes": 13572,
+            "sha256": "57ff9177e0ca71ded09c68bffcfb982579504c81ef2bf16c44eb2c2490f24aaf"
+          }
+        },
+        {
+          "key": "26",
+          "title": "26.The Past Life of the Earth",
+          "filename": "26.The Past Life of the Earth",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/26.lrc",
+            "cached": true,
+            "bytes": 5041,
+            "sha256": "0b57281e12ab420531c72cc138450d5d54802c4771110df2869fc1778d51999b"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/26.json",
+            "cached": true,
+            "bytes": 16460,
+            "sha256": "3b57de288166c9daaa32dd68607d61450fa076901654d90af5bd1167d2851fbb"
+          }
+        },
+        {
+          "key": "27",
+          "title": "27.The vasa",
+          "filename": "27.The vasa",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/27.lrc",
+            "cached": true,
+            "bytes": 5298,
+            "sha256": "6a2e54b5b0f2770e54653336746bd2f058e76914a390b828cd799cdd1d2163f0"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/27.json",
+            "cached": true,
+            "bytes": 14796,
+            "sha256": "5958cfdedca9840b64d795a3264f4aab43a082f7f3e6715068b510431c3ad54b"
+          }
+        },
+        {
+          "key": "28",
+          "title": "28.Patients and Doctors",
+          "filename": "28.Patients and Doctors",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/28.lrc",
+            "cached": true,
+            "bytes": 4871,
+            "sha256": "ec1e0513cf5545ff1916107bee7fd9956fc18691a02a3af67ad9393b233e1ab5"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/28.json",
+            "cached": true,
+            "bytes": 18488,
+            "sha256": "42ac5a564a0fd8450ae3675f5971263c2ded537680e243d40bcb2eeb4ac10374"
+          }
+        },
+        {
+          "key": "29",
+          "title": "29.The Hovercraft",
+          "filename": "29.The Hovercraft",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/29.lrc",
+            "cached": true,
+            "bytes": 4255,
+            "sha256": "3cd289e74b475f89891e9a73117cacc83bba4f6db81be9eb1c4957588d658421"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/29.json",
+            "cached": true,
+            "bytes": 18393,
+            "sha256": "35c970ac620131baf906c36ddabb38bf8216e65a21cb5bcb3ef17db93ff386f9"
+          }
+        },
+        {
+          "key": "30",
+          "title": "30.Exploring the Sea-Floor",
+          "filename": "30.Exploring the Sea-Floor",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/30.lrc",
+            "cached": true,
+            "bytes": 4945,
+            "sha256": "e8add18f80ef77fb7e0fbecfa4dc5f7d67f3645f7f35e5acc73bb1fba7923ec4"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/30.json",
+            "cached": true,
+            "bytes": 15928,
+            "sha256": "7081c11a9b4385a7e7db20b5d76272d97ac36c4837058a49f892c3a9e14ae33b"
+          }
+        },
+        {
+          "key": "31",
+          "title": "31.The Sculptor Speaks",
+          "filename": "31.The Sculptor Speaks",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/31.lrc",
+            "cached": true,
+            "bytes": 4295,
+            "sha256": "7b86f7e0feb8e182b1fb00d7dc23aab99c5e3c81c4b47248bae64c1d1b1aba63"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/31.json",
+            "cached": true,
+            "bytes": 13347,
+            "sha256": "0a3db43fe20b036e463a8f87e6a9cd48148aca4a789590f8649b69c389dbd5e1"
+          }
+        },
+        {
+          "key": "32",
+          "title": "32.Galileo Reborn",
+          "filename": "32.Galileo Reborn",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/32.lrc",
+            "cached": true,
+            "bytes": 5177,
+            "sha256": "9043aa726ab207775570f8eb0eb293d71277cd2547cc7111e4c5c5fa6f53a385"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/32.json",
+            "cached": true,
+            "bytes": 16495,
+            "sha256": "948b59476a885c5229bde607eb91abfe817959ae1e0ab622c16e287f4411b9fe"
+          }
+        },
+        {
+          "key": "33",
+          "title": "33.Education",
+          "filename": "33.Education",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/33.lrc",
+            "cached": true,
+            "bytes": 5150,
+            "sha256": "46caf23d0871e31970f70f391a1d8a6510811310574d329fdd780f11def41298"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/33.json",
+            "cached": true,
+            "bytes": 14170,
+            "sha256": "f2fb5160d42970616d464bc77e94dfd21ad29fc3dfb61725cdbd76bfcf1f08a4"
+          }
+        },
+        {
+          "key": "34",
+          "title": "34.Adolescence",
+          "filename": "34.Adolescence",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/34.lrc",
+            "cached": true,
+            "bytes": 4760,
+            "sha256": "0a826e6352eb1b5a4e0e173d7ca942868309a5598fd5f17ba25a9b62886d40ee"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/34.json",
+            "cached": true,
+            "bytes": 16271,
+            "sha256": "0a89ed8e459657e053a4142e68df37f2032b803b2a0630f7347cab3268934fd6"
+          }
+        },
+        {
+          "key": "35",
+          "title": "35.Space Odyssey",
+          "filename": "35.Space Odyssey",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/35.lrc",
+            "cached": true,
+            "bytes": 4362,
+            "sha256": "62f957048c4b08ea21c33ba2852866d010b6e9e686c85b7d3a75a8b274c4af63"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/35.json",
+            "cached": true,
+            "bytes": 14583,
+            "sha256": "fec2ccdee7b4107a5bc0a501792e2c17794f4488784a2b694b6ccc44be923fff"
+          }
+        },
+        {
+          "key": "36",
+          "title": "36.The Cost of Government",
+          "filename": "36.The Cost of Government",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/36.lrc",
+            "cached": true,
+            "bytes": 4825,
+            "sha256": "c52def13c2485248e70e847bbf394f9243499a7f9c42326d6c7f4df435b49e60"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/36.json",
+            "cached": true,
+            "bytes": 12953,
+            "sha256": "94f26bf20f714bae8a0d84ef2140322c9d7fbb92f491c46688c75ef2c0872382"
+          }
+        },
+        {
+          "key": "37",
+          "title": "37.The Process of Ageing",
+          "filename": "37.The Process of Ageing",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/37.lrc",
+            "cached": true,
+            "bytes": 6086,
+            "sha256": "9bff048c30a36f73e539077eac609bc33443ef077b65eac5f9dded7ea6a272d2"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/37.json",
+            "cached": true,
+            "bytes": 13964,
+            "sha256": "2e4b50778171b7782917fd5146fd7571e41b3b8010842e5684bb3eca78ae0682"
+          }
+        },
+        {
+          "key": "38",
+          "title": "38.Water and the Traveller",
+          "filename": "38.Water and the Traveller",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/38.lrc",
+            "cached": true,
+            "bytes": 4316,
+            "sha256": "050a3914a010b2faffde0dc0160f92409a7ebe5492fa98959a0bceda39daa6ff"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/38.json",
+            "cached": true,
+            "bytes": 14782,
+            "sha256": "d8f578a516067126cace6b143e32b809d8e36402c9493be5ebb9dae262be69b2"
+          }
+        },
+        {
+          "key": "39",
+          "title": "39.What Every Writer Wants",
+          "filename": "39.What Every Writer Wants",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/39.lrc",
+            "cached": true,
+            "bytes": 5405,
+            "sha256": "fc5f8a3c6818871ead30bd71cdb92e63ed54b23cba1b11d34b51123cb3218592"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/39.json",
+            "cached": true,
+            "bytes": 14182,
+            "sha256": "75a5194071df0e23d22afa847a32cc5d7948e1b7eac486ba9e081f703760e841"
+          }
+        },
+        {
+          "key": "40",
+          "title": "40.Waves",
+          "filename": "40.Waves",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/40.lrc",
+            "cached": true,
+            "bytes": 3905,
+            "sha256": "db8896e7b35217daac0a5073fab858457f3fdfd15c4c3c47772b8249a508b1ec"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/40.json",
+            "cached": true,
+            "bytes": 13371,
+            "sha256": "e3d361fe7ea486cf15dd7e37839945087f16dfa4fe48940010ce599209a9765f"
+          }
+        },
+        {
+          "key": "41",
+          "title": "41.Training Elephants",
+          "filename": "41.Training Elephants",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/41.lrc",
+            "cached": true,
+            "bytes": 6922,
+            "sha256": "9158abd1490ed2f82fb418e39e20e510d0c2e07ba338825cedf6657aa0409396"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/41.json",
+            "cached": true,
+            "bytes": 14678,
+            "sha256": "776852ccecf5d177da9eea3d6731b1f4020cb0ea62544565d3357a9361028f52"
+          }
+        },
+        {
+          "key": "42",
+          "title": "42.Recording an Earthquake",
+          "filename": "42.Recording an Earthquake",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/42.lrc",
+            "cached": true,
+            "bytes": 7490,
+            "sha256": "129b724b2ac563d8c0ae02c32138e8a90f88d9a485ed4586ec28f1b869bc7a6d"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/42.json",
+            "cached": true,
+            "bytes": 14988,
+            "sha256": "7b795fd486a5a16d359948610b2cd5eaf03d18d90083a1f7dcef91a1f1f3254d"
+          }
+        },
+        {
+          "key": "43",
+          "title": "43.Are There Strangers in Space",
+          "filename": "43.Are There Strangers in Space",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/43.lrc",
+            "cached": true,
+            "bytes": 7608,
+            "sha256": "18e4d9f5f75072ed5e510ab93de938b299028878399975b47e6cb9d343494113"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/43.json",
+            "cached": true,
+            "bytes": 11085,
+            "sha256": "186011a890b62ed888a39f119cddf3cc498c505cc45f0c852453d61a83603f36"
+          }
+        },
+        {
+          "key": "44",
+          "title": "44.Patterns of Culture",
+          "filename": "44.Patterns of Culture",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/44.lrc",
+            "cached": true,
+            "bytes": 7613,
+            "sha256": "2634077944440fad99c1a592797627b4e877f2c98407a783623174f3dff97b88"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/44.json",
+            "cached": true,
+            "bytes": 17112,
+            "sha256": "bab36c5cdef384173aaf009eff41a6d3544cceaa4e506b03a02dfa3dbb2deeb5"
+          }
+        },
+        {
+          "key": "45",
+          "title": "45.Of Men and Galaxies",
+          "filename": "45.Of Men and Galaxies",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/45.lrc",
+            "cached": true,
+            "bytes": 6781,
+            "sha256": "4db352f153b37901fa83950a4097282c073e0c192ae16d7414f7a1489176b79b"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/45.json",
+            "cached": true,
+            "bytes": 15742,
+            "sha256": "f8c6b13ccecc3ba9cc77b546e02d8b7d1305cc71def41bfd01f1ac7359347ec1"
+          }
+        },
+        {
+          "key": "46",
+          "title": "46.Hobbies",
+          "filename": "46.Hobbies",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/46.lrc",
+            "cached": true,
+            "bytes": 7215,
+            "sha256": "664a57fa3ff6970b2e48a950fb7353a8e13c80420a0c1593cf7b9661d8b9b57d"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/46.json",
+            "cached": true,
+            "bytes": 15896,
+            "sha256": "e754cd9883cad7602fe7bbecf07599c0992f88c6a5bad26983e1189a682df40f"
+          }
+        },
+        {
+          "key": "47",
+          "title": "47.The Great Escape",
+          "filename": "47.The Great Escape",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/47.lrc",
+            "cached": true,
+            "bytes": 8100,
+            "sha256": "b84c80ebc7bf047d59667918cf5ee6549092a89eacc5e0cbe89f4b11c16d5001"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/47.json",
+            "cached": true,
+            "bytes": 12412,
+            "sha256": "34361e4c92ec7ab996e7f5238956f21ec9d468a53609fa1a9e293a771950708a"
+          }
+        },
+        {
+          "key": "48",
+          "title": "48.Planning a Share Portfolio",
+          "filename": "48.Planning a Share Portfolio",
+          "lrc": {
+            "ok": true,
+            "file": "sources/lrc/NCE4/48.lrc",
+            "cached": true,
+            "bytes": 5050,
+            "sha256": "1d3f249c791ba38eae1737b331519b9334c5bbe41204e33fa3c277c02e493550"
+          },
+          "notes": {
+            "ok": true,
+            "file": "sources/notes/NCE4/48.json",
+            "cached": true,
+            "bytes": 17119,
+            "sha256": "cb5b8945187cd302fef5dd1b758550d2c6995284a55cc2dfaa152e10e090927a"
+          }
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "books": 4,
+    "units": 276,
+    "lrcOk": 276,
+    "notesOk": 276,
+    "lrcFailed": 0,
+    "notesFailed": 0
+  },
+  "finishedAt": "2026-10-26T07:36:32.670Z",
+  "errors": []
+}

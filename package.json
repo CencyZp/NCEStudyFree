@@ -1,0 +1,21 @@
+{
+  "name": "nce-study-free",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "新概念英语 1-4 本地学习站：逐句点读、中英对照、词汇语法、练习与间隔重复。",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "fetch": "node tools/fetch-sources.mjs",
+    "build": "node tools/build-data.mjs",
+    "validate": "node tools/validate-data.mjs",
+    "serve": "node tools/serve.mjs",
+    "test": "node --test",
+    "smoke": "node tools/smoke.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.64.1"
+  }
+}

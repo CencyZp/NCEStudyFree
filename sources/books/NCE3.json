@@ -1,0 +1,247 @@
+{
+  "name": "NCE",
+  "level": "3rd Level",
+  "cover": "NCE3.jpg",
+  "units": [
+    {
+      "title": "01.A Puma at Large",
+      "filename": "01.A Puma at Large"
+    },
+    {
+      "title": "02.Thirteen Equals One",
+      "filename": "02.Thirteen Equals One"
+    },
+    {
+      "title": "03.An Unknown Goddess",
+      "filename": "03.An Unknown Goddess"
+    },
+    {
+      "title": "04.The Double Life of Alfred Bloggs",
+      "filename": "04.The Double Life of Alfred Bloggs"
+    },
+    {
+      "title": "05.The Facts",
+      "filename": "05.The Facts"
+    },
+    {
+      "title": "06.Smash and Grab",
+      "filename": "06.Smash and Grab"
+    },
+    {
+      "title": "07.Mutilated Ladies",
+      "filename": "07.Mutilated Ladies"
+    },
+    {
+      "title": "08.A Famous Monastery",
+      "filename": "08.A Famous Monastery"
+    },
+    {
+      "title": "09.Flying Cats",
+      "filename": "09.Flying Cats"
+    },
+    {
+      "title": "10.The Loss of the Titanic",
+      "filename": "10.The Loss of the Titanic"
+    },
+    {
+      "title": "11.Not Guilty",
+      "filename": "11.Not Guilty"
+    },
+    {
+      "title": "12.Life on a Desert Island",
+      "filename": "12.Life on a Desert Island"
+    },
+    {
+      "title": "13.It's Only Me",
+      "filename": "13.It's Only Me"
+    },
+    {
+      "title": "14.A Noble Gangster",
+      "filename": "14.A Noble Gangster"
+    },
+    {
+      "title": "15.Fifty Pence Worth of Trouble",
+      "filename": "15.Fifty Pence Worth of Trouble"
+    },
+    {
+      "title": "16.Mary Had a Little Lamb",
+      "filename": "16.Mary Had a Little Lamb"
+    },
+    {
+      "title": "17.The Longest Suspension Bridge in the World",
+      "filename": "17.The Longest Suspension Bridge in the World"
+    },
+    {
+      "title": "18.Electric Currents in Modern Art",
+      "filename": "18.Electric Currents in Modern Art"
+    },
+    {
+      "title": "19.A Very Dear Cat",
+      "filename": "19.A Very Dear Cat"
+    },
+    {
+      "title": "20.Pioneer Pilots",
+      "filename": "20.Pioneer Pilots"
+    },
+    {
+      "title": "21.Daniel Mendoza",
+      "filename": "21.Daniel Mendoza"
+    },
+    {
+      "title": "22.By Heart",
+      "filename": "22.By Heart"
+    },
+    {
+      "title": "23.One Man's Meat is Another Man's Poison",
+      "filename": "23.One Man's Meat is Another Man's Poison"
+    },
+    {
+      "title": "24.A Skeleton in the Cupboard",
+      "filename": "24.A Skeleton in the Cupboard"
+    },
+    {
+      "title": "25.The Cutty Sark",
+      "filename": "25.The Cutty Sark"
+    },
+    {
+      "title": "26.Wanted a Large Biscuit Tin",
+      "filename": "26.Wanted a Large Biscuit Tin"
+    },
+    {
+      "title": "27.Nothing to Sell and Nothing to Buy",
+      "filename": "27.Nothing to Sell and Nothing to Buy"
+    },
+    {
+      "title": "28.Five Pounds Too Dear",
+      "filename": "28.Five Pounds Too Dear"
+    },
+    {
+      "title": "29.Funny or Not",
+      "filename": "29.Funny or Not"
+    },
+    {
+      "title": "30.The Death of a Ghost",
+      "filename": "30.The Death of a Ghost"
+    },
+    {
+      "title": "31.A Lovable Eccentric",
+      "filename": "31.A Lovable Eccentric"
+    },
+    {
+      "title": "32.A Lost Ship",
+      "filename": "32.A Lost Ship"
+    },
+    {
+      "title": "33.A Day to Remember",
+      "filename": "33.A Day to Remember"
+    },
+    {
+      "title": "34.A Happy Discovery",
+      "filename": "34.A Happy Discovery"
+    },
+    {
+      "title": "35.Justice was Done",
+      "filename": "35.Justice was Done"
+    },
+    {
+      "title": "36.A Chance in a Million",
+      "filename": "36.A Chance in a Million"
+    },
+    {
+      "title": "37.The Westhaven Express",
+      "filename": "37.The Westhaven Express"
+    },
+    {
+      "title": "38.The First Calendar",
+      "filename": "38.The First Calendar"
+    },
+    {
+      "title": "39.Nothing to Worry About",
+      "filename": "39.Nothing to Worry About"
+    },
+    {
+      "title": "40.Who's Who",
+      "filename": "40.Who's Who"
+    },
+    {
+      "title": "41.Illusions of Pastoral Peace",
+      "filename": "41.Illusions of Pastoral Peace"
+    },
+    {
+      "title": "42.Modern Cavemen",
+      "filename": "42.Modern Cavemen"
+    },
+    {
+      "title": "43.Fully Insured",
+      "filename": "43.Fully Insured"
+    },
+    {
+      "title": "44.Speed and Comfort",
+      "filename": "44.Speed and Comfort"
+    },
+    {
+      "title": "45.The Power of the Press",
+      "filename": "45.The Power of the Press"
+    },
+    {
+      "title": "46.Do It Yourself",
+      "filename": "46.Do It Yourself"
+    },
+    {
+      "title": "47.Too High a Price",
+      "filename": "47.Too High a Price"
+    },
+    {
+      "title": "48.The Silent Village",
+      "filename": "48.The Silent Village"
+    },
+    {
+      "title": "49.The Ideal Servant",
+      "filename": "49.The Ideal Servant"
+    },
+    {
+      "title": "50.New Year Resolutions",
+      "filename": "50.New Year Resolutions"
+    },
+    {
+      "title": "51.Predicting the Future",
+      "filename": "51.Predicting the Future"
+    },
+    {
+      "title": "52.Mud is Mud",
+      "filename": "52.Mud is Mud"
+    },
+    {
+      "title": "53.In the Public Interest",
+      "filename": "53.In the Public Interest"
+    },
+    {
+      "title": "54.Instinct or Cleverness",
+      "filename": "54.Instinct or Cleverness"
+    },
+    {
+      "title": "55.From the Earth Greetings",
+      "filename": "55.From the Earth Greetings"
+    },
+    {
+      "title": "56.Our Neighbour, the River",
+      "filename": "56.Our Neighbour, the River"
+    },
+    {
+      "title": "57.Back in the Old Country",
+      "filename": "57.Back in the Old Country"
+    },
+    {
+      "title": "58.A Spot of Bother",
+      "filename": "58.A Spot of Bother"
+    },
+    {
+      "title": "59.Collecting",
+      "filename": "59.Collecting"
+    },
+    {
+      "title": "60.Too Early and Too Late",
+      "filename": "60.Too Early and Too Late"
+    }
+  ]
+}

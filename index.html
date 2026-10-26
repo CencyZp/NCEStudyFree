@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-font="md">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>NCE StudyFree · 新概念英语 1–4 本地学习站</title>
+    <meta
+      name="description"
+      content="新概念英语 1–4 本地学习站：逐句点读、中英对照、词汇语法、自动生成练习、生词间隔重复与本地学习进度。"
+    />
+    <meta name="theme-color" content="#f6f1e7" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/icons/favicon.ico" sizes="any" />
+    <link rel="icon" href="./assets/icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <div id="app"></div>
+    <div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="true"></div>
+    <div id="modal-root"></div>
+    <noscript>
+      <div style="max-width: 640px; margin: 80px auto; padding: 24px; font-family: sans-serif">
+        <h1>需要启用 JavaScript</h1>
+        <p>本站的课文点读、练习与本地进度都依赖浏览器 JavaScript。</p>
+      </div>
+    </noscript>
+    <script src="./data/books.js"></script>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
