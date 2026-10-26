@@ -100,7 +100,7 @@ const NAV_ITEMS = [
 function navLink(item) {
   return h(
     'a',
-    { class: 'nav-link', href: `#${item.path}`, 'data-nav': item.match[0] },
+    { class: 'nav-link', href: `#${item.path}`, 'data-nav': item.match[0], 'aria-label': item.label },
     icon(item.icon, 18),
     h('span', {}, item.label),
   );
@@ -146,7 +146,7 @@ function buildShell() {
     ),
   );
 
-  const main = h('main', { class: 'main', id: 'main' }, h('div', { class: 'view', id: 'view' }));
+  const main = h('main', { class: 'main', id: 'main', tabindex: '-1' }, h('div', { class: 'view', id: 'view' }));
 
   const footer = h(
     'footer',
@@ -167,7 +167,7 @@ function buildShell() {
   const bottomNav = h(
     'nav',
     { class: 'bottom-nav', 'aria-label': '移动端导航' },
-    NAV_ITEMS.filter((item) => ['/', '/book/1', '/review', '/stats'].includes(item.path)).map((item) =>
+    NAV_ITEMS.filter((item) => ['/', '/book/1', '/review', '/stats', '/settings'].includes(item.path)).map((item) =>
       h(
         'a',
         { class: 'bottom-link', href: `#${item.path}`, 'data-nav': item.match[0] },
@@ -264,7 +264,10 @@ function makeContext(location, signal) {
 
 async function handleRoute(location) {
   routeController?.abort();
-  routeController = new AbortController();
+  const controller = new AbortController();
+  routeController = controller;
+  const { signal } = controller;
+
   if (routeCleanup) {
     try {
       routeCleanup();
@@ -282,7 +285,7 @@ async function handleRoute(location) {
   updateNav(location.pathname);
 
   try {
-    const ctx = makeContext(location, routeController.signal);
+    const ctx = makeContext(location, signal);
     const { pathname } = location;
     let cleanup = null;
 
@@ -308,15 +311,22 @@ async function handleRoute(location) {
       }
     }
 
+    if (signal.aborted) {
+      if (typeof cleanup === 'function') cleanup();
+      return;
+    }
+
     clear(view);
     view.appendChild(container);
     routeCleanup = typeof cleanup === 'function' ? cleanup : null;
+    document.getElementById('main')?.focus({ preventScroll: true });
   } catch (error) {
+    if (signal.aborted) return;
     console.error(error);
     clear(view);
     view.appendChild(errorView(error, () => handleRoute(parseLocation())));
   }
-  scrollTop();
+  if (!signal.aborted) scrollTop();
 }
 
 function registerServiceWorker() {
@@ -343,7 +353,11 @@ function init() {
     return;
   }
 
+  store.onError = () => {
+    toast('浏览器本地存储不可用，学习进度可能无法保存。建议在设置中导出备份。', 'error', 8000);
+  };
   store.load();
+  store.watchExternalChanges();
   applyTheme();
   buildShell();
   updateStreak();

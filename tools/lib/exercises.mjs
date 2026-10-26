@@ -79,10 +79,31 @@ const STOP_WORDS = new Set([
   'had', 'will', 'would', 'can', 'could', 'may', 'might', 'must', 'shall', 'should',
 ]);
 
+export function optionKey(value) {
+  return String(value ?? '')
+    .toLowerCase()
+    // 去掉括号里的英文/补充说明，避免“被动语态 (Passive Voice)”与全角括号版本重复
+    .replace(/[（(][^）)]*[）)]/g, '')
+    .replace(/[\s\p{P}]/gu, '')
+    .trim();
+}
+
+const GRAMMAR_HINT =
+  /(时态|语态|从句|句型|疑问|否定|祈使|感叹|比较|倒装|虚拟|强调|省略|独立|不定式|动名词|分词|冠词|名词|代词|形容词|副词|介词|连词|数词|情态|助动词|be动词|there be|被动|主动|直接引语|间接引语|主语|谓语|宾语|定语|状语|表语|tense|voice|clause|question|sentence|pattern|infinitive|gerund|participle|article|pronoun|adjective|adverb|preposition|conjunction|modal|passive|active|reported speech|conditional|comparative|superlative)/i;
+
+/** 过滤 notes 里混入 grammar 数组的短语/插入语（如 "Before long"）。 */
+export function looksLikeGrammar(title, definition = '') {
+  const text = String(title || '').trim();
+  if (!text) return false;
+  if (GRAMMAR_HINT.test(`${text} ${definition}`)) return true;
+  if (/[\u4e00-\u9fff]/.test(text)) return true;
+  if (/^[a-z]/.test(text)) return false;
+  return text.split(/\s+/).length > 3;
+}
+
 function choiceOptions(correct, distractors, random, maxOptions = 4) {
-  const unique = uniqueBy(distractors, (item) => String(item).trim().toLowerCase()).filter(
-    (item) => String(item).trim().toLowerCase() !== String(correct).trim().toLowerCase(),
-  );
+  const correctKey = optionKey(correct);
+  const unique = uniqueBy(distractors, optionKey).filter((item) => optionKey(item) !== correctKey);
   if (!unique.length) return null;
   const options = shuffle([correct, ...pickMany(unique, maxOptions - 1, random)], random);
   return { options, answer: options.indexOf(correct) };
@@ -146,19 +167,35 @@ function escapeRegExp(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+function contextWordCount(blanked) {
+  return String(blanked)
+    .replace(/_+/g, ' ')
+    .replace(/[^\p{L}\p{N}\s']/gu, ' ')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
+}
+
 function makePhraseFill(unit, random) {
-  const candidates = unit.phrases.filter(
-    (phrase) =>
-      phrase.phrase &&
-      phrase.phrase.length >= 3 &&
-      phrase.examples?.some((example) => example.en && new RegExp(escapeRegExp(phrase.phrase), 'i').test(example.en)),
-  );
+  const candidates = unit.phrases
+    .map((phrase) => {
+      if (!phrase.phrase || phrase.phrase.length < 3) return null;
+      const regex = new RegExp(escapeRegExp(phrase.phrase), 'i');
+      const examples = (phrase.examples || []).filter((example) => {
+        if (!example.en || !regex.test(example.en)) return false;
+        // 例句本身只有这个短语时，挖空后没有上下文，无法作答
+        const blanked = example.en.replace(regex, '_____');
+        return (
+          normalizeAnswer(example.en) !== normalizeAnswer(phrase.phrase) &&
+          contextWordCount(blanked) >= 2
+        );
+      });
+      return examples.length ? { phrase, examples } : null;
+    })
+    .filter(Boolean);
   if (!candidates.length) return null;
-  const phrase = pick(candidates, random);
-  const example = pick(
-    phrase.examples.filter((item) => new RegExp(escapeRegExp(phrase.phrase), 'i').test(item.en)),
-    random,
-  );
+  const { phrase, examples } = pick(candidates, random);
+  const example = pick(examples, random);
   const blanked = example.en.replace(new RegExp(escapeRegExp(phrase.phrase), 'i'), '_____');
   return {
     type: 'phrase-fill',
@@ -203,20 +240,30 @@ function makeCloze(unit, random) {
 }
 
 function makeGrammarChoice(unit, pools, random) {
-  const candidates = unit.grammar.filter((item) => item.title && item.definition);
+  const candidates = unit.grammar.filter(
+    (item) => item.title && (item.definition || item.usage) && looksLikeGrammar(item.title, item.definition),
+  );
   if (!candidates.length) return null;
   const grammar = pick(candidates, random);
+  const titleKey = optionKey(grammar.title);
+  const promptText = [grammar.definition, grammar.usage].find(
+    (value) => value && !optionKey(value).includes(titleKey),
+  );
+  if (!promptText) return null;
   const options = choiceOptions(
     grammar.title,
-    pools.grammar.filter((item) => item.title && item.title !== grammar.title).map((item) => item.title),
+    pools.grammar
+      .filter((item) => item.title && looksLikeGrammar(item.title, item.definition))
+      .map((item) => item.title),
     random,
   );
   if (!options) return null;
+  const hint = grammar.structure && !optionKey(grammar.structure).includes(titleKey) ? grammar.structure : '';
   return {
     type: 'grammar-choice',
     kind: 'choice',
-    prompt: `“${grammar.definition}” 描述的是哪个语法点？`,
-    hint: grammar.structure || '',
+    prompt: `“${promptText}” 描述的是哪个语法点？`,
+    hint,
     options: options.options,
     answer: options.answer,
     explain: [grammar.title, grammar.structure, grammar.usage].filter(Boolean).join('：'),
@@ -249,7 +296,12 @@ function makeTranslationChoice(unit, pools, random) {
 function makeDictation(unit, random) {
   const candidates = unit.sentences.filter((sentence) => {
     const count = wordCount(sentence.en);
-    return count >= 4 && count <= 20 && /[A-Za-z]/.test(sentence.en);
+    return (
+      count >= 4 &&
+      count <= 14 &&
+      /^[A-Z"'“]/.test(String(sentence.en).trim()) &&
+      /[A-Za-z]/.test(sentence.en)
+    );
   });
   if (!candidates.length) return null;
   const sentence = pick(candidates, random);

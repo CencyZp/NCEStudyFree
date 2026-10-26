@@ -4,6 +4,7 @@ export class TTS {
     this.supported = typeof window !== 'undefined' && 'speechSynthesis' in window;
     this.voices = [];
     this.current = null;
+    this.generation = 0;
     this.listeners = new Set();
     if (this.supported) {
       this.refresh();
@@ -62,7 +63,8 @@ export class TTS {
       return null;
     }
     if (!text || !String(text).trim()) return null;
-    this.cancel();
+    const generation = ++this.generation;
+    this.cancelSpeech();
     const utterance = new SpeechSynthesisUtterance(String(text));
     const voice = this.resolveVoice(voiceName);
     if (voice) {
@@ -73,12 +75,17 @@ export class TTS {
     }
     utterance.rate = Math.min(1.5, Math.max(0.5, Number(rate) || 1));
     utterance.pitch = 1;
-    utterance.onstart = () => onStart?.();
+    utterance.onstart = () => {
+      if (generation !== this.generation) return;
+      onStart?.();
+    };
     utterance.onend = () => {
+      if (generation !== this.generation) return;
       if (this.current === utterance) this.current = null;
       onEnd?.();
     };
     utterance.onerror = (event) => {
+      if (generation !== this.generation) return;
       if (this.current === utterance) this.current = null;
       onError?.(event.error || event);
     };
@@ -93,14 +100,26 @@ export class TTS {
     return utterance;
   }
 
-  cancel() {
+  cancelSpeech() {
+    const current = this.current;
+    this.current = null;
+    if (current) {
+      // 解绑旧回调，避免 cancel() 触发的 onend/onerror 作用到新播放
+      current.onstart = null;
+      current.onend = null;
+      current.onerror = null;
+    }
     if (!this.supported) return;
     try {
       window.speechSynthesis.cancel();
     } catch {
       /* 忽略 */
     }
-    this.current = null;
+  }
+
+  cancel() {
+    this.generation += 1;
+    this.cancelSpeech();
   }
 
   pause() {

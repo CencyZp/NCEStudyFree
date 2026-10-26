@@ -33,6 +33,7 @@ export async function renderLesson(container, ctx, bookId, unitId) {
     return;
   }
   await ctx.ensureBookData(bookId);
+  if (ctx.signal.aborted) return;
   const unit = ctx.getUnit(bookId, unitId);
   if (!unit) {
     container.appendChild(emptyPanel('没有找到这一课', '课号可能已变化，请返回课程列表重新选择。'));
@@ -380,6 +381,8 @@ export async function renderLesson(container, ctx, bookId, unitId) {
   recordBtn.disabled = !ctx.recorder.supported;
   let recordedUrl = '';
   recordBtn.addEventListener('click', async () => {
+    if (recordBtn.disabled) return;
+    recordBtn.disabled = true;
     try {
       if (ctx.recorder.isRecording) {
         recordedUrl = await ctx.recorder.stop();
@@ -392,8 +395,11 @@ export async function renderLesson(container, ctx, bookId, unitId) {
         recordStatus.textContent = '正在录音…再次点击停止。';
       }
     } catch (error) {
-      recordStatus.textContent = error?.name === 'NotAllowedError' ? '麦克风权限被拒绝。' : '无法开始录音，请检查麦克风。';
+      recordStatus.textContent =
+        error?.name === 'NotAllowedError' ? '麦克风权限被拒绝。' : '无法开始录音，请检查麦克风。';
       toast(recordStatus.textContent, 'error');
+    } finally {
+      recordBtn.disabled = !ctx.recorder.supported;
     }
   });
   replayBtn.addEventListener('click', () => {
@@ -684,6 +690,7 @@ export async function renderLesson(container, ctx, bookId, unitId) {
                 type: 'button',
                 class: `option ${selected ? 'is-selected' : ''} ${isCorrect ? 'is-correct' : ''} ${isWrong ? 'is-wrong' : ''}`,
                 disabled: practiceState.submitted,
+                'aria-pressed': String(selected),
                 onclick: () => select(index),
               },
               h('span', { class: 'option-key' }, String.fromCharCode(65 + index)),
@@ -731,7 +738,11 @@ export async function renderLesson(container, ctx, bookId, unitId) {
     const feedback = practiceState.submitted
       ? h(
           'div',
-          { class: `feedback ${checkAnswer(question, practiceState.selected) ? 'is-correct' : 'is-wrong'}` },
+          {
+            class: `feedback ${checkAnswer(question, practiceState.selected) ? 'is-correct' : 'is-wrong'}`,
+            role: 'status',
+            'aria-live': 'polite',
+          },
           h(
             'div',
             { class: 'feedback-head' },
@@ -770,6 +781,12 @@ export async function renderLesson(container, ctx, bookId, unitId) {
     );
     if (answerInput && !practiceState.submitted) {
       setTimeout(() => answerInput.focus({ preventScroll: true }), 0);
+    } else if (practiceState.submitted) {
+      requestAnimationFrame(() =>
+        practiceRoot.querySelector('.practice-actions .btn-primary')?.focus({ preventScroll: true }),
+      );
+    } else if (question.kind === 'choice' && Number.isInteger(practiceState.selected)) {
+      requestAnimationFrame(() => optionButtons[practiceState.selected]?.focus({ preventScroll: true }));
     }
   }
 
@@ -850,6 +867,7 @@ export async function renderLesson(container, ctx, bookId, unitId) {
     h('div', { class: 'lesson-footer-nav' }, navButton(prevUnit, '上一课', 'back'), navButton(nextUnit, '下一课', 'chevron')),
   );
 
+  if (ctx.signal.aborted) return;
   switchTab(state.tab);
 
   // ---------- 学习时长与快捷键 ----------

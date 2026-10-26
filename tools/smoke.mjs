@@ -131,9 +131,19 @@ try {
   await page.waitForSelector('.flashcard');
   await page.locator('.flashcard').click();
   await page.waitForSelector('.grade-row:not([hidden])');
-  await page.locator('.grade-good').click();
+  const cardId = await page.evaluate(() => Object.keys(window.NCE_APP.store.state.srs)[0]);
+  await page.keyboard.press('3');
   await page.waitForSelector('.review-done');
-  check((await page.locator('.review-done').innerText()).includes('复习完'), '生词评分后完成当日复习');
+  check((await page.locator('.review-done').innerText()).includes('复习完'), '生词键盘评分后完成当日复习');
+  const graded = await page.evaluate((id) => window.NCE_APP.store.state.srs[id], cardId);
+  await page.keyboard.press('Space');
+  await page.keyboard.press('1');
+  await page.waitForTimeout(200);
+  const afterStaleKeys = await page.evaluate((id) => window.NCE_APP.store.state.srs[id], cardId);
+  check(
+    graded.reps === afterStaleKeys.reps && graded.interval === afterStaleKeys.interval,
+    '复习完成后快捷键不会重复评分',
+  );
   await page.waitForTimeout(3000);
   await shot(page, 'review-srs.png');
 
@@ -141,6 +151,11 @@ try {
   await page.goto(`${BASE}#/search?q=handbag`, { waitUntil: 'networkidle' });
   await page.waitForSelector('.search-result', { timeout: 15000 });
   check((await page.locator('.search-result').count()) > 0, '搜索结果非空');
+  await page.waitForTimeout(120);
+  check(
+    (await page.evaluate(() => document.activeElement?.classList?.contains('search-input'))) === true,
+    '搜索页自动聚焦输入框',
+  );
   await shot(page, 'search.png');
 
   // 复习 / 统计 / 设置
@@ -196,6 +211,7 @@ try {
     mobile.scrollWidth <= mobile.clientWidth + 1,
     `移动端首页无横向溢出 (${mobile.scrollWidth}/${mobile.clientWidth})${mobile.offenders.length ? `；溢出：${mobile.offenders.join(', ')}` : ''}`,
   );
+  check((await page.locator('.bottom-link').count()) === 5, '移动端底栏包含设置入口');
   await shot(page, 'home-mobile.png');
 
   await page.goto(`${BASE}#/lesson/b1-u01`, { waitUntil: 'networkidle' });
@@ -213,6 +229,29 @@ try {
   const mobilePractice = await metrics(page);
   check(mobilePractice.scrollWidth <= mobilePractice.clientWidth + 1, '移动端练习页无横向溢出');
   await shot(page, 'practice-mobile.png');
+
+  // 慢网路由竞态：旧课程页加载完成后不能覆盖新首页，也不能改写 hash
+  const raceContext = await browser.newContext({
+    viewport: { width: 1440, height: 1000 },
+    locale: 'zh-CN',
+    serviceWorkers: 'block',
+  });
+  const racePage = await raceContext.newPage();
+  await racePage.route('**/data/book1.js', async (route) => {
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+    await route.continue();
+  });
+  await racePage.goto(BASE, { waitUntil: 'networkidle' });
+  await racePage.goto(`${BASE}#/lesson/b1-u01`, { waitUntil: 'domcontentloaded' });
+  await racePage.waitForTimeout(120);
+  await racePage.goto(BASE, { waitUntil: 'domcontentloaded' });
+  await racePage.waitForSelector('.hero', { timeout: 15000 });
+  await racePage.waitForTimeout(2000);
+  const raceHash = await racePage.evaluate(() => window.location.hash);
+  const raceLessonCount = await racePage.locator('.lesson-header').count();
+  check(raceHash === '' || raceHash === '#/', `慢加载旧路由不改写首页 hash（实际 ${raceHash || '(空)'}）`);
+  check(raceLessonCount === 0, '慢加载旧路由不覆盖首页');
+  await raceContext.close();
 } catch (error) {
   errors.push(`运行异常：${error.stack || error.message}`);
 } finally {

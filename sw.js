@@ -1,5 +1,5 @@
 /* NCE StudyFree service worker：离线缓存与按册数据更新。 */
-const CACHE = 'nce-study-v3';
+const CACHE = 'nce-study-v4';
 const CORE = [
   './',
   './index.html',
@@ -36,8 +36,21 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE);
-      // 逐个缓存，个别资源缺失不影响整体安装
-      await Promise.all(CORE.map((url) => cache.add(url).catch(() => {})));
+      let failed = 0;
+      await Promise.all(
+        CORE.map(async (url) => {
+          try {
+            await cache.add(url);
+          } catch {
+            failed += 1;
+          }
+        }),
+      );
+      if (failed) {
+        // 安装失败时保留旧缓存，避免用不完整的离线包替换可用版本
+        await caches.delete(CACHE);
+        throw new Error(`NCE StudyFree: ${failed} 个核心资源缓存失败`);
+      }
       await self.skipWaiting();
     })(),
   );

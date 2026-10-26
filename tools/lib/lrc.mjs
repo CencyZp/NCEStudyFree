@@ -65,6 +65,8 @@ export function parseLrc(text, options = {}) {
 
     const { en, zh } = splitBilingual(content);
     if (!en) continue;
+    // 部分 LRC 会在开头放分区标题 “English / 英语”
+    if (/^(English|New Concept English|NCE)$/i.test(en)) continue;
     rows.push({ en, zh, t: parseTimeTag(timeMatch) });
   }
 
@@ -75,6 +77,7 @@ export function parseLrc(text, options = {}) {
   let question = '';
   let lessonNumber = null;
   let skippedInstruction = false;
+  let hadInstruction = false;
   let titleRowSkipped = false;
 
   for (const row of rows) {
@@ -96,6 +99,7 @@ export function parseLrc(text, options = {}) {
     // 课文前的听力指令
     if (/^Listen to the tape/i.test(row.en)) {
       skippedInstruction = true;
+      hadInstruction = true;
       continue;
     }
 
@@ -114,9 +118,35 @@ export function parseLrc(text, options = {}) {
     sentences.push(row);
   }
 
-  // 部分 LRC 的标题行在课文之后或缺少 [ti:]，用第一句是否为标题兜底
-  if (!titleEn && sentences.length && !question) {
-    // 不猜测标题，交给调用方 fallback
+  // 部分 LRC 把理解问题拆成两行，或先放一句标题回声。
+  if ((extractQuestion || hadInstruction) && sentences.length >= 2) {
+    const [first, second] = sentences;
+    if (
+      second.en.endsWith('?') &&
+      /^(The word|In the text|Look at|Read|Listen to|Study)/i.test(first.en)
+    ) {
+      question = question || second.en;
+      sentences.splice(0, 2);
+    } else if (
+      !question &&
+      second.en.endsWith('?') &&
+      !first.en.endsWith('?') &&
+      `${first.en} ${second.en}`.split(/\s+/).length <= 20
+    ) {
+      question = `${first.en} ${second.en}`;
+      sentences.splice(0, 2);
+    }
+  }
+
+  if (
+    question &&
+    sentences.length &&
+    /^(Do|Is|Are|Can|Did|Will|Would|Have|Has|Should|May|Must)\b/i.test(question) &&
+    sentences[0].en.endsWith('?') &&
+    /^(Why|What|Where|When|Who|How|Which)\b/i.test(sentences[0].en)
+  ) {
+    question = sentences[0].en;
+    sentences.shift();
   }
 
   return {

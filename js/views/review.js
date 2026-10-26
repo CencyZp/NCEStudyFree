@@ -100,13 +100,14 @@ export async function renderReview(container, ctx) {
 
     state.queue = state.queue.filter((card) => store.state.srs[card.id]);
     if (!state.queue.length) {
+      activeCard = null;
       const next = all[0];
       content.appendChild(
         h(
           'section',
           { class: 'card review-done' },
           h('span', { class: 'empty-icon' }, icon('check', 30)),
-          h('h2', {}, '今天的生词已复习完'),
+          h('h2', { tabindex: '-1' }, '今天的生词已复习完'),
           h('p', { class: 'muted' }, `下一张：${next.word}，${store.srsDueLabel(next)}。`),
           h(
             'div',
@@ -136,9 +137,9 @@ export async function renderReview(container, ctx) {
       'div',
       {
         class: `flashcard ${state.flipped ? 'is-flipped' : ''}`,
-        role: 'button',
+        role: 'group',
         tabindex: '0',
-        'aria-label': '点击翻面',
+        'aria-labelledby': 'flash-word',
         onclick: () => {
           state.flipped = !state.flipped;
           card.classList.toggle('is-flipped', state.flipped);
@@ -160,7 +161,7 @@ export async function renderReview(container, ctx) {
       h(
         'div',
         { class: 'flashcard-front' },
-        h('h1', { class: 'flash-word' }, activeCard.word),
+        h('h1', { class: 'flash-word', id: 'flash-word' }, activeCard.word),
         activeCard.phonetic ? h('p', { class: 'phonetic' }, activeCard.phonetic) : null,
         activeCard.pos ? h('p', { class: 'muted' }, activeCard.pos) : null,
         h('p', { class: 'flash-hint' }, '点击卡片或按空格查看释义'),
@@ -223,6 +224,9 @@ export async function renderReview(container, ctx) {
       h('div', { class: 'review-actions' }, nextButton, h('a', { class: 'btn btn-ghost', href: '#/stats' }, '学习统计')),
       h('p', { class: 'muted shortcut-hint' }, '空格翻面 · 1 重来 · 2 困难 · 3 记得 · 4 太简单'),
     );
+    requestAnimationFrame(() => {
+      if (!ctx.signal.aborted) document.querySelector('.flashcard')?.focus({ preventScroll: true });
+    });
   }
 
   function renderMistakes() {
@@ -367,10 +371,12 @@ export async function renderReview(container, ctx) {
       const target = event.target;
       if (
         target instanceof HTMLElement &&
-        (target.matches('input, textarea, select') ||
-          target.isContentEditable ||
-          target.closest('button, a, summary, .flashcard'))
+        (target.matches('input, textarea, select') || target.isContentEditable)
       ) {
+        return;
+      }
+      // 卡片本身、按钮和链接有原生键盘行为；数字评分仍应可用
+      if (event.code === 'Space' && target instanceof HTMLElement && target.closest('button, a, summary, .flashcard')) {
         return;
       }
       if (event.code === 'Space') {
@@ -378,6 +384,8 @@ export async function renderReview(container, ctx) {
         state.flipped = !state.flipped;
         renderSrs();
       } else if (state.flipped && /^[1-4]$/.test(event.key)) {
+        if (!activeCard || !state.queue.some((card) => card.id === activeCard.id)) return;
+        event.preventDefault();
         const grade = GRADES[Number(event.key) - 1];
         const updated = store.gradeSrs(activeCard.id, grade);
         if (updated) toast(`已记录：${GRADE_LABELS[grade]}，${store.srsDueLabel(updated)}复习`, 'success');

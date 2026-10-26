@@ -61,3 +61,40 @@ test('支持全角分隔符', () => {
   const parsed = parseLrc(text, { extractQuestion: true });
   assert.equal(parsed.sentences[0].zh, '早上好！');
 });
+
+test('把拆成两行的理解问题合并为 question', () => {
+  const text = `[ti:The Best and the Worst]
+[00:09.96]Why is Joe's garden | 为什么乔的花园
+[00:12.05]the most beautiful one in the town? | 是镇上最漂亮的一个？
+[00:16.92]Joe Sanders has the most beautiful garden | 乔拥有最美丽的花园
+`;
+  const parsed = parseLrc(text, { extractQuestion: true });
+  assert.equal(parsed.question, "Why is Joe's garden the most beautiful one in the town?");
+  assert.equal(parsed.sentences.length, 1);
+  assert.equal(parsed.sentences[0].en, 'Joe Sanders has the most beautiful garden');
+});
+
+test('标题回声后优先采用真正的 wh- 理解问题', () => {
+  const text = `[ti:Do the English Speak English]
+[00:03.30]Do they speak English? | 他们说英语吗？
+[00:12.26]Why does the writer not understand the porter? | 为什么作者听不懂搬运工？
+[00:17.71]I arrived in London at last. | 我终于抵达伦敦了。
+`;
+  const parsed = parseLrc(text, { extractQuestion: true });
+  assert.equal(parsed.question, 'Why does the writer not understand the porter?');
+  assert.equal(parsed.sentences.length, 1);
+  assert.equal(parsed.sentences[0].en, 'I arrived in London at last.');
+});
+
+test('过滤分区标题 English', () => {
+  const text = `[ti:Hurry Up]
+[00:00.78]English | 英语
+[00:03.16]Hurry up! | 快点！
+[00:05.71]Listen to the tape then answer this question. | 听录音，然后回答问题。
+[00:11.33]How do you know? | 你怎么知道？
+[00:18.21]Can you make the tea, Sam? | 山姆，你会泡茶吗？
+`;
+  const parsed = parseLrc(text, { extractQuestion: false });
+  assert.equal(parsed.question, 'How do you know?');
+  assert.equal(parsed.sentences[0].en, 'Can you make the tea, Sam?');
+});

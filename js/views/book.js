@@ -38,7 +38,7 @@ function unitRow(unit, store) {
     h(
       'div',
       { class: 'unit-main' },
-      h('h3', { class: 'unit-title' }, unit.title),
+      h('h3', { class: 'unit-title', title: unit.title }, unit.title),
       h(
         'p',
         { class: 'unit-sub' },
@@ -76,6 +76,7 @@ export async function renderBook(container, ctx, bookId) {
   }
 
   await ctx.ensureBookData(bookId);
+  if (ctx.signal.aborted) return;
   const data = window.NCE.booksData[bookId];
   const units = data?.units || [];
   if (!units.length) throw new Error('课程数据为空');
@@ -84,8 +85,13 @@ export async function renderBook(container, ctx, bookId) {
   const done = units.filter((unit) => progressById[unit.id]?.status === 'done').length;
   const learning = units.filter((unit) => progressById[unit.id]?.status === 'learning').length;
   const percent = units.length ? done / units.length : 0;
+  const lastInBook = units.find((unit) => unit.id === store.state.lastLesson);
+  const mostRecent = units
+    .filter((unit) => progressById[unit.id]?.lastVisit)
+    .sort((a, b) => (progressById[b.id]?.lastVisit || 0) - (progressById[a.id]?.lastVisit || 0))[0];
   const resume =
-    [...units].reverse().find((unit) => progressById[unit.id]?.lastVisit) ||
+    lastInBook ||
+    mostRecent ||
     units.find((unit) => progressById[unit.id]?.status !== 'done') ||
     units[0];
 

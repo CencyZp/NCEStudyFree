@@ -12,24 +12,40 @@ export class Recorder {
     this.chunks = [];
     this.url = '';
     this.audio = null;
+    this.starting = false;
+    this.cancelled = false;
   }
 
   async start() {
     if (!this.supported) throw new Error('当前浏览器不支持录音');
+    if (this.starting) throw new Error('录音正在启动');
+    this.starting = true;
+    this.cancelled = false;
     this.stopPlayback();
     this.discard();
-    this.stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-    const mimeType = ['audio/webm;codecs=opus', 'audio/webm', 'audio/mp4', ''].find((type) => {
-      if (!type) return true;
-      return window.MediaRecorder.isTypeSupported?.(type);
-    });
-    this.recorder = new MediaRecorder(this.stream, mimeType ? { mimeType } : undefined);
-    this.chunks = [];
-    this.recorder.addEventListener('dataavailable', (event) => {
-      if (event.data?.size) this.chunks.push(event.data);
-    });
-    this.recorder.start();
-    return true;
+    this.cleanupStream();
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      // 权限弹窗期间用户可能已离开页面
+      if (this.cancelled) {
+        stream.getTracks().forEach((track) => track.stop());
+        throw new Error('录音已取消');
+      }
+      this.stream = stream;
+      const mimeType = ['audio/webm;codecs=opus', 'audio/webm', 'audio/mp4', ''].find((type) => {
+        if (!type) return true;
+        return window.MediaRecorder.isTypeSupported?.(type);
+      });
+      this.recorder = new MediaRecorder(this.stream, mimeType ? { mimeType } : undefined);
+      this.chunks = [];
+      this.recorder.addEventListener('dataavailable', (event) => {
+        if (event.data?.size) this.chunks.push(event.data);
+      });
+      this.recorder.start();
+      return true;
+    } finally {
+      this.starting = false;
+    }
   }
 
   async stop() {
@@ -75,6 +91,14 @@ export class Recorder {
 
   discard() {
     this.stopPlayback();
+    if (this.recorder && this.recorder.state !== 'inactive') {
+      try {
+        this.recorder.stop();
+      } catch {
+        /* 忽略 */
+      }
+    }
+    this.recorder = null;
     if (this.url) {
       URL.revokeObjectURL(this.url);
       this.url = '';
@@ -82,6 +106,7 @@ export class Recorder {
   }
 
   destroy() {
+    this.cancelled = true;
     this.discard();
     this.cleanupStream();
     this.recorder = null;

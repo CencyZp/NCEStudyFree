@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T07:34:51.494Z",
+  "generatedAt": "2026-10-26T07:58:28.197Z",
   "sources": {
     "lrc": "iChochy/NCE (https://nce.mleo.site)",
     "notes": "LiDuoMiao/new-concept-english (MIT)"
@@ -8,12 +8,12 @@
     "books": 4,
     "units": 276,
     "lessons": 348,
-    "sentences": 5342,
-    "vocab": 3971,
+    "sentences": 5332,
+    "vocab": 3968,
     "phrases": 2427,
     "grammar": 778,
     "patterns": 1022,
-    "exercises": 1655,
+    "exercises": 1654,
     "bilingualRatio": 1
   },
   "books": [
@@ -27,12 +27,12 @@
       "description": "从问候、日常句型与基础语法起步，建立语音、词汇和语感。",
       "units": 72,
       "lessons": 144,
-      "sentences": 1228,
-      "vocab": 995,
+      "sentences": 1225,
+      "vocab": 994,
       "phrases": 627,
       "grammar": 210,
       "patterns": 283,
-      "exercises": 431,
+      "exercises": 430,
       "bilingualRatio": 1
     },
     {
@@ -45,8 +45,8 @@
       "description": "系统梳理时态、从句与常见表达，听说读写同步提升。",
       "units": 96,
       "lessons": 96,
-      "sentences": 1334,
-      "vocab": 1410,
+      "sentences": 1329,
+      "vocab": 1408,
       "phrases": 920,
       "grammar": 282,
       "patterns": 379,
@@ -63,7 +63,7 @@
       "description": "训练长句、篇章结构与地道表达，进阶阅读与写作。",
       "units": 60,
       "lessons": 60,
-      "sentences": 1546,
+      "sentences": 1544,
       "vocab": 868,
       "phrases": 513,
       "grammar": 160,

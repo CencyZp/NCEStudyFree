@@ -10,7 +10,7 @@
   --surface-2: #f2ebdf;
   --ink: #20261f;
   --ink-2: #4b5548;
-  --muted: #737b6e;
+  --muted: #5c6658;
   --line: #e3d9c8;
   --primary: #14532d;
   --primary-2: #1f6f43;
@@ -79,7 +79,7 @@ img { max-width: 100%; display: block; }
 ::selection { background: var(--primary-soft); color: var(--ink); }
 
 :focus-visible {
-  outline: 3px solid color-mix(in srgb, var(--primary) 55%, transparent);
+  outline: 3px solid var(--primary);
   outline-offset: 2px;
   border-radius: 6px;
 }
@@ -225,8 +225,10 @@ img { max-width: 100%; display: block; }
   font-size: 11.5px; font-weight: 700; white-space: nowrap;
 }
 .status-new { background: var(--surface-2); color: var(--muted); }
-.status-learning { background: var(--accent-soft); color: var(--accent); }
-.status-done { background: var(--success-soft); color: var(--success); }
+.status-learning { background: var(--accent-soft); color: #8a3f07; }
+.status-done { background: var(--success-soft); color: #0f6b32; }
+[data-theme="dark"] .status-learning { color: var(--accent); }
+[data-theme="dark"] .status-done { color: var(--success); }
 .chip {
   display: inline-flex; align-items: center;
   padding: 5px 10px; border-radius: 999px;
@@ -399,7 +401,15 @@ img { max-width: 100%; display: block; }
 .unit-index strong { font-size: 22px; color: var(--ink-2); }
 .unit-index small { font-size: 11px; }
 .unit-main { min-width: 0; }
-.unit-title { margin: 0; font-size: 15.5px; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.unit-title {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .unit-sub { margin: 2px 0 0; color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .unit-sub .dot { margin: 0 6px; opacity: 0.6; }
 .unit-side { display: flex; align-items: center; gap: 8px; }
@@ -477,6 +487,7 @@ img { max-width: 100%; display: block; }
 .sentence-loop { width: 30px; height: 30px; border-radius: 50%; border: 0; background: transparent; color: var(--muted); display: inline-flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.15s, background 0.15s; }
 .sentence:hover .sentence-loop, .sentence.is-active .sentence-loop { opacity: 1; }
 .sentence-loop:hover { background: var(--surface-2); color: var(--primary); }
+.sentence-loop:focus-visible, .sentence:focus-within .sentence-loop { opacity: 1; }
 .recording-box {
   display: flex; align-items: center; flex-wrap: wrap; gap: 10px;
   margin-top: 14px; padding: 13px 15px;
@@ -607,7 +618,15 @@ img { max-width: 100%; display: block; }
 .flashcard-back { display: none; }
 .flashcard.is-flipped .flashcard-front { display: none; }
 .flashcard.is-flipped .flashcard-back { display: flex; }
-.flash-word { margin: 0; font-family: var(--serif); font-size: clamp(40px, 7vw, 64px); line-height: 1.1; letter-spacing: -0.02em; }
+.flash-word {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(28px, 7vw, 64px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 .flash-meaning { margin: 0; font-family: var(--serif); font-size: 26px; line-height: 1.4; }
 .flash-hint { margin: 22px 0 0; color: var(--muted); font-size: 12px; }
 .grade-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; max-width: 720px; margin: 14px auto 0; }
@@ -704,6 +723,7 @@ img { max-width: 100%; display: block; }
 .search-chips .chip { font-size: 11px; padding: 3px 8px; }
 
 /* ---------- Toast / modal ---------- */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .toast-root { position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%); z-index: 200; display: flex; flex-direction: column; gap: 8px; align-items: center; pointer-events: none; }
 .toast { padding: 10px 16px; border-radius: 999px; background: #1f2a22; color: #f7f1e4; font-size: 13px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); opacity: 0; transform: translateY(10px); transition: opacity 0.22s, transform 0.22s; max-width: 88vw; text-align: center; }
 .toast.show { opacity: 1; transform: none; }

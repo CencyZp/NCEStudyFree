@@ -11,7 +11,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { parseLrc, cleanText } from './lib/lrc.mjs';
-import { buildExercises } from './lib/exercises.mjs';
+import { buildExercises, optionKey } from './lib/exercises.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const SOURCE_DIR = path.join(ROOT, 'sources');
@@ -108,7 +108,7 @@ function normalizeExamples(list) {
 
 function normalizeVocab(list) {
   if (!Array.isArray(list)) return [];
-  return list
+  const normalized = list
     .map((item) => ({
       word: cleanText(item?.word || item?.term || ''),
       phonetic: cleanText(item?.phonetic || item?.ipa || ''),
@@ -121,6 +121,7 @@ function normalizeVocab(list) {
         .filter((meaning) => meaning.meaning),
     }))
     .filter((item) => item.word && item.meanings.length);
+  return uniqueBy(normalized, (item) => item.word.toLowerCase());
 }
 
 function normalizePhrases(list) {
@@ -255,7 +256,7 @@ async function main() {
       ),
       grammar: uniqueBy(
         units.flatMap((unit) => unit.grammar),
-        (item) => item.title.toLowerCase(),
+        (item) => optionKey(item.title),
       ),
       sentences: uniqueBy(
         units.flatMap((unit) => unit.sentences),

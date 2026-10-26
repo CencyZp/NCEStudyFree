@@ -99,10 +99,15 @@ export function qsa(selector, scope = document) {
 
 export function debounce(fn, delay = 250) {
   let timer;
-  return (...args) => {
+  const wrapped = (...args) => {
     clearTimeout(timer);
     timer = setTimeout(() => fn(...args), delay);
   };
+  wrapped.cancel = () => {
+    clearTimeout(timer);
+    timer = null;
+  };
+  return wrapped;
 }
 
 export function toast(message, type = 'info', duration = 2800) {
@@ -118,15 +123,34 @@ export function toast(message, type = 'info', duration = 2800) {
 
 export function openModal({ title, body, actions = [], onClose = null, className = '' }) {
   const root = document.getElementById('modal-root') || document.body;
+  const appRoot = document.getElementById('app');
   const previousFocus = document.activeElement;
   const close = () => {
     overlay.remove();
     document.removeEventListener('keydown', onKey);
+    appRoot?.removeAttribute('inert');
     previousFocus?.focus?.();
     onClose?.();
   };
   const onKey = (event) => {
-    if (event.key === 'Escape') close();
+    if (event.key === 'Escape') {
+      close();
+      return;
+    }
+    if (event.key !== 'Tab') return;
+    const focusables = [...overlay.querySelectorAll(
+      'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])',
+    )].filter((element) => element.offsetParent !== null);
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
   };
   const footer = actions.length
     ? h(
@@ -169,11 +193,12 @@ export function openModal({ title, body, actions = [], onClose = null, className
       footer,
     ),
   );
+  appRoot?.setAttribute('inert', '');
   root.appendChild(overlay);
   document.addEventListener('keydown', onKey);
   requestAnimationFrame(() => {
     overlay.classList.add('show');
-    overlay.querySelector('button, input, textarea, select')?.focus?.();
+    (overlay.querySelector('.modal-actions button') || overlay.querySelector('button, input, textarea, select'))?.focus?.();
   });
   return close;
 }

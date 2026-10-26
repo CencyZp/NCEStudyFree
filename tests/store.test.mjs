@@ -109,3 +109,56 @@ test('导入非法备份会抛错且不破坏现有状态', () => {
   assert.throws(() => store.importData('{"version":1}'), /缺少/);
   assert.equal(store.state.progress['b1-u01'].status, 'learning');
 });
+
+test('结构损坏的 JSON 会丢弃坏条目并备份原数据', () => {
+  const { store, storage } = makeStore();
+  const due = new Date(Date.now() + 86400000).toISOString();
+  storage.setItem(
+    'nce-study:v1',
+    JSON.stringify({
+      version: 1,
+      settings: {},
+      progress: { good: { status: 'learning', lastVisit: 1 }, bad: null },
+      srs: { good: { word: 'pardon', due, meaning: '请再说一遍' }, bad: null },
+      mistakes: { bad: null },
+      notes: { good: 'ok', bad: 123 },
+      daily: { bad: null, good: { answered: 1, correct: 1, seconds: 60 } },
+      favorites: [1, 'b1-u01'],
+    }),
+  );
+  store.load();
+  assert.equal(store.state.progress.bad, undefined);
+  assert.equal(store.state.progress.good.status, 'learning');
+  assert.equal(store.state.srs.bad, undefined);
+  assert.ok(store.state.srs.good);
+  assert.equal(store.state.notes.bad, undefined);
+  assert.equal(store.state.notes.good, 'ok');
+  assert.equal(store.state.daily.bad, undefined);
+  assert.deepEqual(store.state.favorites, ['b1-u01']);
+  assert.doesNotThrow(() => store.dueSrs());
+  const corruptKey = [...storage.map.keys()].find((key) => key.startsWith('nce-study:v1:corrupt:'));
+  assert.ok(corruptKey);
+});
+
+test('applyExternalState 接收另一标签较新的状态，忽略较旧状态', () => {
+  const { store } = makeStore();
+  store.load();
+  store.markVisit('b1-u01');
+  const newer = JSON.stringify({
+    ...store.state,
+    progress: {
+      ...store.state.progress,
+      'b1-u02': { status: 'learning', lastVisit: Date.now() + 1000 },
+    },
+    updatedAt: Date.now() + 1000,
+  });
+  assert.equal(store.applyExternalState(newer), true);
+  assert.ok(store.state.progress['b1-u02']);
+  const older = JSON.stringify({
+    ...store.state,
+    progress: { 'b1-u03': { status: 'learning', lastVisit: 1 } },
+    updatedAt: 1,
+  });
+  assert.equal(store.applyExternalState(older), false);
+  assert.equal(store.state.progress['b1-u03'], undefined);
+});

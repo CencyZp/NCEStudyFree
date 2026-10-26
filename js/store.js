@@ -49,22 +49,129 @@ function isObject(value) {
   return value !== null && typeof value === 'object' && !Array.isArray(value);
 }
 
-function mergeState(raw) {
+function clampNumber(value, min, max, fallback) {
+  const number = Number(value);
+  return Number.isFinite(number) ? Math.min(max, Math.max(min, number)) : fallback;
+}
+
+function mergeState(raw, onSanitize = null) {
   const base = defaultState();
   const parsed = isObject(raw) ? raw : {};
+  let dropped = 0;
   const state = {
     ...base,
-    ...parsed,
     version: STATE_VERSION,
-    settings: { ...base.settings, ...(isObject(parsed.settings) ? parsed.settings : {}) },
-    streak: { ...base.streak, ...(isObject(parsed.streak) ? parsed.streak : {}) },
+    lastLesson: typeof parsed.lastLesson === 'string' ? parsed.lastLesson : '',
+    lastLessonMeta: isObject(parsed.lastLessonMeta) ? parsed.lastLessonMeta : null,
+    createdAt: Number.isFinite(parsed.createdAt) ? parsed.createdAt : base.createdAt,
+    updatedAt: Number.isFinite(parsed.updatedAt) ? parsed.updatedAt : base.updatedAt,
   };
-  for (const key of ['progress', 'srs', 'mistakes', 'notes', 'daily']) {
-    state[key] = isObject(parsed[key]) ? parsed[key] : {};
+
+  const settings = isObject(parsed.settings) ? parsed.settings : {};
+  state.settings = {
+    theme: ['system', 'light', 'dark'].includes(settings.theme) ? settings.theme : base.settings.theme,
+    fontSize: ['sm', 'md', 'lg'].includes(settings.fontSize) ? settings.fontSize : base.settings.fontSize,
+    ttsRate: clampNumber(settings.ttsRate, 0.5, 1.5, base.settings.ttsRate),
+    ttsVoice: typeof settings.ttsVoice === 'string' ? settings.ttsVoice : '',
+    showZh: typeof settings.showZh === 'boolean' ? settings.showZh : true,
+    autoPlay: typeof settings.autoPlay === 'boolean' ? settings.autoPlay : false,
+  };
+
+  state.streak = {
+    current: Math.max(0, Math.floor(clampNumber(parsed.streak?.current, 0, 1e6, 0))),
+    best: Math.max(0, Math.floor(clampNumber(parsed.streak?.best, 0, 1e6, 0))),
+    lastDay: typeof parsed.streak?.lastDay === 'string' ? parsed.streak.lastDay : '',
+  };
+
+  state.progress = {};
+  if (parsed.progress !== undefined && !isObject(parsed.progress)) dropped += 1;
+  for (const [id, progress] of Object.entries(isObject(parsed.progress) ? parsed.progress : {})) {
+    if (typeof id !== 'string' || !isObject(progress)) {
+      dropped += 1;
+      continue;
+    }
+    state.progress[id] = {
+      ...progress,
+      status: ['new', 'learning', 'done'].includes(progress.status) ? progress.status : 'new',
+      visits: Math.max(0, Math.floor(clampNumber(progress.visits, 0, 1e9, 0))),
+      bestScore: clampNumber(progress.bestScore, 0, 1, 0),
+    };
   }
-  state.favorites = Array.isArray(parsed.favorites) ? parsed.favorites.filter((id) => typeof id === 'string') : [];
-  if (typeof state.lastLesson !== 'string') state.lastLesson = '';
-  if (!isObject(state.lastLessonMeta)) state.lastLessonMeta = null;
+
+  state.srs = {};
+  if (parsed.srs !== undefined && !isObject(parsed.srs)) dropped += 1;
+  for (const [id, card] of Object.entries(isObject(parsed.srs) ? parsed.srs : {})) {
+    if (
+      typeof id !== 'string' ||
+      !isObject(card) ||
+      typeof card.word !== 'string' ||
+      !card.word ||
+      Number.isNaN(new Date(card.due).getTime())
+    ) {
+      dropped += 1;
+      continue;
+    }
+    state.srs[id] = {
+      ...card,
+      id: typeof card.id === 'string' ? card.id : id,
+      phonetic: typeof card.phonetic === 'string' ? card.phonetic : '',
+      pos: typeof card.pos === 'string' ? card.pos : '',
+      meaning: typeof card.meaning === 'string' ? card.meaning : '',
+      usage: typeof card.usage === 'string' ? card.usage : '',
+      ease: clampNumber(card.ease, 1.3, 3, 2.5),
+      interval: Math.max(0, clampNumber(card.interval, 0, 3650, 1)),
+      reps: Math.max(0, Math.floor(clampNumber(card.reps, 0, 1e6, 0))),
+      lapses: Math.max(0, Math.floor(clampNumber(card.lapses, 0, 1e6, 0))),
+    };
+  }
+
+  state.mistakes = {};
+  if (parsed.mistakes !== undefined && !isObject(parsed.mistakes)) dropped += 1;
+  for (const [id, mistake] of Object.entries(isObject(parsed.mistakes) ? parsed.mistakes : {})) {
+    if (
+      typeof id !== 'string' ||
+      !isObject(mistake) ||
+      !isObject(mistake.question) ||
+      typeof mistake.question.id !== 'string' ||
+      !mistake.question.id ||
+      typeof mistake.lessonId !== 'string'
+    ) {
+      dropped += 1;
+      continue;
+    }
+    state.mistakes[id] = mistake;
+  }
+
+  state.notes = {};
+  if (parsed.notes !== undefined && !isObject(parsed.notes)) dropped += 1;
+  for (const [id, note] of Object.entries(isObject(parsed.notes) ? parsed.notes : {})) {
+    if (typeof id !== 'string' || typeof note !== 'string') {
+      dropped += 1;
+      continue;
+    }
+    state.notes[id] = note;
+  }
+
+  state.daily = {};
+  if (parsed.daily !== undefined && !isObject(parsed.daily)) dropped += 1;
+  for (const [day, entry] of Object.entries(isObject(parsed.daily) ? parsed.daily : {})) {
+    if (typeof day !== 'string' || !isObject(entry)) {
+      dropped += 1;
+      continue;
+    }
+    state.daily[day] = {
+      seconds: Math.max(0, Math.floor(clampNumber(entry.seconds, 0, 86400, 0))),
+      answered: Math.max(0, Math.floor(clampNumber(entry.answered, 0, 1e6, 0))),
+      correct: Math.max(0, Math.floor(clampNumber(entry.correct, 0, 1e6, 0))),
+      lessons: Array.isArray(entry.lessons) ? entry.lessons.filter((id) => typeof id === 'string') : [],
+    };
+  }
+
+  state.favorites = Array.isArray(parsed.favorites)
+    ? [...new Set(parsed.favorites.filter((id) => typeof id === 'string'))]
+    : [];
+
+  onSanitize?.(dropped);
   return state;
 }
 
@@ -76,6 +183,8 @@ export class Store {
     this.listeners = new Set();
     this.saveTimer = null;
     this.lastError = null;
+    this.errorNotified = false;
+    this.onError = null;
   }
 
   load() {
@@ -83,7 +192,7 @@ export class Store {
     try {
       raw = this.storage?.getItem(this.key) ?? null;
     } catch (error) {
-      this.lastError = error;
+      this.notifyError(error);
     }
     if (!raw) {
       this.state = defaultState();
@@ -91,9 +200,16 @@ export class Store {
     }
     try {
       const parsed = JSON.parse(raw);
-      this.state = mergeState(parsed);
+      this.state = mergeState(parsed, (dropped) => {
+        if (!dropped) return;
+        try {
+          this.storage?.setItem(`${this.key}:corrupt:${Date.now()}`, raw);
+        } catch {
+          /* 忽略备份失败 */
+        }
+      });
     } catch (error) {
-      this.lastError = error;
+      this.notifyError(error);
       try {
         this.storage?.setItem(`${this.key}:corrupt:${Date.now()}`, raw);
       } catch {
@@ -105,6 +221,13 @@ export class Store {
     return this.state;
   }
 
+  notifyError(error) {
+    this.lastError = error;
+    if (this.errorNotified) return;
+    this.errorNotified = true;
+    this.onError?.(error);
+  }
+
   save(immediate = false) {
     if (this.saveTimer) {
       clearTimeout(this.saveTimer);
@@ -114,8 +237,10 @@ export class Store {
       try {
         this.state.updatedAt = Date.now();
         this.storage?.setItem(this.key, JSON.stringify(this.state));
+        this.lastError = null;
+        this.errorNotified = false;
       } catch (error) {
-        this.lastError = error;
+        this.notifyError(error);
       }
     };
     if (immediate) {
@@ -134,6 +259,32 @@ export class Store {
   subscribe(listener) {
     this.listeners.add(listener);
     return () => this.listeners.delete(listener);
+  }
+
+  /** 接收另一个标签页写入的状态（storage 事件）。 */
+  applyExternalState(raw) {
+    if (!raw) return false;
+    try {
+      const parsed = JSON.parse(raw);
+      if (!isObject(parsed)) return false;
+      const next = mergeState(parsed);
+      if ((next.updatedAt || 0) < (this.state.updatedAt || 0)) return false;
+      this.state = next;
+      this.emit();
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  watchExternalChanges() {
+    if (typeof window === 'undefined') return () => {};
+    const onStorage = (event) => {
+      if (event.key !== this.key || !event.newValue) return;
+      this.applyExternalState(event.newValue);
+    };
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
   }
 
   emit() {

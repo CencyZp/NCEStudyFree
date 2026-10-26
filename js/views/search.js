@@ -10,6 +10,7 @@ function lessonRange(item) {
 
 export async function renderSearch(container, ctx) {
   const index = await ctx.ensureSearchIndex();
+  if (ctx.signal.aborted) return;
   let query = ctx.query.get('q') || '';
   let results = [];
 
@@ -133,6 +134,7 @@ export async function renderSearch(container, ctx) {
   }
 
   const onInput = debounce(() => {
+    if (ctx.signal.aborted) return;
     query = input.value;
     updateUrl();
     renderResults();
@@ -165,5 +167,9 @@ export async function renderSearch(container, ctx) {
   );
 
   renderResults();
-  input.focus({ preventScroll: true });
+  requestAnimationFrame(() => {
+    if (!ctx.signal.aborted) input.focus({ preventScroll: true });
+  });
+
+  return () => onInput.cancel();
 }
