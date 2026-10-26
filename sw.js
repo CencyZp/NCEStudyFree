@@ -1,5 +1,5 @@
 /* NCE StudyFree service worker：离线缓存与按册数据更新。 */
-const CACHE = 'nce-study-v4';
+const CACHE = 'nce-study-v6';
 const CORE = [
   './',
   './index.html',
@@ -8,6 +8,7 @@ const CORE = [
   './manifest.webmanifest',
   './js/app.js',
   './js/router.js',
+  './js/profiles.js',
   './js/store.js',
   './js/srs.js',
   './js/exercises.js',
@@ -28,6 +29,10 @@ const CORE = [
   './data/book3.js',
   './data/book4.js',
   './assets/icons/favicon.svg',
+  './assets/icons/favicon.ico',
+  './assets/icons/favicon-16.png',
+  './assets/icons/favicon-32.png',
+  './assets/icons/apple-touch-icon.png',
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png',
 ];

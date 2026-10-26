@@ -76,6 +76,7 @@ try {
   await page.waitForSelector('.hero', { timeout: 15000 });
   const homeTitle = await page.locator('.hero h1').innerText();
   check(homeTitle.includes('新概念四册'), '首页渲染主标题');
+  check((await page.locator('#profile-chip .profile-name').innerText()) === '我的学习', '默认学习档案已创建并显示');
   const desktopMetrics = await metrics(page);
   check(desktopMetrics.scrollWidth <= desktopMetrics.clientWidth + 1, `首页无横向溢出 (${desktopMetrics.scrollWidth}/${desktopMetrics.clientWidth})`);
   await shot(page, 'home.png');
@@ -171,7 +172,8 @@ try {
 
   await page.goto(`${BASE}#/settings`, { waitUntil: 'networkidle' });
   await page.waitForSelector('.settings-grid');
-  check((await page.locator('.settings-card').count()) >= 4, '设置页分区渲染');
+  check((await page.locator('.settings-card').count()) >= 5, '设置页分区渲染（含学习档案）');
+  check((await page.locator('.profile-summary').innerText()).includes('我的学习'), '设置页显示当前档案');
   await shot(page, 'settings.png');
   await page.getByRole('button', { name: '深色' }).click();
   await page.waitForTimeout(3000);
@@ -190,9 +192,12 @@ try {
   // PWA 离线：等待 Service Worker 预缓存完成，断网刷新并进入课程
   await page.goto(BASE, { waitUntil: 'networkidle' });
   await page.evaluate(async () => {
-    if ('serviceWorker' in navigator) await navigator.serviceWorker.ready;
+    if ('serviceWorker' in navigator) {
+      const registration = await navigator.serviceWorker.ready;
+      await registration.update();
+    }
   });
-  await page.waitForTimeout(800);
+  await page.waitForTimeout(1200);
   await context.setOffline(true);
   await page.reload({ waitUntil: 'domcontentloaded' });
   await page.waitForSelector('.hero', { timeout: 15000 });

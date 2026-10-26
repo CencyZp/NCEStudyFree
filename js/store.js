@@ -228,6 +228,31 @@ export class Store {
     this.onError?.(error);
   }
 
+  setKey(key, { saveCurrent = true } = {}) {
+    if (!key || key === this.key) return this.state;
+    if (saveCurrent) this.save(true);
+    if (this.saveTimer) {
+      clearTimeout(this.saveTimer);
+      this.saveTimer = null;
+    }
+    this.key = key;
+    this.state = defaultState();
+    this.load();
+    this.emit();
+    return this.state;
+  }
+
+  reload() {
+    if (this.saveTimer) {
+      clearTimeout(this.saveTimer);
+      this.saveTimer = null;
+    }
+    this.state = defaultState();
+    this.load();
+    this.emit();
+    return this.state;
+  }
+
   save(immediate = false) {
     if (this.saveTimer) {
       clearTimeout(this.saveTimer);

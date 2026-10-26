@@ -27,6 +27,7 @@ const ICONS = {
   filter: '<path d="M3 5h18l-7 8v6l-4 2v-8z"/>',
   headphones: '<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M4 14h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4z"/><path d="M20 14h-2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2z"/>',
   note: '<path d="M5 3h10l4 4v14H5z"/><path d="M15 3v5h5"/><path d="M8 12h8M8 16h6"/>',
+  user: '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
 };
 
 export function icon(name, size = 20, className = '') {
@@ -201,6 +202,58 @@ export function openModal({ title, body, actions = [], onClose = null, className
     (overlay.querySelector('.modal-actions button') || overlay.querySelector('button, input, textarea, select'))?.focus?.();
   });
   return close;
+}
+
+export function promptDialog({
+  title,
+  label = '名称',
+  value = '',
+  placeholder = '',
+  confirmText = '保存',
+  maxlength = 24,
+} = {}) {
+  return new Promise((resolve) => {
+    let settled = false;
+    const input = h('input', {
+      class: 'input',
+      type: 'text',
+      value,
+      placeholder,
+      maxlength: String(maxlength),
+      autocomplete: 'off',
+    });
+    const finish = (result, close) => {
+      if (settled) return;
+      settled = true;
+      resolve(result);
+      close?.();
+    };
+    const close = openModal({
+      title,
+      body: h('label', { class: 'prompt-field' }, h('span', { class: 'setting-label' }, label), input),
+      actions: [
+        { label: '取消', kind: 'ghost', onClick: () => finish(null, close) },
+        {
+          label: confirmText,
+          kind: 'primary',
+          onClick: () => finish(input.value.trim() || null, close),
+        },
+      ],
+      onClose: () => {
+        if (!settled) {
+          settled = true;
+          resolve(null);
+        }
+      },
+    });
+    input.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        finish(input.value.trim() || null, close);
+      }
+    });
+    requestAnimationFrame(() => input.focus({ preventScroll: true }));
+  });
 }
 
 export function confirmDialog(message, { title = '请确认', confirmText = '确定', danger = false } = {}) {

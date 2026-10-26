@@ -53,6 +53,9 @@ export async function renderSettings(container, ctx) {
   const settings = store.getSettings();
   const voices = ctx.tts.getVoices();
   const storageKb = (store.storageBytes() / 1024).toFixed(1);
+  const profileManager = ctx.profileManager;
+  const activeProfile = profileManager?.active();
+  const profileCount = profileManager?.list().length || 1;
 
   const themeControl = segmented(THEMES, settings.theme, (value) => {
     store.updateSettings({ theme: value });
@@ -137,7 +140,28 @@ export async function renderSettings(container, ctx) {
       },
     },
     icon('download', 16),
-    '导出备份',
+    '导出当前档案',
+  );
+
+  const exportAllButton = h(
+    'button',
+    {
+      type: 'button',
+      class: 'btn btn-ghost',
+      onclick: () => {
+        if (!profileManager) return;
+        const blob = new Blob([profileManager.exportAll()], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const link = h('a', { href: url, download: `nce-profiles-backup-${dayKey()}.json` });
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+        toast('全部档案已导出', 'success');
+      },
+    },
+    icon('download', 16),
+    '导出全部档案',
   );
 
   const fileInput = h('input', { type: 'file', accept: 'application/json,.json', hidden: true });
@@ -167,7 +191,36 @@ export async function renderSettings(container, ctx) {
     'button',
     { type: 'button', class: 'btn btn-ghost', onclick: () => fileInput.click() },
     icon('upload', 16),
-    '导入备份',
+    '导入当前档案',
+  );
+
+  const allFileInput = h('input', { type: 'file', accept: 'application/json,.json', hidden: true });
+  allFileInput.addEventListener('change', async () => {
+    const file = allFileInput.files?.[0];
+    if (!file) return;
+    try {
+      const text = await file.text();
+      const ok = await confirmDialog(
+        '导入全部档案会覆盖当前浏览器里的所有档案、进度、生词、错题和笔记。建议先导出备份。确定继续？',
+        { title: '导入全部档案', confirmText: '覆盖导入', danger: true },
+      );
+      if (!ok) {
+        allFileInput.value = '';
+        return;
+      }
+      profileManager.importAll(text);
+      toast('全部档案已导入，正在刷新…', 'success');
+      setTimeout(() => window.location.reload(), 500);
+    } catch (error) {
+      toast(`导入失败：${error.message}`, 'error');
+    }
+    allFileInput.value = '';
+  });
+  const importAllButton = h(
+    'button',
+    { type: 'button', class: 'btn btn-ghost', onclick: () => allFileInput.click() },
+    icon('upload', 16),
+    '导入全部档案',
   );
 
   const clearButton = h(
@@ -176,25 +229,25 @@ export async function renderSettings(container, ctx) {
       type: 'button',
       class: 'btn btn-danger-ghost',
       onclick: async () => {
-        const first = await confirmDialog('这会删除当前浏览器里的全部学习记录，且无法撤销。建议先导出备份。', {
-          title: '清空学习数据',
+        const first = await confirmDialog('这会清空当前档案的全部学习记录，不会影响其他档案，且无法撤销。建议先导出备份。', {
+          title: '清空当前档案',
           confirmText: '继续',
           danger: true,
         });
         if (!first) return;
-        const second = await confirmDialog('最后确认：清空后无法恢复。', {
+        const second = await confirmDialog('最后确认：当前档案清空后无法恢复。', {
           title: '再次确认',
-          confirmText: '清空全部数据',
+          confirmText: '清空当前档案',
           danger: true,
         });
         if (!second) return;
         store.reset();
-        toast('已清空，正在刷新…', 'success');
+        toast('当前档案已清空，正在刷新…', 'success');
         setTimeout(() => window.location.reload(), 400);
       },
     },
     icon('trash', 16),
-    '清空数据',
+    '清空当前档案',
   );
 
   container.append(
@@ -208,6 +261,48 @@ export async function renderSettings(container, ctx) {
     h(
       'div',
       { class: 'settings-grid' },
+      settingsCard(
+        'user',
+        '学习档案',
+        '每个档案独立保存进度、生词、错题和笔记。',
+        h(
+          'div',
+          { class: 'setting-group' },
+          h(
+            'div',
+            { class: 'profile-summary' },
+            h(
+              'span',
+              {
+                class: 'profile-avatar',
+                style: { '--profile-color': activeProfile?.color || '#14532d' },
+              },
+              [...(activeProfile?.name || '学')][0],
+            ),
+            h(
+              'div',
+              {},
+              h('strong', {}, activeProfile?.name || '我的学习'),
+              h('span', { class: 'muted' }, `${profileCount} 个本地档案 · 仅保存在此浏览器`),
+            ),
+            h('span', { class: 'badge' }, '当前'),
+          ),
+          h(
+            'div',
+            { class: 'data-actions' },
+            h(
+              'button',
+              {
+                type: 'button',
+                class: 'btn btn-primary',
+                onclick: () => ctx.openProfileSwitcher?.(),
+              },
+              icon('user', 16),
+              '切换 / 管理档案',
+            ),
+          ),
+        ),
+      ),
       settingsCard('sun', '外观', '主题与字号会立即应用。', h('div', { class: 'setting-group' }, h('span', { class: 'setting-label' }, '主题'), themeControl, h('span', { class: 'setting-label' }, '字号'), fontControl)),
       settingsCard(
         'headphones',
@@ -229,9 +324,14 @@ export async function renderSettings(container, ctx) {
         h(
           'div',
           { class: 'setting-group' },
-          h('div', { class: 'data-actions' }, exportButton, importButton, clearButton),
+          h('div', { class: 'data-actions' }, exportButton, importButton, exportAllButton, importAllButton, clearButton),
           fileInput,
-          h('p', { class: 'muted storage-note' }, `当前占用约 ${storageKb} KB。清除浏览器数据会同时清除学习记录。`),
+          allFileInput,
+          h(
+            'p',
+            { class: 'muted storage-note' },
+            `当前档案占用约 ${storageKb} KB。清除浏览器数据会同时清除所有本地档案。`,
+          ),
         ),
       ),
       settingsCard(

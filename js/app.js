@@ -1,6 +1,16 @@
 import { store } from './store.js';
+import { ProfileManager, profileInitial } from './profiles.js';
 import { startRouter, parseLocation, navigate } from './router.js';
-import { h, icon, clear, toast, scrollTop } from './ui.js';
+import {
+  h,
+  icon,
+  clear,
+  toast,
+  scrollTop,
+  openModal,
+  promptDialog,
+  confirmDialog,
+} from './ui.js';
 import { tts } from './tts.js';
 import { recorder } from './recorder.js';
 import { renderHome } from './views/home.js';
@@ -15,6 +25,7 @@ const bookPromises = new Map();
 let searchPromise = null;
 let routeController = null;
 let routeCleanup = null;
+let profileManager = null;
 
 function loadScript(src) {
   return new Promise((resolve, reject) => {
@@ -89,6 +100,156 @@ function updateStreak() {
   pill.querySelector('[data-streak-value]')?.replaceChildren(document.createTextNode(String(current)));
 }
 
+function updateProfileChip() {
+  const chip = document.getElementById('profile-chip');
+  if (!chip) return;
+  const profile = profileManager?.active();
+  const name = profile?.name || '我的学习';
+  const avatar = chip.querySelector('.profile-avatar');
+  const label = chip.querySelector('.profile-name');
+  if (avatar) {
+    avatar.textContent = profileInitial(name);
+    avatar.style.setProperty('--profile-color', profile?.color || '#14532d');
+  }
+  if (label) label.textContent = name;
+  chip.setAttribute('aria-label', `当前档案：${name}，点击切换`);
+  chip.setAttribute('title', `当前档案：${name}`);
+}
+
+function openProfileSwitcher() {
+  if (!profileManager) return;
+  const listHost = h('div', { class: 'profile-list' });
+
+  const render = () => {
+    clear(listHost);
+    const profiles = profileManager.list();
+    for (const profile of profiles) {
+      const active = profile.id === profileManager.activeId;
+      listHost.appendChild(
+        h(
+          'div',
+          { class: `profile-row ${active ? 'is-active' : ''}` },
+          h(
+            'span',
+            { class: 'profile-avatar', style: { '--profile-color': profile.color } },
+            profileInitial(profile.name),
+          ),
+          h(
+            'div',
+            { class: 'profile-row-main' },
+            h('strong', {}, profile.name),
+            h('span', { class: 'muted' }, active ? '当前档案 · 独立进度' : '独立进度、生词与笔记'),
+          ),
+          h(
+            'div',
+            { class: 'profile-row-actions' },
+            active
+              ? h('span', { class: 'badge' }, '当前')
+              : h(
+                  'button',
+                  {
+                    type: 'button',
+                    class: 'btn btn-ghost btn-sm',
+                    onclick: () => {
+                      profileManager.switch(profile.id);
+                      window.location.reload();
+                    },
+                  },
+                  '切换',
+                ),
+            h(
+              'button',
+              {
+                type: 'button',
+                class: 'icon-btn',
+                'aria-label': `重命名 ${profile.name}`,
+                title: '重命名',
+                onclick: async () => {
+                  const name = await promptDialog({
+                    title: '重命名档案',
+                    label: '档案名称',
+                    value: profile.name,
+                    confirmText: '保存',
+                  });
+                  if (!name) return;
+                  try {
+                    profileManager.rename(profile.id, name);
+                    updateProfileChip();
+                    render();
+                    toast('档案已重命名', 'success');
+                  } catch (error) {
+                    toast(error.message, 'error');
+                  }
+                },
+              },
+              icon('note', 16),
+            ),
+            h(
+              'button',
+              {
+                type: 'button',
+                class: 'icon-btn',
+                'aria-label': `删除 ${profile.name}`,
+                title: '删除',
+                disabled: profiles.length <= 1,
+                onclick: async () => {
+                  const ok = await confirmDialog(
+                    `删除“${profile.name}”会永久删除该档案的进度、生词、错题和笔记。`,
+                    { title: '删除档案', confirmText: '删除', danger: true },
+                  );
+                  if (!ok) return;
+                  try {
+                    profileManager.remove(profile.id);
+                    window.location.reload();
+                  } catch (error) {
+                    toast(error.message, 'error');
+                  }
+                },
+              },
+              icon('trash', 16),
+            ),
+          ),
+        ),
+      );
+    }
+  };
+  render();
+
+  const body = h(
+    'div',
+    { class: 'profile-manager' },
+    h('p', { class: 'muted' }, '每个档案独立保存进度、生词、错题和笔记；切换不会丢失数据。'),
+    listHost,
+    h(
+      'button',
+      {
+        type: 'button',
+        class: 'btn btn-primary profile-create',
+        onclick: async () => {
+          const name = await promptDialog({
+            title: '新建学习档案',
+            label: '档案名称',
+            placeholder: '例如：小明',
+            confirmText: '创建',
+          });
+          if (!name) return;
+          try {
+            const profile = profileManager.create(name);
+            profileManager.switch(profile.id);
+            window.location.reload();
+          } catch (error) {
+            toast(error.message, 'error');
+          }
+        },
+      },
+      icon('user', 16),
+      '新建档案',
+    ),
+  );
+
+  openModal({ title: '学习档案', body, actions: [{ label: '关闭', kind: 'ghost' }] });
+}
+
 const NAV_ITEMS = [
   { path: '/', label: '首页', icon: 'home', match: ['/'] },
   { path: '/book/1', label: '课程', icon: 'book', match: ['/book', '/lesson'] },
@@ -122,6 +283,25 @@ function buildShell() {
     ),
   );
 
+  const activeProfile = profileManager?.active();
+  const profileButton = h(
+    'button',
+    {
+      type: 'button',
+      class: 'profile-chip',
+      id: 'profile-chip',
+      title: `当前档案：${activeProfile?.name || '我的学习'}`,
+      'aria-label': `当前档案：${activeProfile?.name || '我的学习'}，点击切换`,
+      onclick: () => openProfileSwitcher(),
+    },
+    h(
+      'span',
+      { class: 'profile-avatar', style: { '--profile-color': activeProfile?.color || '#14532d' } },
+      profileInitial(activeProfile?.name || '我的学习'),
+    ),
+    h('span', { class: 'profile-name' }, activeProfile?.name || '我的学习'),
+  );
+
   const header = h(
     'header',
     { class: 'app-header' },
@@ -133,6 +313,7 @@ function buildShell() {
       h(
         'div',
         { class: 'header-actions' },
+        profileButton,
         h(
           'span',
           { class: 'streak-pill', id: 'streak-pill', title: '连续学习天数' },
@@ -259,6 +440,9 @@ function makeContext(location, signal) {
     toast,
     tts,
     recorder,
+    profileManager,
+    openProfileSwitcher,
+    updateProfileChip,
   };
 }
 
@@ -357,9 +541,14 @@ function init() {
     toast('浏览器本地存储不可用，学习进度可能无法保存。建议在设置中导出备份。', 'error', 8000);
   };
   store.load();
+  profileManager = new ProfileManager({ store });
+  profileManager.load();
   store.watchExternalChanges();
+  profileManager.watchExternalChanges();
   applyTheme();
   buildShell();
+  profileManager.subscribe(updateProfileChip);
+  updateProfileChip();
   updateStreak();
 
   const media = window.matchMedia?.('(prefers-color-scheme: dark)');
@@ -377,7 +566,16 @@ function init() {
   startRouter(handleRoute);
   registerServiceWorker();
 
-  window.NCE_APP = { store, navigate, ensureBookData, ensureSearchIndex, getBookMeta, getUnit };
+  window.NCE_APP = {
+    store,
+    profileManager,
+    navigate,
+    ensureBookData,
+    ensureSearchIndex,
+    getBookMeta,
+    getUnit,
+    openProfileSwitcher,
+  };
 }
 
 init();
