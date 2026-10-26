@@ -49,19 +49,20 @@ export class Recorder {
   }
 
   async stop() {
-    if (!this.recorder || this.recorder.state === 'inactive') return '';
+    const recorder = this.recorder;
+    if (!recorder || recorder.state === 'inactive') return '';
     return new Promise((resolve) => {
-      this.recorder.addEventListener(
+      recorder.addEventListener(
         'stop',
         () => {
-          const blob = new Blob(this.chunks, { type: this.recorder.mimeType || 'audio/webm' });
+          const blob = new Blob(this.chunks, { type: recorder.mimeType || 'audio/webm' });
           this.url = URL.createObjectURL(blob);
           this.cleanupStream();
           resolve(this.url);
         },
         { once: true },
       );
-      this.recorder.stop();
+      recorder.stop();
     });
   }
 
